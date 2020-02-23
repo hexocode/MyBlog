@@ -76,7 +76,7 @@ menu:
       type: 3  # 跳转类型 3：打开新的tab页
 
 # 文末声明
-article_txt: 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com
+article_txt: 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 15579576761@163.com
 
 bottom_text: ©2019-2020 wallleap
 # 自定义页面最下方的站点版权信息
@@ -159,7 +159,7 @@ img_resize: photoSwipe
 
 # 代码段高亮样式，markdown 语法 `demo`
 code:
-  theme: github
+  theme: dark-red
 # 支持主题：
 # dark-red: 红字(默认)
 # github: github样式（灰色底，黑字）
@@ -209,11 +209,16 @@ mermaid:
 # 友情链接
 friends:
   叶落阁: http://yelog.org/
+  皮皮家园: https://www.zh66.club
+  喵喵喵~: https://jwmm.xyz/
+  evrStr: https://evrstr.tk/
+  LeeYD: https://leeyiding.com/
+  Uncle_drew: https://cndrew.cn/
 
 
 ##########评论设置#############
 comment:
-  on: false
+  on: true
   type: gitalk  # 评论系统：gitalk、disqus、gentie、gitment,注意：使用时，在下方对应位置进行配置
   comment_count: true  # 文章标题下方显示评论数
   preload_comment: false  # 预加载评论区
@@ -233,11 +238,11 @@ gentie:
   # 网易云跟帖暂时不支持查询评论数，所以启用时，把评论数关掉，上方comment_count: false。
 
 gitalk:
-  githubID: yelog
-  repo: yelog.github.io
-  ClientID:
-  ClientSecret:
-  adminUser: yelog
+  githubID: wallleap
+  repo: wallleap.github.io
+  ClientID: 6cf45b59a0652aa53c48
+  ClientSecret: 60fffb661ce5a58686dfa75492e6fef2b23375e4
+  adminUser: wallleap
   distractionFreeMode: true
   language: zh-CN
   perPage: 10
@@ -254,10 +259,10 @@ gitalk:
 
 
 gitment:
-  owner: yelog
-  repo: yelog.github.io
-  client_id:
-  client_secret:
+  owner: wallleap
+  repo: wallleap.github.io
+  client_id: 27c7a71e210fd2f1bc3a
+  client_secret: 11308824aad93b02de77331ff6a346fcf60d0256
   # gitment : 通过github issue实现的评论系统
   # 开源地址 : https://github.com/imsun/gitment
   # 使用说明 :

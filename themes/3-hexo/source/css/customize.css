@@ -1065,3 +1065,49 @@ progress {
     height:24px;
     width:100%
 }
+
+
+
+.site-footer {
+    padding:2%;
+    background:rgba(255,255,255,.8);
+    max-width:800px;
+    margin-left:auto;
+    margin-right:auto
+}
+.site-info {
+    text-align:center;
+    font-size:13px;
+    color:#b9b9b9
+}
+.site-info a {
+    color:#b9b9b9
+}
+.site-info a:hover {
+    color:orange
+}
+.footertext p {
+    margin-bottom:8px
+}
+.footertext .foo-logo {
+    width:30px;
+    height:30px;
+    opacity:.3;
+    margin:0 auto;
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+    animation:poi-deg 12s infinite linear;
+    -webkit-animation:poi-deg 12s infinite linear
+}
+.site-statistics {
+    display:none
+}
+.entry-content .begin,.single-begin {
+    float:left;
+    font-size:3.6em;
+    line-height:1em;
+    margin-right:3px;
+    margin-top:2px;
+    font-weight:bold
+}
