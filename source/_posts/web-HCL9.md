@@ -6,6 +6,7 @@ authorLink: wallleap.cn
 authorAbout: 一个好奇的人
 authorDesc: 一个好奇的人
 comments: true
+top: 1
 tags:
   - eNSP
   - 企业网
