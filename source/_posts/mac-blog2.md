@@ -128,7 +128,15 @@ about页还需要修改主题_config.yml：
 ![](https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/mac-blog2/pic9.jpg)
 
 
+## 五、博客美化
 
+### 1、了解hexo博客layout
+
+### 2、修改layout中各布局代码
+
+### 3、css美化
+
+### 4、其他小部件
 
 
 

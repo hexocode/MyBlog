@@ -6,6 +6,7 @@ authorLink: http://hojun.cn
 authorAbout: 一个好奇的人
 authorDesc: 一个好奇的人
 copyright: false
+reproduce: 'https://github.com/honjun/hexo-theme-sakura/blob/master/README.md'
 categories: 
 	- 转载
 	- 主题
