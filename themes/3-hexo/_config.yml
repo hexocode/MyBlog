@@ -37,7 +37,6 @@ author:
     author2: a
 ##############################
 
-lazyloadImg: https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg
 
 # 文章分类设置
 category:
@@ -121,12 +120,12 @@ article_list:
   datetime: '#5e5e5f' # 文章发布日期颜色
   hover:
     background: '#e2e0e0'  # 背景色:提供几种：'#c1bfc1'  '#fbf4a8'
-    color:     # 文字颜色 提供几种：'#ffffff'
+    color: '#03a788'    # 文字颜色 提供几种：'#ffffff'
 # 注意：由于颜色如果包含#，使用单引号 ' 引起来
 
 # 文章列表背景图
 article_bg_img:
-  on: true # 是否开启
+  on: false # 是否开启
   src: https://i.loli.net/2019/07/22/5d3521411f3f169375.png
   opacity: 0.3 # 背景图透明度，范围 0 ～ 1
 
@@ -214,6 +213,39 @@ friends:
   evrStr: https://evrstr.tk/
   LeeYD: https://leeyiding.com/
   Uncle_drew: https://cndrew.cn/
+
+links:
+  - group: 友情链接
+    desc: 欢迎交换友链 ꉂ(ˊᗜˋ)
+    items:
+    - url: https://yelog.org
+      img: https://yelog.org/img/avatar.jpg
+      name: 叶落阁
+      desc: 喜欢研究新兴技术和未来发展方向
+    - url: https://www.zh66.club
+      img: https://cdn.jsdelivr.net/gh/Zevs6/CDN@3.0/img/avatar.jpg
+      name: 皮皮家园
+      desc: 让平凡的一天不再平凡！
+    - url: https://jwmm.xyz/
+      img: https://cdn.jsdelivr.net/gh/xb2016/kratos-pjax@0.4.0/static/images/favicon.ico
+      name: 喵喵喵~
+      desc: 只会喵喵叫的业余前端佬-喵~
+    - url: https://evrstr.tk/
+      img: https://evrstr.tk/medias/avatar.jpg
+      name: evrStr
+      desc: 自动化专业，喜欢捣鼓单片机啥的。
+    - url: https://leeyiding.com/
+      img: https://cdn.jsdelivr.net/gh/leeyiding/cdn@latest/img/custom/avatar.png
+      name: LeeYD
+      desc: May The Force Be With You
+    - url: https://cndrew.cn/
+      img: https://qn.cndrew.cn/dreww.webp
+      name: Uncle_drew
+      desc: Hand down,man down
+    - url: #
+      img: https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg
+      name: 等待收录中
+      desc: 如交换友链，请留言……
 
 
 ##########评论设置#############

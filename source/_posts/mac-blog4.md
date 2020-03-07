@@ -64,5 +64,37 @@ alias hd='hexo clean && hexo g && hexo d && git add . && git commit -m "update" 
 部署和备份运行`hd`
 
 
+## 添加站点统计代码
+
+一般使用[百度统计](https://tongji.baidu.com/web/welcome/login)
 
 
+
+
+## 站点SEO收录
+
+
+## 部署到个人服务器
+
+## 部署到国内服务器后的域名备案
+
+
+---
+ **文章汇总：**
+<table><tr><td bgcolor=#FFFF00> Mac使用Hexo和GitHub搭建博客(1)</td></tr></table>
+
+[go->](../mac-blog1/index.html)
+
+<table><tr><td bgcolor=#D1EEEE>Mac使用Hexo和GitHub搭建博客(2)</td></tr></table>
+
+[go->](../mac-blog2/index.html)
+
+<table><tr><td bgcolor=#C0FF3E>Mac使用Hexo和GitHub搭建博客(3)</td></tr></table>
+
+[go->](../mac-blog3/index.html)
+
+<table><tr><td bgcolor=#54FF9F>Mac使用Hexo和GitHub搭建博客(4)</td></tr></table>
+
+[go->](../mac-blog4/index.html)
+
+---

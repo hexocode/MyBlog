@@ -2,7 +2,7 @@
 title: Mac使用Hexo和GitHub搭建博客(1)--搭建博客
 author: luwang
 avatar: https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/custom/avatar.jpg
-authorLink: wallleap.top
+authorLink: wallleap.cn
 authorAbout: luwang
 authorDesc: luwang
 date: 2019-08-24 20:14:35
@@ -300,16 +300,16 @@ hexo d -g
 ---
  **文章汇总：**
 <table><tr><td bgcolor=#FFFF00> Mac使用Hexo和GitHub搭建博客(1)</td></tr></table>
-<kbd>[go->](./index.html)</kbd>
+[go->](./index.html)
 
 <table><tr><td bgcolor=#D1EEEE>Mac使用Hexo和GitHub搭建博客(2)</td></tr></table>
-<kbd>[go->](../mac-blog2/index.html)</kbd>
+[go->](../mac-blog2/index.html)
 
 <table><tr><td bgcolor=#C0FF3E>Mac使用Hexo和GitHub搭建博客(3)</td></tr></table>
-<kbd>[go->](../mac-blog3/index.html)</kbd>
+[go->](../mac-blog3/index.html)
 
 <table><tr><td bgcolor=#54FF9F>Mac使用Hexo和GitHub搭建博客(4)</td></tr></table>
-<kbd>[go->](../mac-blog4/index.html)</kbd>
+[go->](../mac-blog4/index.html)
 
 ---
 

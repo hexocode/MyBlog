@@ -604,23 +604,20 @@
 
 <%- partial('_partial/aplayer', null, {cache: !config.relative_link}) %>
 
-$(function () {
-    const observer = lozad();
-    observer.observe();
-});
-
+<script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="/js/botui.js"></script>
 <script type="text/javascript" src="/js/jquery.fancybox.min.js"></script>
-//前面需要引入fancybox的css和js，这里省略
+
 <script>
 (function() {
-  //前面部分是判断是标签否为图集的文章，根据需求可以舍弃
+
   var arr = new Array();
   var $tags = $('.post-tags').children('a');
   $tags.each(function() {
     arr.push($(this).html())
   })
   if (arr.indexOf("图集") !== -1) {
-    //如果是图集
+
     $('.hj_img').each(function() {
       $(this).wrap('<a class="fancybox" data-fancybox="gallery" href="' + $(this).prop("src") + '"></a>'); 
     })

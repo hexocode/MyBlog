@@ -10,6 +10,7 @@
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
 </div>
+<% if(theme.article_txt){%><hr><span style="font-style: italic;color: gray;"> <%=theme.article_txt%> </span><%}%>
 <% } %>
 <% if ((post.copyright == false && !is_page() && theme.copyright && post.reproduce) || post.original){ %>
 <div class="article_copyright">

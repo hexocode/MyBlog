@@ -1,3 +1,6 @@
+
+
+
 # <center><font size="18px" color="red">wallleap</font></center>
 
 
@@ -23,9 +26,10 @@
 </script>
 
 ## <center><i class="fa fa-music" aria-hidden="true"></i>欣赏音乐</center>
+<!--
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=450 src="//music.163.com/outchain/player?type=0&id=2162711186&auto=1&height=430"></iframe>
 
-
+-->
 
 ## <center><i class="fa fa-angle-double-right" aria-hidden="true"></i>对博客的理解</center>
 喜欢写Blog的人，会经历三个阶段。
@@ -67,9 +71,13 @@
 - 一言引入：[hexo博客添加一言](https://www.jianshu.com/p/3a58d9a796c3)
 - [看板娘](https://www.jianshu.com/p/ebde730615f5)
 - 创建404页面：我们可以直接使用html代码，设置不渲染`layout: false;`
+- [使用思维导图插件](/mindmpatest)：[hexo的思维导图插件](https://hunterx.xyz/hexo-simple-mindmap-plugin-intro.html)
+
+## <center><font color="orange"><i class="fa fa-link" aria-hidden="true"></i>友人帐</font></center>
 
 
 
-## <center><font color="blue"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>留言板</font></center>
 
-> 大伙快来留言呐~
+
+
+

@@ -57,7 +57,8 @@ category:
     sub: true # 开启多级分类
 ```
 > 文末声明  改为自己的
-```article_txt: 
+```
+article_txt: 
 
 ```
 > 打赏功能  需要到～/blog/themes/3-hexo/source/img下把weixin.jpg和alipay.jpg替换为自己微信和支付宝收款码
@@ -114,7 +115,7 @@ about页还需要修改主题_config.yml：
 ![](https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/mac-blog2/pic6.jpg)
 ### 2、添加文件
 做完了解析工作还是不行的，需要在仓库加上CNAME文件，文件中只需要填写域名，比如我的：
-![](https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/ mac-blog2/pic7.jpg)
+![](https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/mac-blog2/pic7.jpg)
 由于仓库中上传时会自动删除，因此放到`~/blog/source/`下
 ## 四、评论系统
 
@@ -146,15 +147,15 @@ about页还需要修改主题_config.yml：
 ---
  **文章汇总：**
 <table><tr><td bgcolor=#FFFF00> Mac使用Hexo和GitHub搭建博客(1)</td></tr></table>
-<kbd>[go->](../mac-blog1/index.html)</kbd>
+[go->](../mac-blog1/index.html)
 
 <table><tr><td bgcolor=#D1EEEE>Mac使用Hexo和GitHub搭建博客(2)</td></tr></table>
-<kbd>[go->](../mac-blog2/index.html)</kbd>
+[go->](../mac-blog2/index.html)
 
 <table><tr><td bgcolor=#C0FF3E>Mac使用Hexo和GitHub搭建博客(3)</td></tr></table>
-<kbd>[go->](../mac-blog3/index.html)</kbd>
+<[go->](../mac-blog3/index.html)
 
 <table><tr><td bgcolor=#54FF9F>Mac使用Hexo和GitHub搭建博客(4)</td></tr></table>
-<kbd>[go->](../mac-blog4/index.html)</kbd>
+[go->](../mac-blog4/index.html)
 
 ---
