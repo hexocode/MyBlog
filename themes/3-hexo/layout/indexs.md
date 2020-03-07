@@ -26,6 +26,12 @@
 </script>
 
 ## <center><i class="fa fa-music" aria-hidden="true"></i>欣赏音乐</center>
+
+emmmm……
+
+网易iframe总是下载字体，所以去掉了
+
+直接点击左下角悬浮音乐欣赏吧╮(╯▽╰)╭
 <!--
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=450 src="//music.163.com/outchain/player?type=0&id=2162711186&auto=1&height=430"></iframe>
 
