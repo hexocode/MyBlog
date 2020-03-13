@@ -7,6 +7,7 @@ authorAbout:
 authorDesc: 不忘初心 继续前进
 categories:
   - 电脑
+  - Win10
 comments: true
 tags:
   - Win10

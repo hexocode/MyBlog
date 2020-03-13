@@ -15,6 +15,6 @@ categories:
 date: 2019-08-28 22:12:47
 comments: true
 keywords: 数据结构
-description: 数据结构预备知识
+description: 数据结构
 photos: https://static.2heng.xin/wp-content/uploads//2019/02/wallhaven-672007-1-1024x576.png
 ---

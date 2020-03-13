@@ -1,0 +1,373 @@
+---
+title: 五笔学习笔记
+author: luwang
+avatar: 'https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/custom/avatar.jpg'
+authorLink: wallleap.cn
+tags:
+	- 五笔
+categories:
+	- 笔记
+	- 五笔学习
+comments: true
+photos: 'https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/cover/(00).jpg'
+date: 2020-03-04 23:33:49
+keywords: 
+---
+
+小时候看过五笔的教材，可是看到拆字方法就不想再看了，现在重新学习发现还是可以接受的，今天就把学习的笔记分享一下吧
+
+### 五笔打字的优势
+
+
+
+1、速度快
+
+通常击键1-2次就能打出一个字，击键3次能够打出一个词组
+
+
+
+2、陌生字
+
+对于不知道读音的字也可以打出
+
+
+
+3、准确率高
+
+输入准确率高，不会出现同音不同意的错别字
+
+
+
+
+
+### 学好五笔三大条件
+
+
+
+1、熟记字根
+
+2、熟练掌握拆字原则
+
+3、多练
+
+
+
+### 汉字的5个笔画
+
+
+
+![img](https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHTmibZrqYMHBXkWYwvQS5ry51OnteCssWLLDnB4buqrO71gBsWrmOSuILIfvcMBBJ0BRVAsLzPUnlA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+根据这五个笔画将键盘分为五个区
+
+![img](https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHTmibZrqYMHBXkWYwvQS5ry5ohSiccTfuGN7gpHd8xz6CZ3bAzXZBV2fO9NtvJJAIYn3ib3bjqUicOuIw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+需要知道：
+
+1、五个区分别是哪五个(一区横区、二竖区、三撇区、四捺区、五折区)
+
+2、每个区的键位(不用死记硬背，自己手放对了，打多了就记住了)
+
+横区 G、F、D、S、A
+
+竖区 H、J、K、L、M
+
+撇区 T、R、E、W、Q
+
+捺区 Y、U、I、O、P
+
+折区 N、B、V、C、X
+
+3、每个键的代号(每个字母下方数字)
+
+
+
+
+
+### 五笔字根表
+
+
+
+![img](https://mmbiz.qpic.cn/mmbiz_jpg/bQicJnZn4LHTmibZrqYMHBXkWYwvQS5ry5vKtib5RGCDvkJ7ojsLoHTXCWY2ZDiau4ZO5NP8uV5YJvcg0uRVBdgjEw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+现在是时候播放文章头的五笔自根歌了
+
+这首歌就是来帮助我们记忆五笔自根表的
+
+看上图的下半部分：
+
+1区横区：
+
+<font color="#f000ff">G11 王旁青头戋(兼)五一</font> (这个好理解，记住就行，知道青头是青的上半部分)
+
+<font color="#ff5ab8">F12 土士二干十寸雨</font>    (这里需要记住一个没写上的)
+
+<font color="#ff0000">D13 大犬三(羊)古石厂</font>  (羊没有头、镸字旁要单独记、下面都是类似厂、大、犬的)
+
+<font color="#ff8300">S14 木丁西</font>          (三个，好记)
+
+<font color="#56b800">A15 工戈草头右框七</font>    (右框是方框口朝右的)
+
+
+
+2区竖区：
+
+<font color="#f000ff">H21 目具上止卜虎皮</font>    (具的上半部)
+
+<font color="#ff5ab8">J22 日早两竖与虫依</font>    (日翻转90度)
+
+<font color="#ff0000">K23 口与川，字根稀</font>    (口、川、川形近，只有三个字根)
+
+<font color="#ff8300">L24 田甲方框四车力</font>    (四及形近的注意一下)
+
+<font color="#56b800">M25 山由贝，下框几</font>   (骨上面那个要死记)
+
+
+
+3区撇区：
+
+<font color="#f000ff">T31 禾竹一撇双人立，反文条头共三一</font> (这些都在代号31里)
+
+<font color="#ff5ab8">R32 白手看头三二斤</font>
+
+<font color="#ff0000">E33 月彡(衫)乃用家衣底</font>
+
+<font color="#ff8300">W34 人和八，登祭三四里</font>
+
+<font color="#56b800">Q35 金勺缺点无尾鱼，犬旁留叉儿一点夕，氏无七(妻)</font>
+
+
+
+4区捺区：
+
+<font color="#f000ff">Y41 言文方广在四一，高头一捺谁人去</font>
+
+<font color="#ff5ab8">U42 立辛两点六门疒</font>
+
+<font color="#ff0000">I43 水旁兴头小倒立</font>
+
+<font color="#ff8300">O44 火业头，四点米</font>
+
+<font color="#56b800">P45 之字军盖道建底，摘礻(示)衤(衣)</font>
+
+
+
+五区折区：
+
+<font color="#f000ff">N51 已半巳满不出己，左框折尸心和羽</font>
+
+<font color="#ff5ab8">B52 子耳了也框向上</font>
+
+<font color="#ff0000">V53 女刀九臼山朝西</font>
+
+<font color="#ff8300">C54 又巴马，丢矢矣</font>
+
+<font color="#56b800">X55 慈母无心弓和匕，幼无力</font>
+
+
+
+
+
+## 汉字的字形
+
+
+
+根据汉字字根之间的位置关系，在五笔字型中共有3种汉字字型：左右型、上下型、杂合型，分别用代号1~3表示
+
+![img](https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHTmibZrqYMHBXkWYwvQS5ry5sZViaWAgQZzNmNN7fZM9MShQFQAJYvjfSwmH8fbSuicHmpmmIy99MrKw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+
+
+
+
+## 汉字结构
+
+
+
+1、“单”结构汉字——构成汉字的字根只有一个
+
+eg：上 五 日 小 八 
+
+
+
+2、“散”结构汉字——构成汉字的字根有两个，且两个字根有距离，不相交也不想连
+
+eg：明 对 务 打 休
+
+
+
+3、“连”结构汉字——由一个单笔画字根和一个基本字根相连的汉字
+
+eg：自 千
+
+
+
+4、“交”结构汉字——由几个字根相互交叉构成
+
+eg：内 果 夫 中 申 丰
+
+
+
+
+
+## 汉字拆分原则
+
+
+
+1、书写顺序
+
+在拆字时，应该按照汉字的书写顺序（“从左到右”、“由上而下”、“自外到内”），将其拆分为基本字根，eg：
+
+![img](https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHTmibZrqYMHBXkWYwvQS5ry5dZGbVwS30wP0B4wkYWt3vkFdROERPpYFOiaLZgbpCh5Yp78sWNHib9yw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+2、取大优先
+
+按照书写顺序拆分汉字时，拆分出来的字根应尽量“大”，拆分出来的字根的数量应尽量少，eg：
+
+![img](https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHTmibZrqYMHBXkWYwvQS5ry5jgictk69pKcuH11MzkkSiaTp8ibdsoxGIvITl5PzugX74aTxLxZ1XxFTw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+3、能连不交
+
+当一个字既可以拆成相连的几个部分，也可以拆成相交的几个部分时，通常采用“相连”的拆法，eg：
+
+![img](https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHTmibZrqYMHBXkWYwvQS5ry5mSZveMjthMSptPblA7FzZbNMScANm3WWn35DUvgpwJFwylWhlVibyLQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+4、能散不连
+
+在拆分汉字时，如果能够拆分成“散”结构的字根，就不要拆分成“连”结构的字根，eg：
+
+![img](https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHTmibZrqYMHBXkWYwvQS5ry5YWzgBlQwFVlDibXD4OBttIuDAjoyglk1zjgcaicLgVvb0vheoy4ibRhpA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+
+
+
+
+
+
+
+
+## 汉字的输入6种类型
+
+
+
+![img](https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHTmibZrqYMHBXkWYwvQS5ry5I8llgibWMFJ8lldnichbWghIx1hxIoyEDzjSZOQdLMPhB0E6cEl9AM7g/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+### 键面汉字
+
+1、键名汉字——在字根表中每个键上的第一个字根
+
+键名汉字的输入方法是：连击该字根所在的键位4次，eg:
+
+![img](https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHTmibZrqYMHBXkWYwvQS5ry5uZzuTAYG8Px3EyyPxO4S0qJOXLicS5sQJBiarZicz4IibLdbrCDy9XL2jQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+2、成字字根汉字——除了键名汉字外，也是汉字的一些字根
+
+成字字根汉字的输入方法：先按下该字根所在的键位(俗称“报户口”)，然后根据它的书写顺序一次按它的第一笔、第二笔及最后一笔笔画所在的键位，若不足四码则补按空格键，eg：
+
+![img](https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHTmibZrqYMHBXkWYwvQS5ry5ZpPYlMUeUMShkveull2iabesoib2ibPZibn4ZPyYfD7HicdhdDudwNDpl6A/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+3、基本笔画
+
+基本笔画的输入方法是：先按两次该单笔画所在的键位，再按两次“L”键。
+
+![img](https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHTmibZrqYMHBXkWYwvQS5ry5OH32JqpHoQPu2OULr6icQSWiaYsvEhesXH86OT7NWfic1pChY1socLEIA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+### 键外汉字
+
+1、四个字根汉字
+
+在五笔字型输入法中，无论是汉字还是词组，最多只需要输入四位编码。
+
+对于刚好四码的汉字，输入方法是按照书写顺序依次输入四个字根的编码，eg：
+
+![img](https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHTmibZrqYMHBXkWYwvQS5ry5EUwQukXarWcPOocZXfPMk2BlV9UR3hiaJrbBfMkhwBLe6p9VLTU2ZNw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+2、超过四个字根汉字
+
+超过四码的汉字输入方法是：按照书写顺序，依次输入汉字的第一个字根、第二个字根、第三个字根和最后一个字根的编码，eg：
+
+![img](https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHTmibZrqYMHBXkWYwvQS5ry5icJk95zqLNiaiaRq7qOA35vv9LVy6DesvfcOduZ2ticGob96o6eicabQIicQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+3、不足四个字根汉字
+
+不足四个字根汉字输入方法：依次输入第一个字根、第二个字根、第三个字根的编码，然后再输入该汉字的末笔字型识别码所在键，如果不足四码则按空格键，eg：
+
+![img](https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHTmibZrqYMHBXkWYwvQS5ry5CaZS7jz2wXkfZQELrePEasxzzyCbiboRU8X7O43YF7dpAb2eXpDnYUA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+
+
+> 末笔识别码是由汉字的末笔笔画和字型组成的一个附加码，在输入不足四个字根汉字时，需要在最后输入末笔识别码。
+>末笔识别码的判断方法是：将汉字的末笔代码作为区号，将汉字的字型作为位号，该区号和位号组成的区位码对应的按键就是该汉字的末笔识别码。
+>![img](https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHTmibZrqYMHBXkWYwvQS5ry5UlXibQcuvtWeTyXOAzMGc2Gx6CHB7DJ8oyV7D4QTcFbuzhiauSd62FbA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+> 各自五个区中，左右型第一个键、上下型第二个键、杂合型第三个键
+
+
+
+### 词组输入
+
+
+
+- 二字词组
+
+
+
+二字词组的输入方法为：先输入第一个字的第一个字根、第二个字根的编码，然后输入第二个字的第一个字根、第二个字根的编码，eg：
+
+![img](https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHTmibZrqYMHBXkWYwvQS5ry5tUnB5pYzr1cibfrrYtNhNW2MJUc6m37wrX8dFYicWHibDD5MqvA2bpkBg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+- 三字词组
+
+
+
+三字词组的输入方法为：先输入第一个字的第一个字根编码，在输入第二个字的第一个字根编码，然后再输入第三个字的第一个字根、第二个字根的编码，eg：
+
+![img](https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHTmibZrqYMHBXkWYwvQS5ry5WBz7WmSP7Elm9AnPN44BLm34StZA4SnibMR4u8VxesiceWN4Ch1oKpMQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+- 四字词组
+
+
+
+四字词组的输入方法为：依次输入四个字的第一个字根的编码，eg：
+
+![img](https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHTmibZrqYMHBXkWYwvQS5ry5SWlIYk4La3aLIdN8Xic4WkopTx7UQEaSkQpPRcld2icfa1b2qV0jpk2g/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+- 多字词组
+
+
+
+多字词组的输入方法为：依次输入第一个字、第二个字、第三个字和最后一个字的第一个字根编码，eg：
+
+![img](https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHTmibZrqYMHBXkWYwvQS5ry5ubRqwBqqP8PTWbfMt1sAN8XnlOaKEG8sAnVjlYphyJK0PgMmLbSUiag/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+
+
+
+
+![img](https://mmbiz.qpic.cn/mmbiz_gif/AlflmKuKm5vbHEibqmNybaIFAxibysht9ibe4n71wuVmwt2o7lO0kPw6AQtdFjw1fxfcJBs9YqaNWiayvDvtjsoichQ/640?tp=webp&wxfrom=5&wx_lazy=1)
+
+
+
+好了，笔记到这里就结束了
+
+剩下的就是多多练习啦
+
+再见
+
+
+
+![img](https://mmbiz.qpic.cn/sz_mmbiz_png/seDkEhibMBxINsNlpvlFkGl6jP3PPr4663O0JwCv55TGhIjW6ousb1mjicQPWryuHRVvIEUwu7kPpOrCxAOqIDibA/640?tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+
+
+
+
+
+
+获取资源方式：
+
+请先扫码关注公众号，然后在后台回复“五笔”
+
+
+
+![img](https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHTuxKwib3AibzSz7x7m55ia3yJTx2EpQaov9nTesiaVs8VOSGEaSNx7NWpmZQI7FKO5GxLIC2op3CRRAg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)

@@ -1,10 +1,21 @@
 <div id="colophon" class="site-footer" role="contentinfo">
   <div class="site-info">
+      <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+      <a style="color: #b9b9b9;" href="https://www.jinrishici.com/"><span id="poem_sentence" style="text-align: left;"></span>
+      <span id="poem_info" style="text-align: right;"></span></a>
+      <script type="text/javascript">
+        jinrishici.load(function(result) {
+          var sentence = document.querySelector("#poem_sentence")
+          var info = document.querySelector("#poem_info")
+          sentence.innerHTML = result.data.content
+          info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'
+        });
+      </script>
     <!-- // 文字滚动 -->
-    <!--
-    <div id="binft" style="text-align:center;"></div>
-    <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/textScroll.js"></script>
-    -->
+    
+    <!-- <div id="binft" style="text-align:center; color: #666666;"></div>
+    <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/textScroll.js"></script> -->
+   
     <div class="footertext">
       <div class="img-preload">
         <img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/other/wordpress-rotating-ball-o.svg">
@@ -13,20 +24,31 @@
   
         
 
-      <p style="color: #666666;"><a href="#" style="color: #666666;">Blog <%= config.title %></a>, Copyright &copy; 2019-<%= date(new Date(), 'YYYY') %> by <%= config.author %> All Rights Reserved.</p>
+      <p style="color: #666666;"><a href="#" style="color: #b9b9b9;">Blog <%= config.title %></a>
+        , Copyright &copy; 2019-<%= date(new Date(), 'YYYY') %> 
+        by <%= config.author %> All Rights Reserved.</p>
     </div>
-    <div class="footer-device">
+    <!-- <div class="footer-device">
     <p style="font-family: 'Ubuntu', sans-serif;">
         <i class="fa fa-fire" aria-hidden="true"></i>
-        <span style="color: #b9b9b9;">Theme <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">3-hexo</a> <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> by <a href="https://yelog.org/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">yelog</a>, Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>, Hosted by <a href="https://dev.tencent.com/" target="_blank">Coding Pages</a> & <a href="https://github.com/" target="_blank">Github Pages</a>
+        <span style="color: #666;">
+          Theme <a style="color: #b9b9b9;" href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank" style="color: #b9b9b9; text-decoration: underline dotted rgba(0, 0, 0, .1);">3-hexo</a>
+           <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> 
+           by <a href="https://yelog.org/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">yelog</a>
+           , Powered by <a style="color: #b9b9b9;" href="https://hexo.io/" target="_blank">Hexo</a>
+           , Hosted by <a style="color: #b9b9b9;" href="https://coding.net/" target="_blank">Coding Pages</a>
+            & <a style="color: #b9b9b9;" href="https://github.com/" target="_blank">Github Pages</a>
         </span>
       </p>
-    </div>
+    </div> -->
 
     
-    <a href="http://beian.miit.gov.cn" target="_blank">	<img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/logo/ICP.png" style="vertical-align: text-bottom; width: 17px;" />赣ICP备20000895号</a>
+    <a style="color: #b9b9b9;" href="//beian.miit.gov.cn" target="_blank">	
+      <img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/logo/ICP.png" style="vertical-align: text-bottom; width: 17px;" />
+      赣ICP备20000895号-1
+    </a>
     
-    <span style="color: #ccc;padding-left: 20px;">
+    <span style="color: #666;padding-left: 20px;">
       <i class="fa fa-clock-o" aria-hidden="true"></i>
       <span id="time" align="center">载入时间中...</span>
       <script>
@@ -44,19 +66,62 @@
        } 
        setInterval("createtime()",250);
       </script>
-      <span style="color:#ccc;padding-left: 20px;"><i class="fa fa-eye" aria-hidden="true"></i>访问量: <span class="site_pv"></span>次</span>
-      <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1278079074'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278079074%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+      <!-- <span style="color:#666;padding-left: 20px;"><i class="fa fa-eye" aria-hidden="true"></i>访问量: <span class="site_pv"></span>次</span> -->
+      <span style="padding-left: 20px; color:#666;"><i class="fa fa-cog fa-spin" aria-hidden="true"></i></span>
+      <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1278079074'%3E%3C/span%3E%3Cscript src='https://s4.cnzz.com/z_stat.php%3Fid%3D1278079074%26online%3D2' type='text/javascript'%3E%3C/script%3E"));</script>
+      
     </span>
-      <img width="560px" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/wechat/wallleap.png">
-    <!--
+    <div style="text-align:center; padding-top: 20px;">
+      <div class="github-badge">
+        <a rel="license" href="https://hexo.io/" target="_blank" title="由Hexo强力驱动">
+        <span class="badge-subject"><i class="fa fa-fire" aria-hidden="true"></i> Powered</span><span class="badge-value bg-blue">Hexo</span></a>
+      </div>
+      <div class="github-badge">
+        <a rel="license" href="https://github.io/" target="_blank" title="静态网页托管于Github">
+        <span class="badge-subject">Hosted</span><span class="badge-value bg-brightgreen"><i class="fa fa-github" aria-hidden="true"></i> Github</span></a>
+      </div>
+      <div class="github-badge">
+          <a rel="license" href="https://coding.net/" target="_blank" title="静态网页托管于CODING">
+          <span class="badge-subject"><i class="fa fa-heart" aria-hidden="true"></i> Hosted</span>
+          <span class="badge-value bg-gray">CODING</span></a>
+        </div>
+      <div class="github-badge">
+          <a rel="license" href="https://www.jsdelivr.com/" target="_blank" title="jsDelivr提供CDN加速服务">
+          <span class="badge-subject"><i class="fa fa-firefox fa-spin" aria-hidden="true"></i> CND</span><span class="badge-value bg-cdn">Github&jsDelivr</span></a>
+      </div>
+      <div class="github-badge">
+          <a rel="license" href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank" title="站点使用 Sakura 主题，作者：Mashiro & Hojun">
+          <span class="badge-subject"><i class="fa fa-themeisle" aria-hidden="true"></i> Theme</span><span class="badge-value bg-theme">3-blog</span></a>
+      </div>
+      <div class="github-badge">
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="本站点采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议进行许可">
+          <span class="badge-subject"><i class="fa fa-copyright"></i></span><span class="badge-value bg-lightgrey">BY-NC-SA 4.0</span></a>
+      </div>
+      <div class="github-badge">
+        <span class="badge-subject"><i class="fa fa-user" aria-hidden="true"></i> UV</span>
+        <span  class="site_uv badge-value bg-orange""></span>
+      </div>
+      <div class="github-badge">
+        <span class="badge-subject"><i class="fa fa-eye" aria-hidden="true"></i> PV</span>
+        <span class="site_pv badge-value bg-brightgreen"></span>
+      </div>
+    </div>  
+
     <div class="site-img" style="margin-top:20px;">
-      <a href="https://www.google.com/search?sxsrf=ACYBGNT2ZrasjGUBG6Nj1_Xye1N67lpsrA%3A1573382249794&source=hp&ei=aejHXey4LYHu-gSQlLqgDg&q=site%3Awallleap.cn&oq=site%3Awallleap.cn&gs_l=psy-ab.3...32142.36345..36698...0.0..4.1018.9243.3-5j2j5j3j1......0....1..gws-wiz.....10..35i362i39j35i39j0.9jvLRXQs6zM&ved=0ahUKEwiskd7Qud_lAhUBt54KHRCKDuQQ4dUDCAY&uact=5" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/logo/Google.svg" width="100px" height="80px"></a>
+      <a href="#"><img width="350px" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/wechat/wallleap.png"></a>
+      <!-- <a href="https://www.google.com/search?sxsrf=ACYBGNT2ZrasjGUBG6Nj1_Xye1N67lpsrA%3A1573382249794&source=hp&ei=aejHXey4LYHu-gSQlLqgDg&q=site%3Awallleap.cn&oq=site%3Awallleap.cn&gs_l=psy-ab.3...32142.36345..36698...0.0..4.1018.9243.3-5j2j5j3j1......0....1..gws-wiz.....10..35i362i39j35i39j0.9jvLRXQs6zM&ved=0ahUKEwiskd7Qud_lAhUBt54KHRCKDuQQ4dUDCAY&uact=5" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/logo/Google.svg" width="100px" height="80px"></a>
       <a href="https://www.baidu.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/logo/baidu.png" width="100px" height="80px"></a>
       <a href="https://www.jsdelivr.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/logo/JsDelivr_Logo.svg" width="100px" height="80px"></a>
       <a href="https://github.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/logo/github-logo.jpg" width="100px" height="80px"></a>
       <a href="https://aliyun.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/logo/aliyun-logo.png" width="100px" height="80px"></a>
-      <a href="https://dev.tencent.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/logo/tencentyun-logo.jpg" width="100px" height="80px"></a>  
+      <a href="https://dev.tencent.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/logo/tencentyun-logo.jpg" width="100px" height="80px"></a>   -->
     </div>
-   -->
+    <!-- <div>
+      <a href="https://hexo.io"><img src="https://img.shields.io/badge/Powered-Hexo-blue" alt="Hexo"></a>
+      <a href="https://github.com/yelog/hexo-theme-3-hexo"><img src="https://img.shields.io/badge/Theme-3--hexo-%232c2735" alt="3-blog"></a>
+      <a href="https://github.com/"><img src="https://img.shields.io/badge/Hosted-GitHub-%2324292e" alt="GitHub"></a>
+      <a href="https://coding.net/"><img src="https://img.shields.io/badge/Hosted-CODING-%23141a3f" alt="CODING"></a>
+      <a href="https://www.jsdelivr.com/"><img src="https://img.shields.io/badge/CDN-jsDelivr-%23ee3232" alt="jsDelivr"></a>
+    </div> -->
   </div><!-- .site-info -->
 </div>

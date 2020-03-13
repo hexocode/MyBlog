@@ -102,7 +102,8 @@ deploy:
 - type: git
   repo: 
     github: git@github.com:wallleap/wallleap.github.io.git,master
-    # coding: git@e.coding.net:wallleap/wallleap.git,master
+    # gitlab: git@gitlab.com:wallleap/wallleapblog.git,master
+    coding: git@e.coding.net:wallleap/3-blog.git
   branch: master
 
 
@@ -122,16 +123,21 @@ search:
   field: post
 
 
+##
 
-# 自动生成sitemap
-sitemap:
-  path: sitemap.xml
+Plugins:
+- hexo-generator-baidu-sitemap
+- hexo-generator-sitemap
+
 baidusitemap:
-  path: baidusitemap.xml
+    path: baidusitemap.xml
+sitemap:
+    path: sitemap.xml
+
 
 ## live2d
 live2d:
-   enable: true
+   enable: false
    scriptFrom: local
    pluginRootPath: live2dw/
    pluginJsPath: lib/
@@ -165,3 +171,8 @@ server:
   compress: true
   header: true
 
+# lazyload-img
+lazyload:
+  enable: true 
+  onlypost: true
+  loadingImg: https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg

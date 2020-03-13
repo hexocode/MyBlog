@@ -20,8 +20,10 @@ keywords:
 {% endpullquote %}
 ```
 
+<center><font size="2" color="#a7a7a7">如果没有效果，请手动刷新</font></center>
 
 {% pullquote mindmap mindmap-md %}
+
 - wallleap
 	- [博客](https://wallleap.cn)
 	- 其他

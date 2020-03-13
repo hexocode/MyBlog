@@ -5,12 +5,12 @@
 
 
 ## <center><i class="fa fa-ravelry" aria-hidden="true"></i>每日一句</center>
-<i class="fa fa-volume-up" aria-hidden="true"></i><span id="hitokoto">:D 获取中...</span>
+<i class="fa fa-volume-up" aria-hidden="true"></i>      <span id="hitokoto" style="margin-left:5px;"> :D 获取中...</span>
 <p align="right" id="afrom"></p>
 <script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
 <script>
-  fetch('https://v1.hitokoto.cn')
+  fetch('https://v1.hitokoto.cn/?c=h')
     .then(function (res){
       return res.json();
     })
@@ -18,26 +18,33 @@
       var hitokoto = document.getElementById('hitokoto');
       var afrom = document.getElementById('afrom');
       hitokoto.innerText = data.hitokoto;
-      afrom.innerText =  '——【' + data.from + '】';
+      afrom.innerText =  '——【' + data.from + ' ' + data.from_who + '】';
     })
     .catch(function (err) {
       console.error(err);
     })
 </script>
 
+
 ## <center><i class="fa fa-music" aria-hidden="true"></i>欣赏音乐</center>
 
-emmmm……
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 
-网易iframe总是下载字体，所以去掉了
+<meting-js
+	server="netease"
+	type="playlist"
+	id="2162711186"
+  list-folded="true">
+</meting-js>
 
-直接点击左下角悬浮音乐欣赏吧╮(╯▽╰)╭
 <!--
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=450 src="//music.163.com/outchain/player?type=0&id=2162711186&auto=1&height=430"></iframe>
-
 -->
 
-## <center><i class="fa fa-angle-double-right" aria-hidden="true"></i>对博客的理解</center>
+## <center><i class="fa fa-lightbulb-o" aria-hidden="true"></i>对博客的理解</center>
 喜欢写Blog的人，会经历三个阶段。
 >第一阶段，刚接触Blog，觉得很新鲜，试着选择一个免费空间来写。
 
@@ -70,14 +77,23 @@ emmmm……
 - 评论模块[gitment](https://github.com/imsun/gitment)，解决报[object ProgressEvent]的问题:[使用Heroku，解决gitment登录失败，报object ProgressEvent的错](https://segmentfault.com/a/1190000018177680)
 - 简易相册，[fancybox加入](https://github.com/honjun/hexo-tag-fancybox_img)
 - [bilibili视频插入](https://github.com/Z4Tech/hexo-tag-bilibili)
-- 底部悬浮音乐，使用的[APlayer](https://aplayer.js.org/#/zh-Hans/)，但是修改的代码有点多，就不说了；页面音乐：
+- 底部悬浮音乐，使用的[APlayer](https://aplayer.js.org/#/zh-Hans/)，但是修改的代码有点多，就不说了；页面音乐使用[metingjs](https://github.com/metowolf/MetingJS)：
 ```html
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=450 src="//music.163.com/outchain/player?type=0&id=2162711186&auto=1&height=430"></iframe>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<!-- require MetingJS -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<meting-js
+	server="netease"
+	type="playlist"
+	id="2162711186"
+  list-folded="true">
+</meting-js>
 ```
 - 一言引入：[hexo博客添加一言](https://www.jianshu.com/p/3a58d9a796c3)
 - [看板娘](https://www.jianshu.com/p/ebde730615f5)
 - 创建404页面：我们可以直接使用html代码，设置不渲染`layout: false;`
-- [使用思维导图插件](/mindmpatest)：[hexo的思维导图插件](https://hunterx.xyz/hexo-simple-mindmap-plugin-intro.html)
+- [使用思维导图插件](/2020/03/07/mindmaptest/)：[hexo的思维导图插件](https://hunterx.xyz/hexo-simple-mindmap-plugin-intro.html)
 
 ## <center><font color="orange"><i class="fa fa-link" aria-hidden="true"></i>友人帐</font></center>
 
