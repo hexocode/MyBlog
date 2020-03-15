@@ -178,17 +178,17 @@ auto duplex full
 
 网络拓扑图如下：
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHQt9fup0m0aspAG2GkZhudAQBu6XCQyXfzTQKJTTRvqW7aVYcySdlB9PChaOPQsQzcv0cYr68mnUQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![pic41](https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/test/hcnapic41.png)
 
 现在先配置好下面的三台PC，地址、掩码按图中配置，网关不配置
 
 例如，PC3
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHQt9fup0m0aspAG2GkZhudAdB79zVUJicprTyDWEFEzribBYFL66rrBgaYMKMfy2JhuRevo8nO0VWbg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![pic42](https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/test/hcnapic42.png)
 
 进入任一台PC机命令行，输入命令arp -a 查看主机的ARP表
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHQt9fup0m0aspAG2GkZhudAEsDtrOqEicG23pI2QgJy0XV5XZib99MQgN3PZbniabEywLmSaZgvb1stw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![pic43](https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/test/hcnapic43.png)
 
 可以看到ARP表项为空
 
@@ -216,7 +216,7 @@ on the interface GigabitEthernet0/0/1 has entered the UP state.
 
 现在我们使用命令 `display arp all` 查看R1的ARP表
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHQt9fup0m0aspAG2GkZhudAFS7j7Srj9KLXzia2nf4icOlLjFXLdGnsrHV6RFHX7C8BgAEROzILbksw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![pic44](https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/test/hcanpic44.png)
 
 可以看到，表中只有R1两个接口IP地址及其对应的MAC地址表项，没有其他条目
 
@@ -224,11 +224,11 @@ on the interface GigabitEthernet0/0/1 has entered the UP state.
 
 点击图示位置，选择好设备和接口，开始抓包，这时将会打开wireshark
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHQt9fup0m0aspAG2GkZhudAcatxHYVW3hWEaYWzXtQhbMS4EUcEeIqcD0r1ocAqNCor2MqrLETaTA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![pic45](https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/test/hcnapic45.png)
 
 打开wireshark后会开始抓取数据包，我们只想看到arp的数据包，因此，在红框中输入arp后回车，开始过滤数据包
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHQt9fup0m0aspAG2GkZhudAA1YZrkTzicFJEPvmbiaB92PoQkK9H76MyprJQj9S7ry2fyxPz4DAUaVw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![pic46](https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/test/hcnapic46.png)
 
 
 
@@ -238,7 +238,7 @@ on the interface GigabitEthernet0/0/1 has entered the UP state.
 
 下面就是ping过程抓的包
 
-![img](https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHQt9fup0m0aspAG2GkZhudAlNuPO1UfDIia7PYeJZs69I8hIHuicfKgcTWXvg0oAuzibJRDWJXbBxN3Q/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![pic47](https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/test/hcnapic47.png)
 
 不深入讲了
 
