@@ -51,7 +51,7 @@
 >第二阶段，发现免费空间限制太多，就自己购买域名和空间，搭建独立博客。
 
 >第三阶段，觉得独立博客的管理太麻烦，最好在保留控制权的前提下，让别人来管，自己只负责写文章。
- 
+
 我们每个人的在网络上产生的数据越来越多，这些信息是我们在互联网上存在过的痕迹，值得我们认真对待。但是它们被分散分布在各个网站上。很多时候我们很难将它们聚合在一起，而且各个网站的信息排布方式也没有办法自由控制，所以我们需要一个可以由自己主宰的空间——博客。
 
 通过博客，我们可以记录自己的生活和成长的轨迹。它不像 Twitter 那样碎片化，也不像 Facebook 那样关系化，它是私人的空间。
@@ -94,6 +94,7 @@
 - [看板娘](https://www.jianshu.com/p/ebde730615f5)
 - 创建404页面：我们可以直接使用html代码，设置不渲染`layout: false;`
 - [使用思维导图插件](/2020/03/07/mindmaptest/)：[hexo的思维导图插件](https://hunterx.xyz/hexo-simple-mindmap-plugin-intro.html)
+- npm使用淘宝镜像：```npm config set registry https://registry.npm.taobao.org```
 
 ## <center><font color="orange"><i class="fa fa-link" aria-hidden="true"></i>友人帐</font></center>
 
