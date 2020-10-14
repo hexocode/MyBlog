@@ -1,0 +1,2145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>数据结构(1)-绪论 | wallleap</title>
+  <meta name="keywords" content=" 数据结构 , C/C++ , 技术 ">
+  <meta name="description" content="数据结构(1)-绪论 | wallleap">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="念两句诗          叙别梦、扬州一觉。          【宋代】吴文英《夜游宫·人去西楼雁杳》       .images{ 	float: left;     width: 100%;     height: 300px;     position: relative;     margin: 20px 0">
+<meta property="og:type" content="website">
+<meta property="og:title" content="图集">
+<meta property="og:url" content="https://wallleap.cn/photo/index.html">
+<meta property="og:site_name" content="wallleap">
+<meta property="og:description" content="念两句诗          叙别梦、扬州一觉。          【宋代】吴文英《夜游宫·人去西楼雁杳》       .images{ 	float: left;     width: 100%;     height: 300px;     position: relative;     margin: 20px 0">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=46b93e4b7d1ed21b79c929e39555baf9/14ce36d3d539b600fbdea00ee950352ac65cb773.jpg">
+<meta property="article:published_time" content="2020-02-23T07:09:21.000Z">
+<meta property="article:modified_time" content="2020-03-24T14:15:05.640Z">
+<meta property="article:author" content="Luwang">
+<meta property="article:tag" content="wallleap">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=46b93e4b7d1ed21b79c929e39555baf9/14ce36d3d539b600fbdea00ee950352ac65cb773.jpg">
+
+
+<link rel="icon" href="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/favicon.ico">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/sublime.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css" rel="stylesheet">
+<link href="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css" rel="stylesheet">
+
+<script src="//cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="/css/customize.css">
+<link rel="stylesheet" href="/css/github-badge.css">
+
+<link rel="stylesheet" href="/css/jquery.fancybox.min.css" media="all">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/honjun/hexo-tag-emojis-byhj/css/emoji.css">
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+	.pace .pace-progress {  background: rgb(251, 129, 30); /*进度条颜色*/
+	height: 3px;  }
+	.pace .pace-progress-inner {  box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+	}
+	.pace .pace-activity {  border-top-color: rgb(251, 129, 30);    /*上边框颜色*/
+	border-left-color: rgb(251, 129, 30);    /*左边框颜色*/
+	}
+</style>
+
+  
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?b19f0ec10bac681106907eb1ee978d34";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+  <script>
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+    </script>
+  <!-- site-verification -->
+  <meta name="google-site-verification" content="ZT29P3khtw1qk30lwEOdMqAGXvN3HGllzjzbB5Wln4k" />
+  <meta name="baidu-site-verification" content="AQqaOCFUn0" />
+  <meta name="360-site-verification" content="e9f3f65ff40b09c81ba47287a55363cd" />
+  <meta name="sogou_site_verification" content="jAPTO5JOth"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151908301-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-151908301-1');
+  </script>
+<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="wallleap" type="application/atom+xml">
+</head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="false" />
+</div>
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/" class="avatar_target">
+    <img class="avatar" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/avatar.jpg" />
+</a>
+<div class="author">
+    <span>Luwang</span>
+</div>
+
+<div class="icon">
+    
+        
+        <a title="rss" href="/atom.xml" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-rss"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="github" href="https://github.com/wallleap" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+    
+        
+        <a title="weibo" href="http://weibo.com/u/6023739034" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-weibo"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="jianshu" href="https://www.jianshu.com/u/9357dd145d53" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-jianshu"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="zhihu" href="https://www.zhihu.com/people/8afbefe61c28c0fafed189b234afc91d" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-zhihu"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="csdn" href="https://me.csdn.net/qq_36949103" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-csdn"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+        <a title="email" href="mailto:15579576761@163.com" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-email"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="qq" href="http://wpa.qq.com/msgrd?v=3&uin=990083804&site=qq&menu=yes" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-qq"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="kugou" href="https://www.kugou.com/" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-kugou"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="neteasemusic" href="https://music.163.com/#/user/home?id=453867086" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-neteasemusic"></use>
+                </svg>
+            
+        </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li><div class="all active" data-rel="全部文章">全部文章<small>(53)</small></div></li>
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="博客"><i class="fold iconfont icon-right"></i>博客<small>(1)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="博客<--->valine">valine<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="电脑"><i class="fold iconfont icon-right"></i>电脑<small>(1)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="电脑<--->Win10">Win10<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="笔记"><i class="fold iconfont icon-right"></i>笔记<small>(28)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="笔记<--->后端">后端<small>(2)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="笔记<--->Hexo">Hexo<small>(8)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="笔记<--->Markdown">Markdown<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="笔记<--->五笔学习">五笔学习<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="笔记<--->前端">前端<small>(13)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="笔记<--->微信">微信<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="笔记<--->转载">转载<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="笔记<--->黑苹果">黑苹果<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="编程"><i class="fold iconfont icon-right"></i>编程<small>(2)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="编程<--->数据结构">数据结构<small>(2)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="网络"><i class="fold iconfont icon-right"></i>网络<small>(15)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="网络<--->HCNA">HCNA<small>(4)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="网络<--->华三">华三<small>(4)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="网络<--->基础">基础<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="资源"><i class="fold iconfont icon-right"></i>资源<small>(1)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="资源<--->图集">图集<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="转载"><i class="fold iconfont icon-right"></i>转载<small>(2)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="转载<--->主题">主题<small>(2)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="阅读">阅读<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    
+    
+    </div>
+    <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="53">
+<input type="hidden" id="yelog_site_word_count" value="274.5k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+            <li><a target="_blank" href="https://www.zh66.club">皮皮家园</a></li>
+            
+            <li><a target="_blank" href="https://jwmm.xyz/">喵喵喵~</a></li>
+            
+            <li><a target="_blank" href="https://evrstr.tk/">evrStr</a></li>
+            
+            <li><a target="_blank" href="https://leeyiding.com/">LeeYD</a></li>
+            
+            <li><a target="_blank" href="https://cndrew.cn/">Uncle_drew</a></li>
+            
+            <li><a target="_blank" href="https://yremp.live/">Yremp</a></li>
+            
+            <li><a target="_blank" href="https://immmmm.com/">木木木木木</a></li>
+            
+            <li><a target="_blank" href="https://you.ci/">有次博客</a></li>
+            
+            <li><a target="_blank" href="https://www.fezhu.top/">Uncleacc</a></li>
+            
+            <li><a target="_blank" href="https://nateshao.gitee.io/">千羽</a></li>
+            
+            <li><a target="_blank" href="https://chanshiyu.com/">蝉时雨</a></li>
+            
+            <li><a target="_blank" href="https://www.antmoe.com/">小康博客</a></li>
+            
+            <li><a target="_blank" href="https://www.lete114.top/">Lete乐特</a></li>
+            
+            <li><a target="_blank" href="/">等待收录中……</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索"></i>
+            <div class="right-title">全部文章</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" />
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ACL</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Ajax</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>AngularJS</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Blog</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>C/C++</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>CSS</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>eNsp</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>eNSP</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ES</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Git</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>GitHub</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>hackintosh</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>HCL</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>HCNA</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>hexo</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Hexo</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>HTML</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>JavaScript</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>jQuery</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Markdown</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>MongoDB</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>NAT</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>NodeJS</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>OSPF</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>React</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>RIP</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Sakura</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>STP</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Ubuntu</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>VLAN</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Vue</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>w650dc</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>web</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Win10</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>主题</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>五笔</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>交换机</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>企业网</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>前端</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>华三</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>博客</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>后端</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>图集</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>安装</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>实验</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>微信</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>微信防盗链</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>悦读</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>技术</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>数据结构</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>框架</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>模块化</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>考研</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>英语</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>逆水寒</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>配置</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>黑苹果</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a id="top" class="全部文章 笔记 黑苹果 "
+           href="/2019/03/14/w650dc-hackintosh/"
+           data-tag="w650dc,hackintosh,黑苹果"
+           data-author="" >
+            <span class="post-title" title="毁灭者DC W650DC装黑苹果心得">毁灭者DC W650DC装黑苹果心得</span>
+            <span class="post-date" title="2019-03-14 21:27:46">2019/03/14</span>
+        </a>
+        
+        <a id="top" class="全部文章 网络 "
+           href="/2019/09/30/web-HCL9/"
+           data-tag="eNSP,企业网"
+           data-author="" >
+            <span class="post-title" title="使用eNSP搭建企业网络">使用eNSP搭建企业网络</span>
+            <span class="post-date" title="2019-09-30 07:58:17">2019/09/30</span>
+        </a>
+        
+        <a  class="全部文章 笔记 前端 "
+           href="/2020/08/28/VUE/"
+           data-tag="前端,web,JavaScript,Vue"
+           data-author="" >
+            <span class="post-title" title="Vue学习笔记">Vue学习笔记</span>
+            <span class="post-date" title="2020-08-28 12:33:14">2020/08/28</span>
+        </a>
+        
+        <a  class="全部文章 笔记 前端 "
+           href="/2020/08/20/AJAX/"
+           data-tag="前端,web,Ajax"
+           data-author="" >
+            <span class="post-title" title="Ajax学习笔记">Ajax学习笔记</span>
+            <span class="post-date" title="2020-08-20 12:33:14">2020/08/20</span>
+        </a>
+        
+        <a  class="全部文章 笔记 前端 "
+           href="/2020/07/12/React/"
+           data-tag="前端,框架,React"
+           data-author="" >
+            <span class="post-title" title="React全家桶(技术栈)学习笔记">React全家桶(技术栈)学习笔记</span>
+            <span class="post-date" title="2020-07-12 16:54:50">2020/07/12</span>
+        </a>
+        
+        <a  class="全部文章 笔记 前端 "
+           href="/2020/07/04/Git/"
+           data-tag="前端,Git"
+           data-author="" >
+            <span class="post-title" title="Git学习笔记">Git学习笔记</span>
+            <span class="post-date" title="2020-07-04 23:33:49">2020/07/04</span>
+        </a>
+        
+        <a  class="全部文章 笔记 后端 "
+           href="/2020/06/14/nodejs/"
+           data-tag="后端,NodeJS"
+           data-author="" >
+            <span class="post-title" title="NodeJs学习笔记">NodeJs学习笔记</span>
+            <span class="post-date" title="2020-06-14 11:33:49">2020/06/14</span>
+        </a>
+        
+        <a  class="全部文章 笔记 后端 "
+           href="/2020/06/14/MongoDB/"
+           data-tag="后端,MongoDB"
+           data-author="" >
+            <span class="post-title" title="MongoDB学习笔记">MongoDB学习笔记</span>
+            <span class="post-date" title="2020-06-14 11:22:00">2020/06/14</span>
+        </a>
+        
+        <a  class="全部文章 笔记 前端 "
+           href="/2020/06/04/AngularJs/"
+           data-tag="前端,AngularJS"
+           data-author="" >
+            <span class="post-title" title="AngularJs学习笔记">AngularJs学习笔记</span>
+            <span class="post-date" title="2020-06-04 23:33:49">2020/06/04</span>
+        </a>
+        
+        <a  class="全部文章 笔记 前端 "
+           href="/2020/06/04/ES/"
+           data-tag="前端,ES,模块化"
+           data-author="" >
+            <span class="post-title" title="ES和模块化学习笔记">ES和模块化学习笔记</span>
+            <span class="post-date" title="2020-06-04 23:33:49">2020/06/04</span>
+        </a>
+        
+        <a  class="全部文章 笔记 前端 "
+           href="/2020/04/26/jQuery/"
+           data-tag="前端,web,JavaScript,jQuery"
+           data-author="" >
+            <span class="post-title" title="jQuery学习笔记">jQuery学习笔记</span>
+            <span class="post-date" title="2020-04-26 20:33:14">2020/04/26</span>
+        </a>
+        
+        <a  class="全部文章 笔记 前端 "
+           href="/2020/04/15/JavaScriptAdvance/"
+           data-tag="前端,web,JavaScript"
+           data-author="" >
+            <span class="post-title" title="JavaScript高级学习笔记">JavaScript高级学习笔记</span>
+            <span class="post-date" title="2020-04-15 19:33:14">2020/04/15</span>
+        </a>
+        
+        <a  class="全部文章 笔记 前端 "
+           href="/2020/04/05/JavaScriptBase/"
+           data-tag="前端,web,JavaScript"
+           data-author="" >
+            <span class="post-title" title="JavaScript基础学习笔记">JavaScript基础学习笔记</span>
+            <span class="post-date" title="2020-04-05 12:33:14">2020/04/05</span>
+        </a>
+        
+        <a  class="全部文章 笔记 前端 "
+           href="/2020/03/30/css/"
+           data-tag="前端,web,CSS"
+           data-author="" >
+            <span class="post-title" title="CSS学习笔记">CSS学习笔记</span>
+            <span class="post-date" title="2020-03-30 12:33:14">2020/03/30</span>
+        </a>
+        
+        <a  class="全部文章 博客 valine "
+           href="/2020/03/30/hexoValine/"
+           data-tag="hexo"
+           data-author="" >
+            <span class="post-title" title="valine评论系统使用">valine评论系统使用</span>
+            <span class="post-date" title="2020-03-30 12:16:01">2020/03/30</span>
+        </a>
+        
+        <a  class="全部文章 笔记 Markdown "
+           href="/2020/03/29/markdown/"
+           data-tag="Markdown"
+           data-author="" >
+            <span class="post-title" title="Markdown语法大全">Markdown语法大全</span>
+            <span class="post-date" title="2020-03-29 22:23:57">2020/03/29</span>
+        </a>
+        
+        <a  class="全部文章 笔记 微信 "
+           href="/2020/03/27/wechatpaper/"
+           data-tag="微信"
+           data-author="" >
+            <span class="post-title" title="使用Markdown Here对微信公众号文章进行排版">使用Markdown Here对微信公众号文章进行排版</span>
+            <span class="post-date" title="2020-03-27 22:36:35">2020/03/27</span>
+        </a>
+        
+        <a  class="全部文章 笔记 前端 "
+           href="/2020/03/27/html/"
+           data-tag="前端,web,HTML"
+           data-author="" >
+            <span class="post-title" title="HTML学习笔记">HTML学习笔记</span>
+            <span class="post-date" title="2020-03-27 17:33:14">2020/03/27</span>
+        </a>
+        
+        <a  class="全部文章 笔记 前端 "
+           href="/2020/03/24/chrometwo/"
+           data-tag="前端,web"
+           data-author="" >
+            <span class="post-title" title="怎样拥有两个独立的Chrome">怎样拥有两个独立的Chrome</span>
+            <span class="post-date" title="2020-03-24 10:33:14">2020/03/24</span>
+        </a>
+        
+        <a  class="全部文章 笔记 前端 "
+           href="/2020/03/24/webBase/"
+           data-tag="前端,web"
+           data-author="" >
+            <span class="post-title" title="web入门基础知识">web入门基础知识</span>
+            <span class="post-date" title="2020-03-24 10:33:14">2020/03/24</span>
+        </a>
+        
+        <a  class="全部文章 笔记 Hexo "
+           href="/2020/03/08/theme-beautify/"
+           data-tag="主题,Hexo,Blog,博客"
+           data-author="" >
+            <span class="post-title" title="Sakura美化">Sakura美化</span>
+            <span class="post-date" title="2020-03-08 21:09:24">2020/03/08</span>
+        </a>
+        
+        <a  class="全部文章 笔记 Hexo "
+           href="/2020/03/08/hexo-themes/"
+           data-tag="Hexo,Blog,博客,Sakura"
+           data-author="" >
+            <span class="post-title" title="hexo博客如何更换主题，并且进行常用的配置">hexo博客如何更换主题，并且进行常用的配置</span>
+            <span class="post-date" title="2020-03-08 13:31:00">2020/03/08</span>
+        </a>
+        
+        <a  class="全部文章 笔记 Hexo "
+           href="/2020/03/07/wechat-pic/"
+           data-tag="Hexo,Blog,博客,微信防盗链"
+           data-author="" >
+            <span class="post-title" title="微信公众号图片防盗链破解">微信公众号图片防盗链破解</span>
+            <span class="post-date" title="2020-03-07 23:50:00">2020/03/07</span>
+        </a>
+        
+        <a  class="全部文章 "
+           href="/2020/03/07/mindmaptest/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="测试思维导图">测试思维导图</span>
+            <span class="post-date" title="2020-03-07 20:15:12">2020/03/07</span>
+        </a>
+        
+        <a  class="全部文章 网络 HCNA "
+           href="/2020/03/07/hcna-vlan/"
+           data-tag="HCNA,VLAN"
+           data-author="" >
+            <span class="post-title" title="HCNA学习——VLAN配置">HCNA学习——VLAN配置</span>
+            <span class="post-date" title="2020-03-07 00:54:04">2020/03/07</span>
+        </a>
+        
+        <a  class="全部文章 笔记 五笔学习 "
+           href="/2020/03/04/wubi/"
+           data-tag="五笔"
+           data-author="" >
+            <span class="post-title" title="五笔学习笔记">五笔学习笔记</span>
+            <span class="post-date" title="2020-03-04 23:33:49">2020/03/04</span>
+        </a>
+        
+        <a  class="全部文章 网络 HCNA "
+           href="/2020/03/02/switchbase/"
+           data-tag="HCNA,交换机"
+           data-author="" >
+            <span class="post-title" title="HCNA学习——交换机基础配置">HCNA学习——交换机基础配置</span>
+            <span class="post-date" title="2020-03-02 23:19:15">2020/03/02</span>
+        </a>
+        
+        <a  class="全部文章 网络 基础 "
+           href="/2020/02/29/networkmodule/"
+           data-tag="HCNA"
+           data-author="" >
+            <span class="post-title" title="两种主要的网络参考模型">两种主要的网络参考模型</span>
+            <span class="post-date" title="2020-02-29 19:53:49">2020/02/29</span>
+        </a>
+        
+        <a  class="全部文章 网络 HCNA "
+           href="/2020/02/24/eNSP-use/"
+           data-tag="HCNA,eNSP"
+           data-author="" >
+            <span class="post-title" title="eNSP使用">eNSP使用</span>
+            <span class="post-date" title="2020-02-24 21:39:54">2020/02/24</span>
+        </a>
+        
+        <a  class="全部文章 网络 HCNA "
+           href="/2020/02/22/eNSP-install/"
+           data-tag="HCNA,eNSP"
+           data-author="" >
+            <span class="post-title" title="安装华为模拟器eNSP">安装华为模拟器eNSP</span>
+            <span class="post-date" title="2020-02-22 21:39:56">2020/02/22</span>
+        </a>
+        
+        <a  class="全部文章 笔记 Hexo "
+           href="/2020/02/08/hexo-blog/"
+           data-tag="Hexo,GitHub,Blog,博客"
+           data-author="" >
+            <span class="post-title" title="闲着也是闲着，不如搭个免费的博客玩玩">闲着也是闲着，不如搭个免费的博客玩玩</span>
+            <span class="post-date" title="2020-02-08 21:34:47">2020/02/08</span>
+        </a>
+        
+        <a  class="全部文章 转载 主题 "
+           href="/2020/02/04/hexotheme/"
+           data-tag="主题"
+           data-author="" >
+            <span class="post-title" title="都2020了，带你开发hexo主题">都2020了，带你开发hexo主题</span>
+            <span class="post-date" title="2020-02-04 22:16:01">2020/02/04</span>
+        </a>
+        
+        <a  class="全部文章 电脑 Win10 "
+           href="/2019/11/07/WLU/"
+           data-tag="Win10,Ubuntu"
+           data-author="" >
+            <span class="post-title" title="Win10启用其子系统Ubuntu并安装图形界面">Win10启用其子系统Ubuntu并安装图形界面</span>
+            <span class="post-date" title="2019-11-07 10:21:17">2019/11/07</span>
+        </a>
+        
+        <a  class="全部文章 笔记 转载 "
+           href="/2019/10/31/English_ReadWay/"
+           data-tag="考研,英语"
+           data-author="" >
+            <span class="post-title" title="唐迟阅读方法论">唐迟阅读方法论</span>
+            <span class="post-date" title="2019-10-31 21:58:17">2019/10/31</span>
+        </a>
+        
+        <a  class="全部文章 网络 "
+           href="/2019/09/27/web-HCL8/"
+           data-tag="eNSP,ACL,NAT"
+           data-author="" >
+            <span class="post-title" title="ACL+NAT配置">ACL+NAT配置</span>
+            <span class="post-date" title="2019-09-27 07:58:17">2019/09/27</span>
+        </a>
+        
+        <a  class="全部文章 网络 "
+           href="/2019/09/27/web-HCL7/"
+           data-tag="eNSP,OSPF"
+           data-author="" >
+            <span class="post-title" title="OSPF配置">OSPF配置</span>
+            <span class="post-date" title="2019-09-27 07:58:04">2019/09/27</span>
+        </a>
+        
+        <a  class="全部文章 资源 图集 "
+           href="/2019/09/20/atlas1/"
+           data-tag="逆水寒,图集"
+           data-author="" >
+            <span class="post-title" title="图集1-逆水寒">图集1-逆水寒</span>
+            <span class="post-date" title="2019-09-20 20:15:12">2019/09/20</span>
+        </a>
+        
+        <a  class="全部文章 网络 "
+           href="/2019/09/19/web-HCL6/"
+           data-tag="eNsp,RIP"
+           data-author="" >
+            <span class="post-title" title="RIP配置">RIP配置</span>
+            <span class="post-date" title="2019-09-19 16:13:56">2019/09/19</span>
+        </a>
+        
+        <a  class="全部文章 网络 "
+           href="/2019/09/18/web-HCL4/"
+           data-tag="HCL,华三"
+           data-author="" >
+            <span class="post-title" title="DHCP配置(续)--DHCP中继">DHCP配置(续)--DHCP中继</span>
+            <span class="post-date" title="2019-09-18 16:14:16">2019/09/18</span>
+        </a>
+        
+        <a  class="全部文章 网络 "
+           href="/2019/09/18/web-HCL5/"
+           data-tag="eNsp,STP"
+           data-author="" >
+            <span class="post-title" title="STP及VRRP配置">STP及VRRP配置</span>
+            <span class="post-date" title="2019-09-18 16:13:56">2019/09/18</span>
+        </a>
+        
+        <a  class="全部文章 阅读 "
+           href="/2019/09/15/book1/"
+           data-tag="悦读"
+           data-author="" >
+            <span class="post-title" title="书单1--平凡的世界">书单1--平凡的世界</span>
+            <span class="post-date" title="2019-09-15 19:32:39">2019/09/15</span>
+        </a>
+        
+        <a  class="全部文章 网络 华三 "
+           href="/2019/09/12/web-HCL3/"
+           data-tag="HCL,华三,实验,配置"
+           data-author="" >
+            <span class="post-title" title="HCL配置(三)–-DHCP配置">HCL配置(三)–-DHCP配置</span>
+            <span class="post-date" title="2019-09-12 15:42:43">2019/09/12</span>
+        </a>
+        
+        <a  class="全部文章 网络 华三 "
+           href="/2019/09/11/web-HCL2/"
+           data-tag="HCL,华三,实验,配置"
+           data-author="" >
+            <span class="post-title" title="HCL配置(二)--VLAN间通信">HCL配置(二)--VLAN间通信</span>
+            <span class="post-date" title="2019-09-11 18:06:05">2019/09/11</span>
+        </a>
+        
+        <a  class="全部文章 网络 华三 "
+           href="/2019/09/09/web-HCL1/"
+           data-tag="HCL,华三,实验,配置"
+           data-author="" >
+            <span class="post-title" title="HCL配置(一)--ping通及Telnet">HCL配置(一)--ping通及Telnet</span>
+            <span class="post-date" title="2019-09-09 21:54:19">2019/09/09</span>
+        </a>
+        
+        <a  class="全部文章 网络 华三 "
+           href="/2019/09/09/web-HCL0/"
+           data-tag="HCL,华三,安装"
+           data-author="" >
+            <span class="post-title" title="HCL的安装和使用">HCL的安装和使用</span>
+            <span class="post-date" title="2019-09-09 21:34:37">2019/09/09</span>
+        </a>
+        
+        <a  class="全部文章 编程 数据结构 "
+           href="/2019/08/28/DataStructure1/"
+           data-tag="数据结构,C/C++,技术"
+           data-author="" >
+            <span class="post-title" title="数据结构(1)-绪论">数据结构(1)-绪论</span>
+            <span class="post-date" title="2019-08-28 22:12:47">2019/08/28</span>
+        </a>
+        
+        <a  class="全部文章 编程 数据结构 "
+           href="/2019/08/25/DataStructure0/"
+           data-tag="数据结构,C/C++"
+           data-author="" >
+            <span class="post-title" title="数据结构(0)--预备知识">数据结构(0)--预备知识</span>
+            <span class="post-date" title="2019-08-25 10:18:51">2019/08/25</span>
+        </a>
+        
+        <a  class="全部文章 笔记 Hexo "
+           href="/2019/08/25/mac-blog4/"
+           data-tag="Hexo,GitHub,Blog,博客"
+           data-author="" >
+            <span class="post-title" title="Mac使用Hexo和GitHub搭建博客(4)--博客维护">Mac使用Hexo和GitHub搭建博客(4)--博客维护</span>
+            <span class="post-date" title="2019-08-25 09:30:28">2019/08/25</span>
+        </a>
+        
+        <a  class="全部文章 笔记 Hexo "
+           href="/2019/08/25/mac-blog3/"
+           data-tag="Hexo,GitHub,Blog,博客"
+           data-author="" >
+            <span class="post-title" title="Mac使用Hexo和GitHub搭建博客(3)--发布文章">Mac使用Hexo和GitHub搭建博客(3)--发布文章</span>
+            <span class="post-date" title="2019-08-25 08:46:41">2019/08/25</span>
+        </a>
+        
+        <a  class="全部文章 笔记 Hexo "
+           href="/2019/08/24/mac-blog2/"
+           data-tag="Hexo,GitHub,Blog,博客"
+           data-author="" >
+            <span class="post-title" title="Mac使用Hexo和GitHub搭建博客(2)--优化配置">Mac使用Hexo和GitHub搭建博客(2)--优化配置</span>
+            <span class="post-date" title="2019-08-24 20:21:59">2019/08/24</span>
+        </a>
+        
+        <a  class="全部文章 笔记 Hexo "
+           href="/2019/08/24/mac-blog1/"
+           data-tag="Hexo,GitHub,Blog,博客"
+           data-author="" >
+            <span class="post-title" title="Mac使用Hexo和GitHub搭建博客(1)--搭建博客">Mac使用Hexo和GitHub搭建博客(1)--搭建博客</span>
+            <span class="post-date" title="2019-08-24 20:14:35">2019/08/24</span>
+        </a>
+        
+        <a  class="全部文章 "
+           href="/2019/08/08/hello-world/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Hello World">Hello World</span>
+            <span class="post-date" title="2019-08-08 19:32:39">2019/08/08</span>
+        </a>
+        
+        <a  class="全部文章 转载 主题 "
+           href="/2018/12/12/Hexo-Theme-Sakura/"
+           data-tag="主题"
+           data-author="" >
+            <span class="post-title" title="Hexo-Theme-Sakura">Hexo-Theme-Sakura</span>
+            <span class="post-date" title="2018-12-12 22:16:01">2018/12/12</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-DataStructure1" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">数据结构(1)-绪论</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="编程">编程</a> > 
+            
+            <a  data-rel="编程&lt;---&gt;数据结构">数据结构</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color5">数据结构</a>
+            
+            <a class="color1">C/C++</a>
+            
+            <a class="color3">技术</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2020-03-07 19:23:31'>2019-08-28 22:12</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>字数:0</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+        <span class="top-comment" title="跳转至评论区">
+            <a href="#comments">
+                评论:<span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </a>
+        </span>
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-4 i,
+    .toc-level-4 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
+      
+      
+       
+    </div>
+</article>
+
+
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+<!-- 
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>数据结构(1)-绪论</p>
+    <p><span class="copy-title">字数:</span><span class="post-count">0</span></p>
+    <p><span class="copy-title">本文作者:</span><a  title="Luwang">Luwang</a></p>
+    <p><span class="copy-title">发布时间:</span>2019-08-28, 22:12:47</p>
+    <p><span class="copy-title">最后更新:</span>2020-03-07, 19:23:31</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/08/28/DataStructure1/" title="数据结构(1)-绪论">https://wallleap.cn/2019/08/28/DataStructure1/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">&#34;署名-非商用-相同方式共享 4.0&#34;</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+ -->
+
+    <div class="article_copyright">
+        <p><span class="copy-title">文章标题:</span>数据结构(1)-绪论</p>
+        <p><span class="copy-title">文章字数:</span><span class="post-count">0</span></p>
+        <p><span class="copy-title">本文作者:</span><a  title="Luwang">Luwang</a></p>
+        <p><span class="copy-title">发布时间:</span>2019-08-28, 22:12:47</p>
+        <p><span class="copy-title">最后更新:</span>2020-03-07, 19:23:31</p>
+        <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/08/28/DataStructure1/" title="数据结构(1)-绪论">https://wallleap.cn/2019/08/28/DataStructure1/</a>
+        <p>
+            <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+    
+    
+    
+
+    <div id="comments"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+<script type="text/javascript">
+    $.getScript('/js/gitalk.js', function () {
+        var gitalk = new Gitalk({
+            clientID: 'c34c4610e9454bf73702',
+            clientSecret: 'bccb16d6af22e10394fcf4fc3bb916f541b0492c',
+            repo: 'comment',
+            owner: 'wallleap',
+            admin: ['wallleap'],
+            id: decodeURI(location.pathname),
+            distractionFreeMode: 'true',
+            language: 'zh-CN',
+            perPage: parseInt('10',10)
+        })
+        gitalk.render('comments')
+    })
+</script>
+
+
+
+
+
+
+
+    </div>
+    <div class="copyright">
+        <!-- <p class="footer-entry"><span class="miit">
+                <img src="/img/gov.png" title="中华人民共和国工业和信息化部">
+                <a href="http://beian.miit.gov.cn/" target="_blank" rel="noopener">赣ICP备20000895号</a>
+        </span>
+    
+    ©2019-2020 wallleap
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p> -->
+
+
+
+<div id="colophon" class="site-footer" role="contentinfo" style="background-color: transparent;font-size: 12px;">
+    <div class="site-info">
+        <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+        <a style="color: #b9b9b9;" href="https://www.jinrishici.com/" target="_blank" rel="noopener"><span id="poem_sentence" style="text-align: left;"></span>
+        <span id="poem_info" style="text-align: right;"></span></a>
+        <script type="text/javascript">
+          jinrishici.load(function(result) {
+            var sentence = document.querySelector("#poem_sentence")
+            var info = document.querySelector("#poem_info")
+            sentence.innerHTML = result.data.content
+            info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'
+          });
+        </script>
+      <!-- // 文字滚动 -->
+      
+      <!-- <div id="binft" style="text-align:center; color: #666666;"></div>
+      <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/textScroll.js"></script> -->
+     
+      <div class="footertext">
+        <div class="img-preload">
+          <img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/other/wordpress-rotating-ball-o.svg">
+          <img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/other/disqus-preloader.svg">
+        </div>
+    
+          
+  
+        <p style="color: #666666;"><a href="#" style="color: #b9b9b9;">Blog wallleap</a>
+          , Copyright &copy; 2019-2020 
+          by Luwang All Rights Reserved.</p>
+      </div>
+      <!-- <div class="footer-device">
+      <p style="font-family: 'Ubuntu', sans-serif;">
+          <i class="fa fa-fire" aria-hidden="true"></i>
+          <span style="color: #666;">
+            Theme <a style="color: #b9b9b9;" href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank" style="color: #b9b9b9; text-decoration: underline dotted rgba(0, 0, 0, .1);">3-hexo</a>
+             <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> 
+             by <a href="https://yelog.org/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">yelog</a>
+             , Powered by <a style="color: #b9b9b9;" href="https://hexo.io/" target="_blank">Hexo</a>
+             , Hosted by <a style="color: #b9b9b9;" href="https://coding.net/" target="_blank">Coding Pages</a>
+              & <a style="color: #b9b9b9;" href="https://github.com/" target="_blank">Github Pages</a>
+          </span>
+        </p>
+      </div> -->
+  
+      
+      <a style="color: #b9b9b9;" href="http://beian.miit.gov.cn/" target="_blank">	
+        <img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/logo/ICP.png" style="vertical-align: text-bottom; width: 17px;" />
+        赣ICP备20000895号-1
+      </a>
+      <a href="https://icp.gov.moe" target="_blank"><img style="width:17px;margin-bottom: -2px;" src="https://icp.gov.moe/images/ico64.png">萌ICP备 </a><a href="https://icp.gov.moe/?keyword=20200895" target="_blank"> 20200895号</a>
+      
+      <span style="color: #666;padding-left: 20px;">
+        <i class="fa fa-clock-o" aria-hidden="true"></i>
+        <span id="time" align="center">载入时间中...</span>
+        <script>
+          var now = new Date(); 
+          function createtime() { 
+            var grt= new Date("08/08/2019 17:38:00");//在此处修改你的建站时间
+            now.setTime(now.getTime()+250); 
+            days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+            hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+            if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+            mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+            seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+            snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+            document.getElementById("time").innerHTML = "小站已经苟活 "+dnum+" 天 "+hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+         } 
+         setInterval("createtime()",250);
+        </script>
+        <!-- <span style="color:#666;padding-left: 20px;"><i class="fa fa-eye" aria-hidden="true"></i>访问量: <span class="site_pv"></span>次</span> -->
+        <span style="padding-left: 20px; color:#666;"><i class="fa fa-cog fa-spin" aria-hidden="true"></i></span>
+        <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1278079074'%3E%3C/span%3E%3Cscript src='https://s4.cnzz.com/z_stat.php%3Fid%3D1278079074%26online%3D2' type='text/javascript'%3E%3C/script%3E"));</script>
+        
+      </span>
+      <div style="text-align:center; padding-top: 20px;">
+        <div class="github-badge">
+          <a rel="license" href="https://hexo.io/" target="_blank" title="由Hexo强力驱动">
+          <span class="badge-subject"><i class="fa fa-fire" aria-hidden="true"></i> Powered</span><span class="badge-value bg-blue">Hexo</span></a>
+        </div>
+        <div class="github-badge">
+          <a rel="license" href="https://github.io/" target="_blank" title="静态网页托管于Github">
+          <span class="badge-subject">Hosted</span><span class="badge-value bg-brightgreen"><i class="fa fa-github" aria-hidden="true"></i> Github</span></a>
+        </div>
+        <div class="github-badge">
+            <a rel="license" href="https://coding.net/" target="_blank" title="静态网页托管于CODING">
+            <span class="badge-subject"><i class="fa fa-heart" aria-hidden="true"></i> Hosted</span>
+            <span class="badge-value bg-gray">CODING</span></a>
+          </div>
+        <div class="github-badge">
+            <a rel="license" href="https://www.jsdelivr.com/" target="_blank" title="jsDelivr提供CDN加速服务">
+            <span class="badge-subject"><i class="fa fa-firefox fa-spin" aria-hidden="true"></i> CND</span><span class="badge-value bg-cdn">Github&jsDelivr</span></a>
+        </div>
+        <div class="github-badge">
+            <a rel="license" href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank" title="站点使用 Sakura 主题，作者：Mashiro & Hojun">
+            <span class="badge-subject"><i class="fa fa-themeisle" aria-hidden="true"></i> Theme</span><span class="badge-value bg-theme">3-blog</span></a>
+        </div>
+        <div class="github-badge">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="本站点采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议进行许可">
+            <span class="badge-subject"><i class="fa fa-copyright"></i></span><span class="badge-value bg-lightgrey">BY-NC-SA 4.0</span></a>
+        </div>
+        <div class="github-badge">
+          <span class="badge-subject"><i class="fa fa-user" aria-hidden="true"></i> UV</span>
+          <span  class="site_uv badge-value bg-orange""></span>
+        </div>
+        <div class="github-badge">
+          <span class="badge-subject"><i class="fa fa-eye" aria-hidden="true"></i> PV</span>
+          <span class="site_pv badge-value bg-brightgreen"></span>
+        </div>
+      </div>  
+  
+      <div class="site-img" style="margin-top:20px;">
+        <a href="#"><img width="350px" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/wechat/wallleap.png"></a>
+        <!-- <a href="https://www.google.com/search?sxsrf=ACYBGNT2ZrasjGUBG6Nj1_Xye1N67lpsrA%3A1573382249794&source=hp&ei=aejHXey4LYHu-gSQlLqgDg&q=site%3Awallleap.cn&oq=site%3Awallleap.cn&gs_l=psy-ab.3...32142.36345..36698...0.0..4.1018.9243.3-5j2j5j3j1......0....1..gws-wiz.....10..35i362i39j35i39j0.9jvLRXQs6zM&ved=0ahUKEwiskd7Qud_lAhUBt54KHRCKDuQQ4dUDCAY&uact=5" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/logo/Google.svg" width="100px" height="80px"></a>
+        <a href="https://www.baidu.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/logo/baidu.png" width="100px" height="80px"></a>
+        <a href="https://www.jsdelivr.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/logo/JsDelivr_Logo.svg" width="100px" height="80px"></a>
+        <a href="https://github.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/logo/github-logo.jpg" width="100px" height="80px"></a>
+        <a href="https://aliyun.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/logo/aliyun-logo.png" width="100px" height="80px"></a>
+        <a href="https://dev.tencent.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/logo/tencentyun-logo.jpg" width="100px" height="80px"></a>   -->
+      </div>
+      <!-- <div>
+        <a href="https://hexo.io" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Powered-Hexo-blue" alt="Hexo"></a>
+        <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Theme-3--hexo-%232c2735" alt="3-blog"></a>
+        <a href="https://github.com/" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Hosted-GitHub-%2324292e" alt="GitHub"></a>
+        <a href="https://coding.net/" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Hosted-CODING-%23141a3f" alt="CODING"></a>
+        <a href="https://www.jsdelivr.com/" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/CDN-jsDelivr-%23ee3232" alt="jsDelivr"></a>
+      </div> -->
+    </div><!-- .site-info -->
+  </div>
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>喜欢就点赞,疼爱就打赏</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+    </div>
+</div>
+
+
+<script>!function(e){var c=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){for(var r=0;r<c.length;r++)t=c[r],0<=(n=t.getBoundingClientRect()).bottom&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(){var t,n,e,i,o=c[r];t=o,n=function(){c=c.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n&&n()},e.src=i}();var t,n}i(),e.addEventListener("scroll",function(){var t,n;t=i,n=e,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)})}(this);</script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script></body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'photoSwipe';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+        $('pre code').each(function(){
+            var lines = $(this).text().trim().split('\n').length, widther='';
+            if (lines>99) {
+                widther = 'widther'
+            }
+            var $numbering = $('<ul/>').addClass('pre-numbering ' + widther).attr("unselectable","on");
+            $(this).addClass('has-numbering ' + widther)
+                    .parent()
+                    .append($numbering);
+            for(var i=1;i<=lines;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+
+        // PhotoSwipe
+        $('article').each(function(i){
+            $(this).find('img').each(function(){
+                if ($(this).closest('figure').hasClass('article-gallery-img')) {
+                    return;
+                }
+                var alt = this.alt;
+                $(this)
+                    .wrap('<figure class="article-gallery-img" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"></figure>')
+                    .wrap('<a href="' + this.src + '" title="' + alt + '"></a>');
+                $(this).after('<div class="img_alt"><span>' + (alt || '') + '</span></div>');
+            });
+        });
+
+        var pswpElement = document.querySelectorAll('.pswp')[0];
+        if (pswpElement) {
+            var gallerySelector = '.article-gallery, article';
+
+            var initPhotoSwipeFromDOM = function(gallerySelector) {
+
+                // parse slide data (url, title, size ...) from DOM elements
+                // (children of gallerySelector)
+                var parseThumbnailElements = function(el) {
+                    var thumbElements = $(el).find('figure.article-gallery-img').toArray(),
+                        numNodes = thumbElements.length,
+                        items = [],
+                        figureEl,
+                        linkEl,
+                        size,
+                        imgEl,
+                        item;
+
+                    for (var i = 0; i < numNodes; i++) {
+
+                        figureEl = thumbElements[i]; // <figure> element
+
+                        // include only element nodes
+                        if (figureEl.nodeType !== 1) {
+                            continue;
+                        }
+
+                        linkEl = figureEl.children[0]; // <a> element
+                        imgEl = linkEl.children[0]; // <img>
+
+                        size = linkEl.getAttribute('data-size');
+                        size = size && size.split('x');
+
+                        // create slide object
+                        item = {
+                            src: linkEl.getAttribute('href'),
+                            w: size && parseInt(size[0], 10) || imgEl.width,
+                            h: size && parseInt(size[1], 10) || imgEl.height
+                        };
+
+                        if (figureEl.children.length > 1) {
+                            // <figcaption> content
+                            item.title = figureEl.children[1].innerHTML;
+                        }
+
+                        if (linkEl.children.length > 0) {
+                            // <img> thumbnail element, retrieving thumbnail url
+                            item.msrc = linkEl.children[0].getAttribute('src');
+                        }
+
+                        item.el = figureEl; // save link to element for getThumbBoundsFn
+                        items.push(item);
+                    }
+
+                    return items;
+                };
+
+                // find nearest parent element
+                var closest = function closest(el, fn) {
+                    return el && (fn(el) ? el : closest(el.parentNode, fn));
+                };
+
+                // triggers when user clicks on thumbnail
+                var onThumbnailsClick = function(e) {
+                    e = e || window.event;
+
+                    var eTarget = e.target || e.srcElement;
+
+                    // find root element of slide
+                    var clickedListItem = closest(eTarget, function(el) {
+                        return (el.tagName && el.tagName.toUpperCase() === 'FIGURE');
+                    });
+
+                    if (!clickedListItem) {
+                        return;
+                    }
+
+                    if (e.preventDefault) {
+                        e.preventDefault();
+                    } else {
+                        e.returnValue = false;
+                    }
+
+                    // find index of clicked item by looping through all child nodes
+                    // alternatively, you may define index via data- attribute
+                    var clickedGallery = $(clickedListItem).closest(gallerySelector)[0],
+                        childNodes = $(clickedGallery).find('figure.article-gallery-img').toArray(),
+                        numChildNodes = childNodes.length,
+                        nodeIndex = 0,
+                        index;
+
+                    for (var i = 0; i < numChildNodes; i++) {
+                        if (childNodes[i].nodeType !== 1) {
+                            continue;
+                        }
+
+                        if (childNodes[i] === clickedListItem) {
+                            index = nodeIndex;
+                            break;
+                        }
+                        nodeIndex++;
+                    }
+
+
+
+                    if (index >= 0) {
+                        // open PhotoSwipe if valid index found
+                        openPhotoSwipe(index, clickedGallery);
+                    }
+                    return false;
+                };
+
+                // parse picture index and gallery index from URL (#&pid=1&gid=2)
+                var photoswipeParseHash = function() {
+                    var hash = window.location.hash.substring(1),
+                        params = {};
+
+                    if (hash.length < 5) {
+                        return params;
+                    }
+
+                    var vars = hash.split('&');
+                    for (var i = 0; i < vars.length; i++) {
+                        if (!vars[i]) {
+                            continue;
+                        }
+                        var pair = vars[i].split('=');
+                        if (pair.length < 2) {
+                            continue;
+                        }
+                        params[pair[0]] = pair[1];
+                    }
+
+                    if (params.gid) {
+                        params.gid = parseInt(params.gid, 10);
+                    }
+
+                    return params;
+                };
+
+                var openPhotoSwipe = function(index, galleryElement, disableAnimation, fromURL) {
+                    var pswpElement = document.querySelectorAll('.pswp')[0],
+                        gallery,
+                        options,
+                        items;
+
+                    items = parseThumbnailElements(galleryElement);
+
+                    // define options (if needed)
+                    options = {
+
+                        // define gallery index (for URL)
+                        galleryUID: galleryElement.getAttribute('data-pswp-uid'),
+
+                        getThumbBoundsFn: function(index) {
+                            // See Options -> getThumbBoundsFn section of documentation for more info
+                            var thumbnail = items[index].el.getElementsByTagName('img')[0], // find thumbnail
+                                pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
+                                rect = thumbnail.getBoundingClientRect();
+
+                            return {
+                                x: rect.left,
+                                y: rect.top + pageYScroll,
+                                w: rect.width
+                            };
+                        }
+                    };
+
+                    // PhotoSwipe opened from URL
+                    if (fromURL) {
+                        if (options.galleryPIDs) {
+                            // parse real index when custom PIDs are used
+                            // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
+                            for (var j = 0; j < items.length; j++) {
+                                if (items[j].pid == index) {
+                                    options.index = j;
+                                    break;
+                                }
+                            }
+                        } else {
+                            // in URL indexes start from 1
+                            options.index = parseInt(index, 10) - 1;
+                        }
+                    } else {
+                        options.index = parseInt(index, 10);
+                    }
+
+                    // exit if index not found
+                    if (isNaN(options.index)) {
+                        return;
+                    }
+
+                    if (disableAnimation) {
+                        options.showAnimationDuration = 0;
+                    }
+
+                    // Pass data to PhotoSwipe and initialize it
+                    gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+
+                    gallery.listen('imageLoadComplete', function(index, item) {
+                        var linkEl = item.el.children[0];
+                        var img = item.container.children[0];
+                        if (!linkEl.getAttribute('data-size')) {
+                            linkEl.setAttribute('data-size', img.naturalWidth + 'x' + img.naturalHeight);
+                            item.w = img.naturalWidth;
+                            item.h = img.naturalHeight;
+                            gallery.invalidateCurrItems();
+                            gallery.updateSize(true);
+                        }
+                    });
+
+                    gallery.init();
+                };
+
+                // loop through all gallery elements and bind events
+                var galleryElements = document.querySelectorAll(gallerySelector);
+
+                for (var i = 0, l = galleryElements.length; i < l; i++) {
+                    galleryElements[i].setAttribute('data-pswp-uid', i + 1);
+                    galleryElements[i].onclick = onThumbnailsClick;
+                }
+
+                // Parse URL and open gallery if it contains #&pid=3&gid=1
+                var hashData = photoswipeParseHash();
+                if (hashData.pid && hashData.gid) {
+                    openPhotoSwipe(hashData.pid, galleryElements[hashData.gid - 1], true, true);
+                }
+            };
+
+            // execute above function
+            initPhotoSwipeFromDOM(gallerySelector);
+        }
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<style>
+    pre{
+        position: relative;
+        margin-bottom: 24px;
+        border-radius: 10px;
+        border: 1px solid #e2dede;
+        background: #FFF;
+        overflow: hidden;
+    }
+    code.has-numbering{
+        margin-left: 30px;
+    }
+    code.has-numbering.widther{
+        margin-left: 35px;
+    }
+    .pre-numbering{
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        padding: 0.5em 3px 0.7em 5px;
+        border-right: 1px solid #C3CCD0;
+        text-align: right;
+        color: #AAA;
+        background-color: ;
+    }
+    .pre-numbering.widther {
+        width: 35px;
+    }
+</style>
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+    .nav-right nav a.hover > span{
+        color: #03a788 !important;
+    }
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element, as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script>
+<style>
+  .aplayer .aplayer-lrc {
+    height: 35px;
+  }
+  .aplayer .aplayer-lrc p{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px !important;
+  }
+  .aplayer .aplayer-lrc p.aplayer-lrc-current{
+    color: #FF1493;
+  }
+  .aplayer.aplayer-narrow .aplayer-body{
+    left: -66px !important;
+  }
+  .aplayer.aplayer-fixed .aplayer-lrc {
+    display: none;
+  }
+  .aplayer .aplayer-lrc.aplayer-lrc-hide {
+      display:none !important;
+  }
+  .aplayer.aplayer-fixed .lrc-show {
+    display: block;
+    background: rgba(255, 255, 255, 0.8);
+  }
+</style>
+<div class="aplayer"
+
+    data-id="2162711186"
+
+    data-server="netease"
+
+    data-type="playlist"
+
+    data-fixed="true"
+
+    data-autoplay="false"
+
+    data-loop="all"
+
+    data-order="random"
+
+    data-preload="auto"
+
+    data-volume="0.7"
+
+    data-mutex="true"
+
+>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/meting@1.2/dist/Meting.min.js"></script>
+<script>
+  $(function(){
+    $('body').on('click', '.aplayer', function(){
+      if($('.aplayer-button').hasClass('aplayer-play')) {
+        $('.aplayer-lrc').removeClass('lrc-show');
+      } else {
+        $('.aplayer-lrc').addClass('lrc-show');
+      }
+    })
+  });
+</script>
+
+<script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script type="text/javascript" src="/js/jquery.fancybox.min.js"></script>
+
+<script>
+(function() {
+
+  var arr = new Array();
+  var $tags = $('.post-tags').children('a');
+  $tags.each(function() {
+    arr.push($(this).html())
+  })
+  if (arr.indexOf("图集") !== -1) {
+
+    $('.hj_img').each(function() {
+      $(this).wrap('<a class="fancybox" data-fancybox="gallery" href="' + $(this).prop("src") + '"></a>'); 
+    })
+    //初始化fancybox，padding设为0，loop设为false
+    $('.fancybox').fancybox({
+      padding: 0,
+      loop: false
+    });
+  }
+})();
+</script>
+
+<!-- // 文字 -->
+<script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/shehuizhuyi.js"></script>
+<!-- // 爱心 -->
+<script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/love.js"></script>
+<!-- // 按键屏蔽 需要jQuery -->
+<script src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/js/noSomeKey.js"></script>
+
+</html>

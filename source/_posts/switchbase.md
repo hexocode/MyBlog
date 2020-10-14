@@ -21,12 +21,6 @@ keywords:
 
 
 
-![img](https://mmbiz.qpic.cn/mmbiz_gif/9p7k9sjaO4WO0xvic9azzXTZpacThQn0kNIynIaF1c4srP28bQbs0icst3t6B6KbbtBC4V5PQUz83sL55VOfkRJA/640?tp=webp&wxfrom=5&wx_lazy=1)
-
-
-
-
-
 
 
 今天就水一下，直接按照教材上的讲吧
@@ -46,11 +40,6 @@ keywords:
 
 
 
-
-
-
-
-![img](https://mmbiz.qpic.cn/mmbiz_gif/9p7k9sjaO4WO0xvic9azzXTZpacThQn0kNIynIaF1c4srP28bQbs0icst3t6B6KbbtBC4V5PQUz83sL55VOfkRJA/640?tp=webp&wxfrom=5&wx_lazy=1)
 
 
 

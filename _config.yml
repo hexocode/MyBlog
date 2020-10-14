@@ -8,7 +8,7 @@ subtitle: Luwang's Blog
 description: luwang的博客，正在努力学习💪
 keywords: wallleap
 author: Luwang
-language: zh-cn
+language: zh-CN
 timezone: Asia/Shanghai
 
 # URL
@@ -101,11 +101,11 @@ theme: 3-hexo
 deploy:
 - type: git
   repo: 
-    github: git@github.com:wallleap/wallleap.github.io.git,master
+    github: git@github.com:wallleap/3blog.git,master
     # gitlab: git@gitlab.com:wallleap/wallleapblog.git,master
     coding: git@e.coding.net:wallleap/3-blog.git
   branch: master
-
+- type: baidu_url_submitter ## 添加这里内容即可
 
 # RRS\sitemap
 plugin:
@@ -135,6 +135,12 @@ sitemap:
     path: sitemap.xml
 
 
+baidu_url_submit:
+  count: 40 ## 比如3，代表提交最新的三个链接
+  host: wallleap.cn ## 在百度站长平台中注册的域名
+  token: IJrxTJRX41YEwpDS ## 请注意这是您的秘钥， 请不要发布在公众仓库里!
+  path: baidu_urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里
+
 ## live2d
 live2d:
    enable: false
@@ -162,6 +168,17 @@ live2d:
    react:
        opacityDefault: 0.7
        opacityOnHover: 0.2
+
+
+# toc:
+#   maxdepth: 3
+#   class: toc
+#   slugify: transliteration
+#   decodeEntities: false
+#   anchor:
+#     position: after
+#     symbol: '#'
+#     style: header-anchor
 
 
 

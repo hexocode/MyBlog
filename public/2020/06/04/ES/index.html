@@ -1,0 +1,4534 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ES和模块化学习笔记 | wallleap</title>
+  <meta name="keywords" content=" 前端 , ES , 模块化 ">
+  <meta name="description" content="ES和模块化学习笔记 | wallleap">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="description" content="念两句诗          叙别梦、扬州一觉。          【宋代】吴文英《夜游宫·人去西楼雁杳》       .images{ 	float: left;     width: 100%;     height: 300px;     position: relative;     margin: 20px 0">
+<meta property="og:type" content="website">
+<meta property="og:title" content="图集">
+<meta property="og:url" content="https://wallleap.cn/photo/index.html">
+<meta property="og:site_name" content="wallleap">
+<meta property="og:description" content="念两句诗          叙别梦、扬州一觉。          【宋代】吴文英《夜游宫·人去西楼雁杳》       .images{ 	float: left;     width: 100%;     height: 300px;     position: relative;     margin: 20px 0">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=46b93e4b7d1ed21b79c929e39555baf9/14ce36d3d539b600fbdea00ee950352ac65cb773.jpg">
+<meta property="article:published_time" content="2020-02-23T07:09:21.000Z">
+<meta property="article:modified_time" content="2020-03-24T14:15:05.640Z">
+<meta property="article:author" content="Luwang">
+<meta property="article:tag" content="wallleap">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=46b93e4b7d1ed21b79c929e39555baf9/14ce36d3d539b600fbdea00ee950352ac65cb773.jpg">
+
+
+<link rel="icon" href="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/favicon.ico">
+
+<link href="/css/style.css?v=1.1.0" rel="stylesheet">
+
+<link href="/css/hl_theme/sublime.css?v=1.1.0" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/animate.css@4.1.0/animate.min.css" rel="stylesheet">
+
+<link href="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css" rel="stylesheet">
+<link href="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css" rel="stylesheet">
+
+<script src="//cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="/js/titleTip.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/highlightjs@9.16.2/highlight.pack.min.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+</script>
+
+<script src="//cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js" ></script>
+
+<script src="/js/iconfont.js?v=1.1.0" ></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="/css/customize.css">
+<link rel="stylesheet" href="/css/github-badge.css">
+
+<link rel="stylesheet" href="/css/jquery.fancybox.min.css" media="all">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/honjun/hexo-tag-emojis-byhj/css/emoji.css">
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+	.pace .pace-progress {  background: rgb(251, 129, 30); /*进度条颜色*/
+	height: 3px;  }
+	.pace .pace-progress-inner {  box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+	}
+	.pace .pace-activity {  border-top-color: rgb(251, 129, 30);    /*上边框颜色*/
+	border-left-color: rgb(251, 129, 30);    /*左边框颜色*/
+	}
+</style>
+
+  
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?b19f0ec10bac681106907eb1ee978d34";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+  <script>
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+    </script>
+  <!-- site-verification -->
+  <meta name="google-site-verification" content="ZT29P3khtw1qk30lwEOdMqAGXvN3HGllzjzbB5Wln4k" />
+  <meta name="baidu-site-verification" content="AQqaOCFUn0" />
+  <meta name="360-site-verification" content="e9f3f65ff40b09c81ba47287a55363cd" />
+  <meta name="sogou_site_verification" content="jAPTO5JOth"/>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151908301-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-151908301-1');
+  </script>
+<meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="wallleap" type="application/atom+xml">
+</head>
+<div style="display: none">
+  <input class="theme_disqus_on" value="false">
+  <input class="theme_preload_comment" value="">
+  <input class="theme_blog_path" value="">
+  <input id="theme_shortcut" value="false" />
+</div>
+
+
+<body>
+<aside class="nav">
+    <div class="nav-left">
+        <a href="/" class="avatar_target">
+    <img class="avatar" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/avatar.jpg" />
+</a>
+<div class="author">
+    <span>Luwang</span>
+</div>
+
+<div class="icon">
+    
+        
+        <a title="rss" href="/atom.xml" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-rss"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="github" href="https://github.com/wallleap" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-github"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+    
+        
+        <a title="weibo" href="http://weibo.com/u/6023739034" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-weibo"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="jianshu" href="https://www.jianshu.com/u/9357dd145d53" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-jianshu"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="zhihu" href="https://www.zhihu.com/people/8afbefe61c28c0fafed189b234afc91d" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-zhihu"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="csdn" href="https://me.csdn.net/qq_36949103" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-csdn"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+    
+        
+        <a title="email" href="mailto:15579576761@163.com" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-email"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="qq" href="http://wpa.qq.com/msgrd?v=3&uin=990083804&site=qq&menu=yes" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-qq"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="kugou" href="https://www.kugou.com/" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-kugou"></use>
+                </svg>
+            
+        </a>
+        
+    
+        
+        <a title="neteasemusic" href="https://music.163.com/#/user/home?id=453867086" target="_blank">
+            
+                <svg class="iconfont-svg" aria-hidden="true">
+                    <use xlink:href="#icon-neteasemusic"></use>
+                </svg>
+            
+        </a>
+        
+    
+</div>
+
+
+
+
+<ul>
+    <li><div class="all active" data-rel="全部文章">全部文章<small>(53)</small></div></li>
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="博客"><i class="fold iconfont icon-right"></i>博客<small>(1)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="博客<--->valine">valine<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="电脑"><i class="fold iconfont icon-right"></i>电脑<small>(1)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="电脑<--->Win10">Win10<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="笔记"><i class="fold iconfont icon-right"></i>笔记<small>(28)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="笔记<--->后端">后端<small>(2)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="笔记<--->Hexo">Hexo<small>(8)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="笔记<--->Markdown">Markdown<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="笔记<--->五笔学习">五笔学习<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="笔记<--->前端">前端<small>(13)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="笔记<--->微信">微信<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="笔记<--->转载">转载<small>(1)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="笔记<--->黑苹果">黑苹果<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="编程"><i class="fold iconfont icon-right"></i>编程<small>(2)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="编程<--->数据结构">数据结构<small>(2)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="网络"><i class="fold iconfont icon-right"></i>网络<small>(15)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="网络<--->HCNA">HCNA<small>(4)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="网络<--->华三">华三<small>(4)</small></div>
+                            
+                        </li>
+                            
+                        <li><div data-rel="网络<--->基础">基础<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="资源"><i class="fold iconfont icon-right"></i>资源<small>(1)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="资源<--->图集">图集<small>(1)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+        
+            
+            <li><div data-rel="转载"><i class="fold iconfont icon-right"></i>转载<small>(2)</small></div>
+                
+                    <ul class="sub hide">
+                        
+                        <li><div data-rel="转载<--->主题">主题<small>(2)</small></div>
+                            
+                        </li>
+                            
+                    </ul>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="阅读">阅读<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+        
+    
+</ul>
+<div class="left-bottom">
+    <div class="menus">
+    
+    
+    
+    
+    </div>
+    <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
+</div>
+<input type="hidden" id="yelog_site_posts_number" value="53">
+<input type="hidden" id="yelog_site_word_count" value="274.5k">
+<div style="display: none">
+    <span id="busuanzi_value_site_uv"></span>
+    <span id="busuanzi_value_site_pv"></span>
+</div>
+
+    </div>
+    <div class="nav-right">
+        <div class="friends-area">
+    <div class="friends-title">
+        友情链接
+        <i class="iconfont icon-left"></i>
+    </div>
+    <div class="friends-content">
+        <ul>
+            
+            <li><a target="_blank" href="http://yelog.org/">叶落阁</a></li>
+            
+            <li><a target="_blank" href="https://www.zh66.club">皮皮家园</a></li>
+            
+            <li><a target="_blank" href="https://jwmm.xyz/">喵喵喵~</a></li>
+            
+            <li><a target="_blank" href="https://evrstr.tk/">evrStr</a></li>
+            
+            <li><a target="_blank" href="https://leeyiding.com/">LeeYD</a></li>
+            
+            <li><a target="_blank" href="https://cndrew.cn/">Uncle_drew</a></li>
+            
+            <li><a target="_blank" href="https://yremp.live/">Yremp</a></li>
+            
+            <li><a target="_blank" href="https://immmmm.com/">木木木木木</a></li>
+            
+            <li><a target="_blank" href="https://you.ci/">有次博客</a></li>
+            
+            <li><a target="_blank" href="https://www.fezhu.top/">Uncleacc</a></li>
+            
+            <li><a target="_blank" href="https://nateshao.gitee.io/">千羽</a></li>
+            
+            <li><a target="_blank" href="https://chanshiyu.com/">蝉时雨</a></li>
+            
+            <li><a target="_blank" href="https://www.antmoe.com/">小康博客</a></li>
+            
+            <li><a target="_blank" href="https://www.lete114.top/">Lete乐特</a></li>
+            
+            <li><a target="_blank" href="/">等待收录中……</a></li>
+            
+        </ul>
+    </div>
+</div>
+        <div class="title-list">
+    <div class="right-top">
+        <div id="default-panel">
+            <i class="iconfont icon-search" data-title="搜索"></i>
+            <div class="right-title">全部文章</div>
+            <i class="iconfont icon-file-tree" data-title="切换到大纲视图"></i>
+        </div>
+        <div id="search-panel">
+            <i class="iconfont icon-left" data-title="返回"></i>
+            <input id="local-search-input" />
+            <label class="border-line" for="input"></label>
+            <i class="iconfont icon-case-sensitive" data-title="大小写敏感"></i>
+            <i class="iconfont icon-tag" data-title="标签"></i>
+        </div>
+        <div id="outline-panel" style="display: none">
+            <div class="right-title">大纲</div>
+            <i class="iconfont icon-list" data-title="切换到文章列表"></i>
+        </div>
+    </div>
+
+    <div class="tags-list">
+    <input id="tag-search" />
+    <div class="tag-wrapper">
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ACL</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Ajax</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>AngularJS</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Blog</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>C/C++</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>CSS</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>eNsp</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>eNSP</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>ES</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Git</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>GitHub</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>hackintosh</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>HCL</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>HCNA</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>hexo</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Hexo</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>HTML</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>JavaScript</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>jQuery</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Markdown</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>MongoDB</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>NAT</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>NodeJS</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>OSPF</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>React</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>RIP</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Sakura</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>STP</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Ubuntu</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>VLAN</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Vue</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>w650dc</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>web</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>Win10</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>主题</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>五笔</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>交换机</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>企业网</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>前端</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>华三</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>博客</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>后端</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>图集</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>安装</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>实验</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>微信</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>微信防盗链</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>悦读</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>技术</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>数据结构</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>框架</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>模块化</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>考研</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>英语</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>逆水寒</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>配置</a>
+            </li>
+        
+            <li class="article-tag-list-item">
+                <i class="iconfont icon-tag"></i><a>黑苹果</a>
+            </li>
+        
+    </div>
+
+</div>
+
+    
+    <nav id="title-list-nav">
+        
+        <a id="top" class="全部文章 笔记 黑苹果 "
+           href="/2019/03/14/w650dc-hackintosh/"
+           data-tag="w650dc,hackintosh,黑苹果"
+           data-author="" >
+            <span class="post-title" title="毁灭者DC W650DC装黑苹果心得">毁灭者DC W650DC装黑苹果心得</span>
+            <span class="post-date" title="2019-03-14 21:27:46">2019/03/14</span>
+        </a>
+        
+        <a id="top" class="全部文章 网络 "
+           href="/2019/09/30/web-HCL9/"
+           data-tag="eNSP,企业网"
+           data-author="" >
+            <span class="post-title" title="使用eNSP搭建企业网络">使用eNSP搭建企业网络</span>
+            <span class="post-date" title="2019-09-30 07:58:17">2019/09/30</span>
+        </a>
+        
+        <a  class="全部文章 笔记 前端 "
+           href="/2020/08/28/VUE/"
+           data-tag="前端,web,JavaScript,Vue"
+           data-author="" >
+            <span class="post-title" title="Vue学习笔记">Vue学习笔记</span>
+            <span class="post-date" title="2020-08-28 12:33:14">2020/08/28</span>
+        </a>
+        
+        <a  class="全部文章 笔记 前端 "
+           href="/2020/08/20/AJAX/"
+           data-tag="前端,web,Ajax"
+           data-author="" >
+            <span class="post-title" title="Ajax学习笔记">Ajax学习笔记</span>
+            <span class="post-date" title="2020-08-20 12:33:14">2020/08/20</span>
+        </a>
+        
+        <a  class="全部文章 笔记 前端 "
+           href="/2020/07/12/React/"
+           data-tag="前端,框架,React"
+           data-author="" >
+            <span class="post-title" title="React全家桶(技术栈)学习笔记">React全家桶(技术栈)学习笔记</span>
+            <span class="post-date" title="2020-07-12 16:54:50">2020/07/12</span>
+        </a>
+        
+        <a  class="全部文章 笔记 前端 "
+           href="/2020/07/04/Git/"
+           data-tag="前端,Git"
+           data-author="" >
+            <span class="post-title" title="Git学习笔记">Git学习笔记</span>
+            <span class="post-date" title="2020-07-04 23:33:49">2020/07/04</span>
+        </a>
+        
+        <a  class="全部文章 笔记 后端 "
+           href="/2020/06/14/nodejs/"
+           data-tag="后端,NodeJS"
+           data-author="" >
+            <span class="post-title" title="NodeJs学习笔记">NodeJs学习笔记</span>
+            <span class="post-date" title="2020-06-14 11:33:49">2020/06/14</span>
+        </a>
+        
+        <a  class="全部文章 笔记 后端 "
+           href="/2020/06/14/MongoDB/"
+           data-tag="后端,MongoDB"
+           data-author="" >
+            <span class="post-title" title="MongoDB学习笔记">MongoDB学习笔记</span>
+            <span class="post-date" title="2020-06-14 11:22:00">2020/06/14</span>
+        </a>
+        
+        <a  class="全部文章 笔记 前端 "
+           href="/2020/06/04/AngularJs/"
+           data-tag="前端,AngularJS"
+           data-author="" >
+            <span class="post-title" title="AngularJs学习笔记">AngularJs学习笔记</span>
+            <span class="post-date" title="2020-06-04 23:33:49">2020/06/04</span>
+        </a>
+        
+        <a  class="全部文章 笔记 前端 "
+           href="/2020/06/04/ES/"
+           data-tag="前端,ES,模块化"
+           data-author="" >
+            <span class="post-title" title="ES和模块化学习笔记">ES和模块化学习笔记</span>
+            <span class="post-date" title="2020-06-04 23:33:49">2020/06/04</span>
+        </a>
+        
+        <a  class="全部文章 笔记 前端 "
+           href="/2020/04/26/jQuery/"
+           data-tag="前端,web,JavaScript,jQuery"
+           data-author="" >
+            <span class="post-title" title="jQuery学习笔记">jQuery学习笔记</span>
+            <span class="post-date" title="2020-04-26 20:33:14">2020/04/26</span>
+        </a>
+        
+        <a  class="全部文章 笔记 前端 "
+           href="/2020/04/15/JavaScriptAdvance/"
+           data-tag="前端,web,JavaScript"
+           data-author="" >
+            <span class="post-title" title="JavaScript高级学习笔记">JavaScript高级学习笔记</span>
+            <span class="post-date" title="2020-04-15 19:33:14">2020/04/15</span>
+        </a>
+        
+        <a  class="全部文章 笔记 前端 "
+           href="/2020/04/05/JavaScriptBase/"
+           data-tag="前端,web,JavaScript"
+           data-author="" >
+            <span class="post-title" title="JavaScript基础学习笔记">JavaScript基础学习笔记</span>
+            <span class="post-date" title="2020-04-05 12:33:14">2020/04/05</span>
+        </a>
+        
+        <a  class="全部文章 笔记 前端 "
+           href="/2020/03/30/css/"
+           data-tag="前端,web,CSS"
+           data-author="" >
+            <span class="post-title" title="CSS学习笔记">CSS学习笔记</span>
+            <span class="post-date" title="2020-03-30 12:33:14">2020/03/30</span>
+        </a>
+        
+        <a  class="全部文章 博客 valine "
+           href="/2020/03/30/hexoValine/"
+           data-tag="hexo"
+           data-author="" >
+            <span class="post-title" title="valine评论系统使用">valine评论系统使用</span>
+            <span class="post-date" title="2020-03-30 12:16:01">2020/03/30</span>
+        </a>
+        
+        <a  class="全部文章 笔记 Markdown "
+           href="/2020/03/29/markdown/"
+           data-tag="Markdown"
+           data-author="" >
+            <span class="post-title" title="Markdown语法大全">Markdown语法大全</span>
+            <span class="post-date" title="2020-03-29 22:23:57">2020/03/29</span>
+        </a>
+        
+        <a  class="全部文章 笔记 微信 "
+           href="/2020/03/27/wechatpaper/"
+           data-tag="微信"
+           data-author="" >
+            <span class="post-title" title="使用Markdown Here对微信公众号文章进行排版">使用Markdown Here对微信公众号文章进行排版</span>
+            <span class="post-date" title="2020-03-27 22:36:35">2020/03/27</span>
+        </a>
+        
+        <a  class="全部文章 笔记 前端 "
+           href="/2020/03/27/html/"
+           data-tag="前端,web,HTML"
+           data-author="" >
+            <span class="post-title" title="HTML学习笔记">HTML学习笔记</span>
+            <span class="post-date" title="2020-03-27 17:33:14">2020/03/27</span>
+        </a>
+        
+        <a  class="全部文章 笔记 前端 "
+           href="/2020/03/24/chrometwo/"
+           data-tag="前端,web"
+           data-author="" >
+            <span class="post-title" title="怎样拥有两个独立的Chrome">怎样拥有两个独立的Chrome</span>
+            <span class="post-date" title="2020-03-24 10:33:14">2020/03/24</span>
+        </a>
+        
+        <a  class="全部文章 笔记 前端 "
+           href="/2020/03/24/webBase/"
+           data-tag="前端,web"
+           data-author="" >
+            <span class="post-title" title="web入门基础知识">web入门基础知识</span>
+            <span class="post-date" title="2020-03-24 10:33:14">2020/03/24</span>
+        </a>
+        
+        <a  class="全部文章 笔记 Hexo "
+           href="/2020/03/08/theme-beautify/"
+           data-tag="主题,Hexo,Blog,博客"
+           data-author="" >
+            <span class="post-title" title="Sakura美化">Sakura美化</span>
+            <span class="post-date" title="2020-03-08 21:09:24">2020/03/08</span>
+        </a>
+        
+        <a  class="全部文章 笔记 Hexo "
+           href="/2020/03/08/hexo-themes/"
+           data-tag="Hexo,Blog,博客,Sakura"
+           data-author="" >
+            <span class="post-title" title="hexo博客如何更换主题，并且进行常用的配置">hexo博客如何更换主题，并且进行常用的配置</span>
+            <span class="post-date" title="2020-03-08 13:31:00">2020/03/08</span>
+        </a>
+        
+        <a  class="全部文章 笔记 Hexo "
+           href="/2020/03/07/wechat-pic/"
+           data-tag="Hexo,Blog,博客,微信防盗链"
+           data-author="" >
+            <span class="post-title" title="微信公众号图片防盗链破解">微信公众号图片防盗链破解</span>
+            <span class="post-date" title="2020-03-07 23:50:00">2020/03/07</span>
+        </a>
+        
+        <a  class="全部文章 "
+           href="/2020/03/07/mindmaptest/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="测试思维导图">测试思维导图</span>
+            <span class="post-date" title="2020-03-07 20:15:12">2020/03/07</span>
+        </a>
+        
+        <a  class="全部文章 网络 HCNA "
+           href="/2020/03/07/hcna-vlan/"
+           data-tag="HCNA,VLAN"
+           data-author="" >
+            <span class="post-title" title="HCNA学习——VLAN配置">HCNA学习——VLAN配置</span>
+            <span class="post-date" title="2020-03-07 00:54:04">2020/03/07</span>
+        </a>
+        
+        <a  class="全部文章 笔记 五笔学习 "
+           href="/2020/03/04/wubi/"
+           data-tag="五笔"
+           data-author="" >
+            <span class="post-title" title="五笔学习笔记">五笔学习笔记</span>
+            <span class="post-date" title="2020-03-04 23:33:49">2020/03/04</span>
+        </a>
+        
+        <a  class="全部文章 网络 HCNA "
+           href="/2020/03/02/switchbase/"
+           data-tag="HCNA,交换机"
+           data-author="" >
+            <span class="post-title" title="HCNA学习——交换机基础配置">HCNA学习——交换机基础配置</span>
+            <span class="post-date" title="2020-03-02 23:19:15">2020/03/02</span>
+        </a>
+        
+        <a  class="全部文章 网络 基础 "
+           href="/2020/02/29/networkmodule/"
+           data-tag="HCNA"
+           data-author="" >
+            <span class="post-title" title="两种主要的网络参考模型">两种主要的网络参考模型</span>
+            <span class="post-date" title="2020-02-29 19:53:49">2020/02/29</span>
+        </a>
+        
+        <a  class="全部文章 网络 HCNA "
+           href="/2020/02/24/eNSP-use/"
+           data-tag="HCNA,eNSP"
+           data-author="" >
+            <span class="post-title" title="eNSP使用">eNSP使用</span>
+            <span class="post-date" title="2020-02-24 21:39:54">2020/02/24</span>
+        </a>
+        
+        <a  class="全部文章 网络 HCNA "
+           href="/2020/02/22/eNSP-install/"
+           data-tag="HCNA,eNSP"
+           data-author="" >
+            <span class="post-title" title="安装华为模拟器eNSP">安装华为模拟器eNSP</span>
+            <span class="post-date" title="2020-02-22 21:39:56">2020/02/22</span>
+        </a>
+        
+        <a  class="全部文章 笔记 Hexo "
+           href="/2020/02/08/hexo-blog/"
+           data-tag="Hexo,GitHub,Blog,博客"
+           data-author="" >
+            <span class="post-title" title="闲着也是闲着，不如搭个免费的博客玩玩">闲着也是闲着，不如搭个免费的博客玩玩</span>
+            <span class="post-date" title="2020-02-08 21:34:47">2020/02/08</span>
+        </a>
+        
+        <a  class="全部文章 转载 主题 "
+           href="/2020/02/04/hexotheme/"
+           data-tag="主题"
+           data-author="" >
+            <span class="post-title" title="都2020了，带你开发hexo主题">都2020了，带你开发hexo主题</span>
+            <span class="post-date" title="2020-02-04 22:16:01">2020/02/04</span>
+        </a>
+        
+        <a  class="全部文章 电脑 Win10 "
+           href="/2019/11/07/WLU/"
+           data-tag="Win10,Ubuntu"
+           data-author="" >
+            <span class="post-title" title="Win10启用其子系统Ubuntu并安装图形界面">Win10启用其子系统Ubuntu并安装图形界面</span>
+            <span class="post-date" title="2019-11-07 10:21:17">2019/11/07</span>
+        </a>
+        
+        <a  class="全部文章 笔记 转载 "
+           href="/2019/10/31/English_ReadWay/"
+           data-tag="考研,英语"
+           data-author="" >
+            <span class="post-title" title="唐迟阅读方法论">唐迟阅读方法论</span>
+            <span class="post-date" title="2019-10-31 21:58:17">2019/10/31</span>
+        </a>
+        
+        <a  class="全部文章 网络 "
+           href="/2019/09/27/web-HCL8/"
+           data-tag="eNSP,ACL,NAT"
+           data-author="" >
+            <span class="post-title" title="ACL+NAT配置">ACL+NAT配置</span>
+            <span class="post-date" title="2019-09-27 07:58:17">2019/09/27</span>
+        </a>
+        
+        <a  class="全部文章 网络 "
+           href="/2019/09/27/web-HCL7/"
+           data-tag="eNSP,OSPF"
+           data-author="" >
+            <span class="post-title" title="OSPF配置">OSPF配置</span>
+            <span class="post-date" title="2019-09-27 07:58:04">2019/09/27</span>
+        </a>
+        
+        <a  class="全部文章 资源 图集 "
+           href="/2019/09/20/atlas1/"
+           data-tag="逆水寒,图集"
+           data-author="" >
+            <span class="post-title" title="图集1-逆水寒">图集1-逆水寒</span>
+            <span class="post-date" title="2019-09-20 20:15:12">2019/09/20</span>
+        </a>
+        
+        <a  class="全部文章 网络 "
+           href="/2019/09/19/web-HCL6/"
+           data-tag="eNsp,RIP"
+           data-author="" >
+            <span class="post-title" title="RIP配置">RIP配置</span>
+            <span class="post-date" title="2019-09-19 16:13:56">2019/09/19</span>
+        </a>
+        
+        <a  class="全部文章 网络 "
+           href="/2019/09/18/web-HCL4/"
+           data-tag="HCL,华三"
+           data-author="" >
+            <span class="post-title" title="DHCP配置(续)--DHCP中继">DHCP配置(续)--DHCP中继</span>
+            <span class="post-date" title="2019-09-18 16:14:16">2019/09/18</span>
+        </a>
+        
+        <a  class="全部文章 网络 "
+           href="/2019/09/18/web-HCL5/"
+           data-tag="eNsp,STP"
+           data-author="" >
+            <span class="post-title" title="STP及VRRP配置">STP及VRRP配置</span>
+            <span class="post-date" title="2019-09-18 16:13:56">2019/09/18</span>
+        </a>
+        
+        <a  class="全部文章 阅读 "
+           href="/2019/09/15/book1/"
+           data-tag="悦读"
+           data-author="" >
+            <span class="post-title" title="书单1--平凡的世界">书单1--平凡的世界</span>
+            <span class="post-date" title="2019-09-15 19:32:39">2019/09/15</span>
+        </a>
+        
+        <a  class="全部文章 网络 华三 "
+           href="/2019/09/12/web-HCL3/"
+           data-tag="HCL,华三,实验,配置"
+           data-author="" >
+            <span class="post-title" title="HCL配置(三)–-DHCP配置">HCL配置(三)–-DHCP配置</span>
+            <span class="post-date" title="2019-09-12 15:42:43">2019/09/12</span>
+        </a>
+        
+        <a  class="全部文章 网络 华三 "
+           href="/2019/09/11/web-HCL2/"
+           data-tag="HCL,华三,实验,配置"
+           data-author="" >
+            <span class="post-title" title="HCL配置(二)--VLAN间通信">HCL配置(二)--VLAN间通信</span>
+            <span class="post-date" title="2019-09-11 18:06:05">2019/09/11</span>
+        </a>
+        
+        <a  class="全部文章 网络 华三 "
+           href="/2019/09/09/web-HCL1/"
+           data-tag="HCL,华三,实验,配置"
+           data-author="" >
+            <span class="post-title" title="HCL配置(一)--ping通及Telnet">HCL配置(一)--ping通及Telnet</span>
+            <span class="post-date" title="2019-09-09 21:54:19">2019/09/09</span>
+        </a>
+        
+        <a  class="全部文章 网络 华三 "
+           href="/2019/09/09/web-HCL0/"
+           data-tag="HCL,华三,安装"
+           data-author="" >
+            <span class="post-title" title="HCL的安装和使用">HCL的安装和使用</span>
+            <span class="post-date" title="2019-09-09 21:34:37">2019/09/09</span>
+        </a>
+        
+        <a  class="全部文章 编程 数据结构 "
+           href="/2019/08/28/DataStructure1/"
+           data-tag="数据结构,C/C++,技术"
+           data-author="" >
+            <span class="post-title" title="数据结构(1)-绪论">数据结构(1)-绪论</span>
+            <span class="post-date" title="2019-08-28 22:12:47">2019/08/28</span>
+        </a>
+        
+        <a  class="全部文章 编程 数据结构 "
+           href="/2019/08/25/DataStructure0/"
+           data-tag="数据结构,C/C++"
+           data-author="" >
+            <span class="post-title" title="数据结构(0)--预备知识">数据结构(0)--预备知识</span>
+            <span class="post-date" title="2019-08-25 10:18:51">2019/08/25</span>
+        </a>
+        
+        <a  class="全部文章 笔记 Hexo "
+           href="/2019/08/25/mac-blog4/"
+           data-tag="Hexo,GitHub,Blog,博客"
+           data-author="" >
+            <span class="post-title" title="Mac使用Hexo和GitHub搭建博客(4)--博客维护">Mac使用Hexo和GitHub搭建博客(4)--博客维护</span>
+            <span class="post-date" title="2019-08-25 09:30:28">2019/08/25</span>
+        </a>
+        
+        <a  class="全部文章 笔记 Hexo "
+           href="/2019/08/25/mac-blog3/"
+           data-tag="Hexo,GitHub,Blog,博客"
+           data-author="" >
+            <span class="post-title" title="Mac使用Hexo和GitHub搭建博客(3)--发布文章">Mac使用Hexo和GitHub搭建博客(3)--发布文章</span>
+            <span class="post-date" title="2019-08-25 08:46:41">2019/08/25</span>
+        </a>
+        
+        <a  class="全部文章 笔记 Hexo "
+           href="/2019/08/24/mac-blog2/"
+           data-tag="Hexo,GitHub,Blog,博客"
+           data-author="" >
+            <span class="post-title" title="Mac使用Hexo和GitHub搭建博客(2)--优化配置">Mac使用Hexo和GitHub搭建博客(2)--优化配置</span>
+            <span class="post-date" title="2019-08-24 20:21:59">2019/08/24</span>
+        </a>
+        
+        <a  class="全部文章 笔记 Hexo "
+           href="/2019/08/24/mac-blog1/"
+           data-tag="Hexo,GitHub,Blog,博客"
+           data-author="" >
+            <span class="post-title" title="Mac使用Hexo和GitHub搭建博客(1)--搭建博客">Mac使用Hexo和GitHub搭建博客(1)--搭建博客</span>
+            <span class="post-date" title="2019-08-24 20:14:35">2019/08/24</span>
+        </a>
+        
+        <a  class="全部文章 "
+           href="/2019/08/08/hello-world/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="Hello World">Hello World</span>
+            <span class="post-date" title="2019-08-08 19:32:39">2019/08/08</span>
+        </a>
+        
+        <a  class="全部文章 转载 主题 "
+           href="/2018/12/12/Hexo-Theme-Sakura/"
+           data-tag="主题"
+           data-author="" >
+            <span class="post-title" title="Hexo-Theme-Sakura">Hexo-Theme-Sakura</span>
+            <span class="post-date" title="2018-12-12 22:16:01">2018/12/12</span>
+        </a>
+        
+        <div id="no-item-tips">
+
+        </div>
+    </nav>
+    <div id="outline-list">
+    </div>
+</div>
+    </div>
+    <div class="hide-list">
+        <div class="semicircle" data-title="切换全屏">
+            <div class="brackets first"><</div>
+            <div class="brackets">&gt;</div>
+        </div>
+    </div>
+</aside>
+<div id="post">
+    <div class="pjax">
+        <article id="post-ES" class="article article-type-post" itemscope itemprop="blogPost">
+    
+        <h1 class="article-title">ES和模块化学习笔记</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="笔记">笔记</a> > 
+            
+            <a  data-rel="笔记&lt;---&gt;前端">前端</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color3">前端</a>
+            
+            <a class="color3">ES</a>
+            
+            <a class="color4">模块化</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2020-07-12 17:18:26'>2020-06-04 23:33</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        <span>字数:12.1k</span>
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+        <span class="top-comment" title="跳转至评论区">
+            <a href="#comments">
+                评论:<span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </a>
+        </span>
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">一、理解ES</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">二、ES5</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-text">1、严格模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-text">2、JSON对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-text">3、Object扩展</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-text">4、Array扩展</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-text">5、Function扩展</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-text">6、Date扩展</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">三、ES6</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-text">1、2个新的关键字</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-text">2、变量(对象)的解构赋值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-text">3、各种数据类型的扩展</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-text">4、深度克隆</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-text">7、class类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-text">4、set&#x2F;Map容器结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-text">5、for–of循环</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-text">6、Promise对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-text">8、Symbol属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-text">9、Iterator遍历器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-text">10、Generator函数</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">四、模块化</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-text">1、理解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-text">2、CommonJS基于服务器端（Node.js）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-text">3、CommonJS基于浏览器端应用（Browserify）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-text">4、AMD规范</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#null"><span class="toc-text">（1）NoAMD</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#null"><span class="toc-text">（2）AMD（require.js）</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-text">5、CMD规范</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-text">6、ES6-Babel-Browserify使用教程</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#null"><span class="toc-text">五、ES7</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-text">1、async函数(源自ES2017)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-text">2、指数运算符(幂): **</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#null"><span class="toc-text">3、Array.prototype.includes(value): 判断数组中是否包含指定value</span></a></li></ol></li></ol>
+    
+<style>
+    .left-col .switch-btn,
+    .left-col .switch-area {
+        display: none;
+    }
+    .toc-level-4 i,
+    .toc-level-4 ol {
+        display: none !important;
+    }
+</style>
+</div>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2><span id="一-理解es">一、理解ES</span></h2><ol>
+<li><p>全称: ECMAScript</p>
+<ul>
+<li>它是一种由ECMA组织(前身为欧洲计算机制造商协会)制定和发布的脚本语言规范</li>
+<li>我们学习的JavaScript就是ECMA的实现，但属于ECMAScript和JavaScript平时表达同一个意思</li>
+</ul>
+</li>
+<li><p>JS包含三个部分：</p>
+<ul>
+<li><p>ECMAScript(js基础、核心)</p>
+</li>
+<li><p>扩展–&gt;浏览器端</p>
+<ul>
+<li>BOM(浏览器对象模型)</li>
+<li>DOM(文档对象模型)</li>
+</ul>
+</li>
+<li><p>扩展–&gt;服务器端</p>
+<ul>
+<li>Node.js</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>ES的几个重要版本</p>
+<ul>
+<li>ES5：09年发布</li>
+<li><strong>ES6(ES2015)</strong>:15年发布，也称为ECMA2015——重点</li>
+<li>ES7(ES2016):16年发布，也称为ECMA2016（变化不大）</li>
+</ul>
+</li>
+</ol>
+<h2><span id="二-es5">二、ES5</span></h2><h3><span id="1-严格模式">1、严格模式</span></h3><ul>
+<li><p>理解</p>
+<ul>
+<li>运行模式: 正常(混杂)模式与严格模式</li>
+<li>这种模式使得JavaScript在更严格的语法条件下运行</li>
+</ul>
+</li>
+<li><p>目的/作用: </p>
+<ul>
+<li>使得Javascript在更严格的条件下运行</li>
+<li>消除Javascript语法的一些不合理、不严谨之处，减少一些怪异行为</li>
+<li>消除代码运行的一些不安全之处，保证代码运行的安全</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>使用</p>
+<ul>
+<li>在全局或函数的第一条语句定义为：<code>use strict</code></li>
+<li>如果浏览器不支持，只解析为一条简单的语句，没有任何副作用</li>
+</ul>
+</li>
+<li><p>语法和行为改变</p>
+<ul>
+<li>声明定义变量必须用var</li>
+<li>禁止自定义的函数中的this关键字指向全局对象(window)</li>
+<li>创建eval作用域, 更安全</li>
+<li>对象不能有重名的属性</li>
+</ul>
+<pre><code class="html">&lt;script&gt;
+  &#39;use strict&#39;
+  var username = &#39;luwang&#39;
+  // name = &#39;luwang&#39; 在严格模式下不用var声明变量会报错
+  console.log(username)
+
+  function Person(name, age){
+    this.name = name
+    this.age = age
+  }
+  new Person(&#39;luwang&#39;, 23)
+  // Person(&#39;luwang&#39;, 23) //没有new会报错
+
+  var str = &#39;web&#39;
+  eval(&#39;var str = &quot;HTML&quot;; alert(str)&#39;) // HTML
+  alert(str) // web 即开启严格模式之后不会污染全局作用域
+
+  var obj = {
+    username: &#39;luwang&#39;,
+    username: &#39;luwang&#39;  // 定义重名了
+  }
+&lt;/script&gt;</code></pre>
+</li>
+</ul>
+<h3><span id="2-json对象">2、JSON对象</span></h3><ul>
+<li>作用: 用于在json对象/数组与js对象/数组相互转换</li>
+<li><code>JSON.stringify(obj/arr)</code> js对象(数组)转换为json对象(数组)</li>
+<li><code>JSON.parse(json)</code> json对象(数组)转换为js对象(数组)<pre><code class="html">&lt;script&gt;
+var obj = {username: &#39;wallleap&#39;}
+obj = JSON.stringify(obj)
+console.log(typeof obj)
+obj = JSON.parse(obj)
+console.log(typeof obj)
+&lt;/script&gt;</code></pre>
+</li>
+</ul>
+<h3><span id="3-object扩展">3、Object扩展</span></h3><p>ES5给Object扩展了一些静态方法，常用的两个：</p>
+<ul>
+<li><p><code>Object.create(prototype[, descriptors])</code>: 创建一个新的对象</p>
+<ul>
+<li><p>作用：以指定对象为原型创建新的对象</p>
+</li>
+<li><p>为新的对象指定新的属性, 并对属性进行描述</p>
+<ul>
+<li><code>value</code>: 指定值</li>
+<li><code>writable</code> : 标识当前属性值是否是可修改的, 默认为<code>false</code></li>
+<li><code>configurable</code>：标识当前属性是否可以被删除，默认为<code>false</code></li>
+<li><code>enumerable</code>：标识当前属性是否能用for in枚举，默认为<code>false</code></li>
+</ul>
+<pre><code class="html">&lt;script&gt;
+  var obj = {username: &#39;luwang&#39;, age:23}
+  var obj1 = {}
+  obj1 = Object.create(obj, {  // obj的属性为obj1的原型
+    sex: {
+      value: &#39;男&#39;,
+      writable: true,  // 默认false
+      configurable: true,
+      enumerable: true
+    }
+  })
+  console.log(obj1.sex)
+  obj1.sex = &#39;nan&#39;
+  console.log(obj1.sex)
+  delete obj1.sex
+  console.log(obj1)
+  for(var i in obj1){
+    console.log(i)
+  }
+&lt;/script&gt;</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><code>Object.defineProperties(object, descriptors)</code>: 为指定对象定义扩展多个属性</p>
+<ul>
+<li><strong>get方法</strong> : 用来得到当前属性值的回调函数</li>
+<li><strong>set方法</strong> : 用来监视当前属性值变化的回调函数</li>
+</ul>
+<pre><code class="html">&lt;script&gt;
+  var obj = {username: &#39;luwang&#39;, age:23}
+  var obj1 = {}
+  var obj2 = {firstName: &#39;lu&#39;, lastName: &#39;wang&#39;}
+  Object.defineProperties(obj2, {
+    fullName: { // 此方法在原型中
+      get: function(){ // 获取扩展属性的值
+        console.log(&#39;get方法被调用&#39;)
+        return this.firstName + &#39; &#39; + this.lastName
+      },
+      set: function(data){ // 监听扩展属性，当扩展属性发生变化的时候会自动调用，自动调用后会讲变化的值作为实参注入到set函数
+        console.log(&#39;set方法被调用，&#39;, data)
+        var names = data.split(&#39; &#39;) // 根据空格拆分为数组
+        this.firstName = names[0]
+        this.lastName = names[1]
+      }
+    }
+  })
+  console.log(obj2.fullName) // get会自动调用 
+  obj2.fullName = &#39;lu wang&#39;  
+  console.log(obj2.fullName)
+&lt;/script&gt;</code></pre>
+<p>console.log(obj2)   fullName</p>
+<p>惰性求值：点击才给值(什么时候要什么时候给)，会再次调用get方法</p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/1589786198022.png" alt="惰性求值"></p>
+<ul>
+<li>什么时候调用：<ul>
+<li>get方法：获取扩展属性值的时候get方法自动调用</li>
+<li>set方法：监听</li>
+</ul>
+</li>
+<li>存储器属性：setter，getter一个用来存值，一个用来取值</li>
+</ul>
+</li>
+</ul>
+<p>对象本身也有两个方法</p>
+<ul>
+<li>get propertyName(){}</li>
+<li>set propertyName(){}</li>
+</ul>
+<pre><code class="html">&lt;script&gt;
+  var obj = {
+    firstName: &#39;lu&#39;, 
+    lastName: &#39;wang&#39;,
+    get fullName(){
+      return this.firstName + &#39; &#39; + this.lastName
+    },
+    set fullName(data){
+      var names = data.split(&#39; &#39;)
+      this.firstName = names[0]
+      this.lastName = names[1]
+    }
+  }
+  console.log(obj)
+  obj.fullName = &#39;lu wang&#39;
+  console.log(obj.fullName)
+&lt;/script&gt;</code></pre>
+<h3><span id="4-array扩展">4、Array扩展</span></h3><ul>
+<li><p>Array.prototype.indexOf(value) : 得到值在数组中的第一个下标</p>
+</li>
+<li><p>Array.prototype.lastIndexOf(value) : 得到值在数组中的最后一个下标</p>
+</li>
+<li><p><strong>Array.prototype.forEach(function(item, index){}) : 遍历数组</strong></p>
+</li>
+<li><p><strong>Array.prototype.map(function(item, index){}) : 遍历数组返回一个新的数组</strong></p>
+</li>
+<li><p><strong>Array.prototype.filter(function(item, index){}) : 遍历过滤出一个子数组，返回条件为true的值</strong></p>
+<pre><code class="javascript">var arr = [2,4,5,1,6,7,4,3,9]
+console.log(arr.indexOf(4))
+console.log(arr.lastIndexOf(4))
+arr.forEach(function(item, index){
+    console.log(item, index)
+})
+var arr1 = arr.map(function(item, index){
+    return item + 10
+})
+console.log(arr, arr1)
+arr.filter(fuction(item, index){
+    return item &gt; 3
+})</code></pre>
+</li>
+</ul>
+<h3><span id="5-function扩展">5、Function扩展</span></h3><p>this，强制绑定使用call和bind</p>
+<p>eg:</p>
+<pre><code class="javascript">var obj = {username: &#39;luwang&#39;}
+function foo(){
+    console.log(this)   
+}
+foo() // this--&gt;Window 全局
+// call和apply不传参的时候是一样的
+foo.call(obj) // this--&gt;{username: &#39;luwang&#39;} obj对象
+foo.apply(obj) // this--&gt;{username: &#39;luwang&#39;} obj对象
+// bind的特点： 绑定完this不会立即调用当前的函数，而是将函数返回
+// var bar = foo.bind(obj)
+// bar()
+foo.bind(obj)()
+
+
+// 传入参数的形式
+var obj1 = {age: 23}
+function fun(data){
+    console.log(this, data)
+}
+fun(22) // Window  22
+// call直接从第二个参数开始，依次传入
+fun.call(obj1, 21) // {age: 23} 21
+// 第二参数必须是数组，传入放在数组里
+fun.apply(obj1, [20]) // {age: 23} 20
+
+// bind传参的方式通call一样
+fun.bind(obj1, 18)()</code></pre>
+<ul>
+<li><p><code>Function.prototype.bind(obj)</code></p>
+<ul>
+<li>将函数内的this绑定为obj, 并将函数返回</li>
+</ul>
+</li>
+<li><p>面试题: 区别bind()与call()和apply()?</p>
+<ul>
+<li><p><code>fn.bind(obj)</code> : 指定函数中的this, 并返回函数(不会立即调用)，一般用在回调函数绑定其他对象的this</p>
+<pre><code class="javascript">var obj = {username: &#39;luwang&#39;}
+setTimeout(function(){
+    console.log(this) // Window
+}, 1000)
+setTimeout(function(){
+    console.log(this) // Window
+}.bind(obj), 1000)</code></pre>
+</li>
+<li><p><code>fn.call(obj)</code>: 指定函数中的this,并调用函数</p>
+</li>
+<li><p><code>fn.apply(obj)</code></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3><span id="6-date扩展">6、Date扩展</span></h3><ul>
+<li>Date.now() : 得到当前时间值</li>
+</ul>
+<h2><span id="三-es6">三、ES6</span></h2><h3><span id="1-2个新的关键字">1、2个新的关键字</span></h3><ul>
+<li>块作用域：ES5中没有(只有全局和函数作用域)，ES6有</li>
+</ul>
+<ol>
+<li><p><strong>let</strong></p>
+<ul>
+<li><p>作用：与var相似，用于声明一个变量</p>
+</li>
+<li><p>特点</p>
+<ul>
+<li>在块作用域内有效</li>
+<li>不能重复声明</li>
+<li>不会预处理，不存在变量提升</li>
+</ul>
+</li>
+<li><p>应用</p>
+<ul>
+<li><p>循环遍历加监听</p>
+<pre><code class="html">&lt;br/&gt;&lt;button&gt;按钮1&lt;/button&gt;&lt;br/&gt;&lt;br/&gt;
+&lt;button&gt;按钮2&lt;/button&gt;&lt;br/&gt;&lt;br/&gt;
+&lt;button&gt;按钮3&lt;/button&gt;
+&lt;script&gt;
+    var btns = document.getElementsByTagName(&#39;button&#39;)
+    for(var i = 0; i &lt; btns.length; i++){
+        var btn = btns[i]
+        btn.onclick = function(){
+            alert(i)
+        }
+    }
+    /*
+     * 一直会显示3
+     * 点击事件对应的是回调函数，回调函数又称勾子函数，回调函数会被放到事件队列中，等主线程上的代码执行完毕之后再通过钩子一样的形式，勾出来执行
+     * 以前的方式是通过闭包，立即执行函数(自己的作用域)
+    */
+    for(var i = 0; i &lt; btns.length; i++){
+      var btn = btns[i]
+      ;(function(i){  // 声明的形参
+        btn.onclick = function(){
+        alert(i)
+      }
+      })(i)   // 传的实参
+    }
+    /*
+    * 闭包利用的是函数作用域的特点
+    * 因此可以直接使用let
+    */
+    for(let i = 0; i &lt; btns.length; i++){ // let，在块作用域内有效
+      var btn = btns[i]
+      btn.onclick = function(){
+        alert(i)
+      }
+    }
+&lt;/script&gt;</code></pre>
+</li>
+<li><p>使用let代替var是趋势</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>const</strong></p>
+<ul>
+<li><p>作用：定义一个常量</p>
+</li>
+<li><p>特点</p>
+<ul>
+<li>不能修改</li>
+<li>其他特点同let</li>
+</ul>
+</li>
+<li><p>应用</p>
+<ul>
+<li>保存不用改变的数据</li>
+</ul>
+<pre><code class="javas">const PI = 3.1415926</code></pre>
+</li>
+</ul>
+</li>
+</ol>
+<h3><span id="2-变量对象的解构赋值">2、变量(对象)的解构赋值</span></h3><ul>
+<li><p>理解：从对象或数组中提取数据，并赋值给多个变量</p>
+</li>
+<li><p>将包含多个数据的对象(数组)一次赋值给多个变量</p>
+</li>
+<li><p>数据源: 对象/数组</p>
+</li>
+<li><p>目标: {a, b}/[a, b]</p>
+</li>
+<li><p>对象的解构赋值：<code>let {n, a} = {n:&#39;tom&#39;, a:12}</code> 把对象中的值赋值出来(根据属性名key)</p>
+</li>
+<li><p>数组的解构赋值：<code>let[a, b] = [1, &#39;luwang&#39;]</code> (根据下标)</p>
+</li>
+<li><p>用途：给多个形参赋值</p>
+<pre><code class="javascript">let obj = {
+    username: &#39;luwang&#39;,
+    age: 23
+}
+// let username = obj.username
+// let age = obj.age
+// console.log(username, age)
+// let {username, age} = obj // 对象，因此需要以对象的形式来接收 只需要一个就写一个，不需要按顺序
+// console.log(username, age)
+let {age} = obj
+console.log(age)
+
+let arr = [1, 3, 5,&#39;abc&#39;, true]
+// let [a, b, c, d, e] = arr
+// console.log(a, b, c, d, e)
+// let [a, b] = arr
+// console.log(a, b)
+let [,,a, b] = arr
+console.log(a, b)
+
+function foo({username, age}){ // {username, age} = obj
+    console.log(username, age)
+}
+foo(obj)</code></pre>
+</li>
+</ul>
+<h3><span id="3-各种数据类型的扩展">3、各种数据类型的扩展</span></h3><ul>
+<li><p>字符串</p>
+<ul>
+<li><strong>模板字符串</strong> <ul>
+<li>作用: 简化字符串的拼接</li>
+<li>模板字符串必须用``，波浪线那个</li>
+<li>变化的部分使用${xxx}定义</li>
+</ul>
+</li>
+</ul>
+<pre><code class="javascript">let obj = {username: &#39;luwang&#39;, age: 23}
+/*
+* 之前的写法：简单拼串
+* 缺点：可能会拼错，效率低。比如，url携带10个参数，动态拼起来
+*/
+let str = &#39;My name is &#39; + obj.username + &#39;, age is &#39;+ obj.age
+console.log(str)
+/*
+* ES6提供的模板字符串
+*/
+str = `My name is ${obj.username} age is ${obj.age}`</code></pre>
+<ul>
+<li><code>includes(str)</code> : 判断是否包含指定的字符串</li>
+<li><code>startsWith(str)</code>: 判断是否以指定字符串开头</li>
+<li><code>endsWith(str)</code> : 判断是否以指定字符串结尾</li>
+<li><code>repeat(count)</code>: 重复指定次数</li>
+</ul>
+<pre><code class="javascript">let str = &#39;asdfghjkklqwrtyuiopzxcvbnm123467890&#39;
+console.log(str.includes(&#39;t&#39;)) // true
+console.log(str.includes(&#39;abc&#39;)) // false
+console.log(str.startsWith(&#39;a&#39;)) // true
+console.log(str.endsWith(&#39;0&#39;)) // true
+console.log(str.repeat(2)) // asdfghjkklqwrtyuiopzxcvbnm123467890asdfghjkklqwrtyuiopzxcvbnm123467890</code></pre>
+</li>
+</ul>
+<ul>
+<li><p>数值扩展</p>
+<ul>
+<li>二进制与八进制表示法：二进制用0b，八进制用0o</li>
+<li><code>Number.isFinite(i)</code>：判断是否是有限大的数字</li>
+<li><code>Number.isNaN(i)</code>：判断是否是NaN</li>
+<li><code>Number.isInteger(i)</code>：判断是否是整数</li>
+<li><code>Number.parseInt(str)</code>：将字符串转换为对应的数值</li>
+<li><code>Math.trunc(i)</code>：直接去除小数部分</li>
+</ul>
+<pre><code class="javascript">console.log(0b1010)
+console.log(0o12)
+console.log(Number.isFinite(Infinity))
+console.log(Number.isNaN(NaN))
+console.log(Number.isInteger(123.1))
+console.log(Number.isInteger(123.0))
+console.log(Number.parseInt(&#39;123abc123&#39;)) // 123
+console.log(Number.parseInt(&#39;a123abc123&#39;)) // NN
+console.log(Math.trunc(123.123)) // 123</code></pre>
+</li>
+</ul>
+<ul>
+<li><p>对象</p>
+<ul>
+<li><p><strong>简化的对象写法</strong></p>
+<ul>
+<li>省略同名的属性值</li>
+<li>省略方法的function</li>
+</ul>
+<pre><code class="JavaScript">let name = &#39;Tom&#39;;
+let age = 12;
+/* 正常情况 */
+let obj = {
+    name: name,
+    age: age，
+    getName: function(){
+        retrun this.name
+    }
+}
+console.log(obj)
+/* key和value相同，可以省略 */
+let person = {
+    name,  // 同名的属性可以不写
+    age,
+    setName (name) { // 可以省略函数的function
+        this.name = name
+    }
+}</code></pre>
+</li>
+<li><p><code>Object.assign(target, source1, source2..)</code>: 将源对象的属性复制到目标对象上</p>
+</li>
+</ul>
+<pre><code class="javascript">let obj = {}
+let obj1 = {username:&#39;a&#39;, age: 20}
+let obj2 = {sex: &#39;男&#39;}
+// Object.assign(obj, obj1)
+// console.log(obj) // {username: &quot;a&quot;, age: 20}
+Object.assign(obj, obj1, obj2)
+console.log(obj) // {username: &quot;a&quot;, age: 20, sex: &quot;男&quot;}</code></pre>
+<ul>
+<li><code>Object.is(v1, v2)</code> : 判断2个数据是否完全相等</li>
+</ul>
+<pre><code class="javascript">console.log(0 == -0) // true
+console.log(NaN == NaN) //false
+console.log(Object.is(0, -0)) // false
+console.log(Object.is(NaN, NaN)) // true</code></pre>
+<ul>
+<li><strong>proto</strong>属性 : 隐式原型属性.ES6中能直接操作<code>__proto__</code>属性</li>
+</ul>
+<pre><code class="javascript">let obj = {}
+let obj1 = {salary: 5000000}
+obj.__proto__ = obj1
+console.log(obj)
+console.log(obj.salary)</code></pre>
+</li>
+</ul>
+<ul>
+<li><p>数组</p>
+<ul>
+<li><code>Array.from(v)</code> : 将伪数组对象或可遍历对象转换为真数组</li>
+<li><code>Array.of(v1, v2, v3)</code> : 将一系列值转换成数组</li>
+<li><code>find(function(value, index, arr){return true})</code> : 找出第一个满足条件返回true的元素</li>
+<li><code>findIndex(function(value, index, arr){return true})</code>: 找出第一个满足条件返回true的元素下标</li>
+</ul>
+<pre><code class="html">&lt;button&gt;測試1&lt;/button&gt;&lt;br&gt;
+&lt;button&gt;測試2&lt;/button&gt;&lt;br&gt;
+&lt;button&gt;測試3&lt;/button&gt;
+&lt;script&gt;
+  let btns = document.getElementsByTagName(&#39;button&#39;)
+  // 偽數組 不能使用forEach(數組的方法)
+  Array.from(btns).forEach(function(item, index){
+    console.log(item)
+  })
+
+  let arr = Array.of(1, 4, &#39;abc&#39;, true)
+  console.log(arr)
+
+  let arr2 = [2,3,4,2,5,7,3,6]
+  console.log(arr2.find(function(item, index){
+    return item &gt; 4
+  }))
+  console.log(arr2.findIndex(function(item, index){
+    return item &gt; 4
+  }))
+&lt;/script&gt;</code></pre>
+</li>
+</ul>
+<ul>
+<li><p>函数</p>
+<ul>
+<li><strong>箭头函数</strong><ul>
+<li>用来定义匿名函数</li>
+<li>基本语法:<ul>
+<li>没有参数: () =&gt; console.log(‘xxxx’)   箭头前的()不能省略</li>
+<li>一个参数: i =&gt; i+2  可以省略</li>
+<li>大于一个参数: (i,j) =&gt; i+j  ()不能省略</li>
+<li>函数体不用大括号: 默认返回结果</li>
+<li>函数体如果有多个语句, 需要用{}包围</li>
+</ul>
+</li>
+<li>使用场景: 多用来定义回调函数</li>
+<li>特点：<ul>
+<li>简洁</li>
+<li>箭头函数没有自己的this，箭头函数的this不是调用的时候决定的，而是在定义的时候所处的对象就是它的this</li>
+<li>扩展理解：箭头函数的this看外层是否有函数<ul>
+<li>箭头外层有函数，this是外层函数的this</li>
+<li>箭头外层无函数，this是window</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code class="javascript">let fun = function(){console.log(&#39;fun&#39;)}
+fun()
+// 1、没有形参
+let fun1 = () =&gt; console.log(&#39;fun1&#39;)
+fun1()
+
+// 2、只有一个形参
+let fun2 = (a) =&gt; console.log(a)
+// 可省略() let fun2 = a =&gt; console.log(a)
+fun2(&#39;aaa&#39;)
+
+// 3、两个及两个以上的形参
+let fun3 = (x,y) =&gt; console.log(x, y)
+fun3(1, 2)
+
+// I、函数体只有一条语句或表达式，{}可以省略--&gt;会自动返回语句执行的结果或表达式的结果
+let foo = (x, y) =&gt; x + y
+// let foo = (x, y) =&gt; {return x + y}
+console.log(foo(1, 3))
+
+// II、函数体不止一条语句或者表达式， {}不可以省略
+let foo2 = (x, y) =&gt; {
+    console.log(x, y)
+    return x + y
+}
+console.log(foo2(3, 5))
+
+// 箭头函数的this
+&lt;br/&gt;&lt;button id=&quot;btn1&quot;&gt;按钮1&lt;/button&gt;&lt;br/&gt;&lt;br/&gt;
+&lt;button id=&quot;btn2&quot;&gt;按钮2&lt;/button&gt;&lt;br/&gt;&lt;br/&gt;
+&lt;button id=&quot;btn3&quot;&gt;按钮3&lt;/button&gt;
+&lt;script&gt;
+    let btn1 = document.getElementById(&#39;btn1&#39;)
+    let btn2 = document.getElementById(&#39;btn2&#39;)
+    let btn3 = document.getElementById(&#39;btn3&#39;)
+    btn1.onclick = function(){
+      console.log(this) // &lt;button id=&quot;btn1&quot;&gt;按钮1&lt;/button&gt;
+    }
+    btn2.onclick = () =&gt; {
+      console.log(this)  // Window
+    }
+    let obj = {
+      name: &#39;箭头函数&#39;,
+      getName: function(){
+        btn3.onclick = () =&gt; {
+          console.log(this) // {name: &quot;箭头函数&quot;, getName: ƒ}
+        }
+      }
+    }
+    obj.getName()
+    let obj1 = {
+      name: &#39;箭头函数&#39;,
+      getName: () =&gt; {
+        btn3.onclick = () =&gt; {
+          console.log(this) // Window
+        }
+      }
+    }
+    obj.getName()
+&lt;/script&gt;</code></pre>
+</li>
+</ul>
+<ul>
+<li><p><strong>3点运算符/点点点运算符</strong></p>
+<ul>
+<li>rest(可变)参数<ul>
+<li>通过形参左侧的…来表达, 取代arguments的使用</li>
+<li>比arguments灵活，只能是最后部分形参参数<ul>
+<li>arguments是伪数组，有length，但是没有数组的一般方法，不能使用forEach遍历</li>
+<li>callee是arguments的一个属性，等于函数本身，递归的时候可以写为：<code>arguments.callee()</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code class="javascript">// arguments
+function foo(a, b){
+  console.log(arguments)
+  // arguments.callee() 调用自身，相当于foo(参数)
+  /* arguments.forEach(function(item, index){ // 会报错，伪数组并没有数组的一般方法
+      console.log(item, index)
+  }) */
+}
+foo(2,5)</code></pre>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/1590476357564.png" alt="参数"></p>
+<pre><code class="javascript">// 点点点运算符
+function foo(...value){
+  console.log(arguments)
+  console.log(value) // 就是一个正常的数组
+  value.forEach(function(item, index){
+    console.log(item, index)
+  })
+}
+foo(2,5)
+
+function foo(a, ...value){// ...value只能放在最后面
+  console.log(arguments)
+  // arguments.callee()
+  console.log(value)    // 使用的时候不用加...
+  value.forEach(function(item, index){
+    console.log(item, index)
+  })
+}
+foo(2, 3, 5, 7) // 最前面的就是a，value就不包括它了</code></pre>
+</li>
+</ul>
+<ul>
+<li><p>第二种用法——扩展运算符</p>
+<ul>
+<li>可以分解出数组或对象中的数据</li>
+</ul>
+<pre><code class="javascript">let arr = [1, 6]
+let arr1 = [2, 3, 4, 5]
+arr = [1, ...arr1, 6]
+console.log(arr)    // (6) [1, 2, 3, 4, 5, 6]  数组
+console.log(...arr) // 1 2 3 4 5 6  每项值</code></pre>
+</li>
+</ul>
+<ul>
+<li><p><strong>形参的默认值</strong></p>
+<ul>
+<li>定义形参时指定其默认的值</li>
+<li>当不传入参数的时候默认使用形参里的默认值</li>
+</ul>
+<pre><code class="javascript">// 定义一个点的坐标的构造函数
+function Point(x, y){
+  this.x = x
+  this.y = y
+}
+let point = new Point(50, 20)
+console.log(point) // Point {x: 50, y: 20}
+// 忘记传参
+let point1 = new Point()
+console.log(point1) // Point {x: undefined, y: undefined}
+
+/* 
+* 因此会有需求，在忘记传参的时候使用默认值
+* 在形参的位置赋默认值
+*/
+function Point(x = 0, y = 0){
+  this.x = x
+  this.y = y
+}
+let point = new Point(50, 20)
+console.log(point) // Point {x: 50, y: 20}
+// 忘记传参，使用默认值
+let point1 = new Point()
+console.log(point1) // Point {x: 0, y: 0}</code></pre>
+</li>
+</ul>
+<h3><span id="4-深度克隆">4、深度克隆</span></h3><ul>
+<li><p>拷贝数据：</p>
+<ul>
+<li>基本数据类型<ul>
+<li>拷贝后会生成一份新的数据</li>
+<li>修改拷贝以后的数据不会影响原数据</li>
+</ul>
+</li>
+<li>引用数据类型<ul>
+<li>拷贝后不会生成新的数据，而是拷贝的引用</li>
+<li>修改拷贝以后的数据会影响原来的数据</li>
+</ul>
+</li>
+</ul>
+<pre><code class="javascript">// 基本數據類型
+let str = &#39;abcd&#39;
+let str2 = str
+console.log(str, str2)
+str2 = &#39;&#39;
+console.log(str, str2)
+
+// 引用數據類型
+let obj = {username: &#39;kobe&#39;, age:39}
+let obj1 = obj
+console.log(obj, obj1)
+obj1.username = &#39;wade&#39;
+console.log(obj, obj1)
+let arr = [1,4,{username:&#39;kobe&#39;,age:39}]
+let arr2 = arr
+arr2[0] = &#39;abcd&#39;
+console.log(arr, arr2)</code></pre>
+</li>
+</ul>
+<ul>
+<li><p>拷贝数据的方法</p>
+<ul>
+<li>直接赋值给一个变量    // 浅拷贝(浅克隆)——能影响</li>
+<li><code>Object.assign()</code>     // 浅拷贝</li>
+</ul>
+<pre><code class="javascript">let obj = {username: &#39;kobe&#39;}
+let obj2 = Object.assign(obj)
+console.log(obj, obj2)
+obj2.username = &#39;wade&#39;
+console.log(obj, obj2)</code></pre>
+<ul>
+<li><code>Array.prototype.concat()</code>   //浅拷贝</li>
+</ul>
+<pre><code class="javascript">let arr = [1, 4, {username: &#39;kobe&#39;}]
+let testArr = [&#39;ce&#39;, &#39;shi&#39;]
+// let arr2 = arr.concat(testArr)
+let arr2 = arr.concat()
+console.log(arr, arr2)
+arr2[1] = &#39;a&#39;
+console.log(arr, arr2)
+arr2[2].username = &#39;wade&#39;
+console.log(arr, arr2)</code></pre>
+<ul>
+<li><code>Array.prototype.slice()</code>   // 浅拷贝</li>
+</ul>
+<pre><code class="javascript">let arr = [1, 4, {username: &#39;kobe&#39;}]
+let arr2 = arr.slice()
+arr2[2].username = &#39;wade&#39;
+console.log(arr, arr2)</code></pre>
+<ul>
+<li><code>JSON.parse(JSON.stringify())</code>   // 深拷贝(深度克隆)——修改不影响引用类型的原数据。<ul>
+<li>拷贝的数据里不能有函数(处理不了)，先是将数据转为了JSON格式，字符串对应js中的只有对象和数组，没有函数</li>
+</ul>
+</li>
+</ul>
+<pre><code class="javascript">let arr = [1, 4, {username: &#39;kobe&#39;}]
+let arr2 = JSON.stringify(arr)
+arr2 = JSON.parse(arr2)
+arr2[2].username = &#39;wade&#39;
+console.log(arr, arr2)</code></pre>
+</li>
+<li><p>浅拷贝</p>
+<ul>
+<li>特点：拷贝的是引用，修改拷贝以后的数据会影响原来的数据，使得原数据不安全</li>
+</ul>
+</li>
+<li><p>深拷贝</p>
+<ul>
+<li>特点：拷贝的时候生成新数据，修改拷贝以后的数据不会影响原数据</li>
+</ul>
+</li>
+<li><p>这两个都是针对对象/数组来说的</p>
+</li>
+<li><p>思考：如何实现深度拷贝？</p>
+<ul>
+<li><p>拷贝的数据里有对象/数组，即使有对象/数组可以继续遍历对象、数组，拿到里边的每一项值，直到拿到的是基本数据类型，然后再去复制(拷贝的数据里不能有对象/数组)</p>
+</li>
+<li><p>知识点储备</p>
+<ul>
+<li>如何判断数据类型<ol>
+<li><code>typeof</code>返回的数据类型： String、Number、boolean、undefined、Object、Function</li>
+<li><code>Object.prototype.toString.call(obj)</code>—&gt;<code>Object.prototype.toString.call(data).slice(8, -1)</code></li>
+</ol>
+</li>
+</ul>
+<pre><code class="javascript">let result = &#39;abc&#39; // [object String]
+result = null // [object Null]
+result = [1, &#39;a&#39;] // test-demo.html:17 [object Array]
+// console.log(Object.prototype.toString.call(result))
+// console.log(typeof Object.prototype.toString.call(result)) // 返回的是string
+// 因此可以用下面这种方式显示数据类型
+console.log(Object.prototype.toString.call(result).slice(8, -1))
+</code></pre>
+<ul>
+<li><p>for in 循环</p>
+<ul>
+<li>用于循环对象，枚举出来的是属性名</li>
+</ul>
+<pre><code class="javascript">let obj = {username: &#39;kobe&#39;, age: 39}
+for(let i in obj){
+  console.log(i) // username age
+}</code></pre>
+<ul>
+<li>循环数组时，枚举的是下标</li>
+</ul>
+<pre><code class="javascript">let arr = [1,3,&#39;abc&#39;]
+for(let i in arr){
+  console.log(i) // 0 1 2
+}</code></pre>
+</li>
+</ul>
+</li>
+<li><p>实现深度克隆</p>
+</li>
+</ul>
+<pre><code class="javascript">// 定义检测数据类型的功能函数
+function checkType(target){
+  return Object.prototype.toString.call(target).slice(8, -1)
+}
+console.log(checkType([1,2,&#39;a&#39;]))
+// 实现深度克隆--&gt;对象/数组
+function clone(target){
+  // 1.判断拷贝的数据类型
+  let result, targetType = checkType(target)
+  if(targetType === &#39;Object&#39;){
+    // 2.初始化数据，对象/数组/其他类型仍不改变
+    result = {}
+  }else if(targetType === &#39;Array&#39;){
+    result = []
+  }else{
+    return target
+  }
+  // 3.遍历目标数据
+  for(let i in target){
+    // 遍历数据结构的每一项值
+    let value = target[i] // key、下标都可以用[]
+    // 判断目标结构里的每一值是否存在数组/对象
+    if(checkType(value) === &#39;Object&#39; || checkType(value) === &#39;Array&#39;){// 对象、数组中还嵌套了对象数组
+      // 继续遍历获取到的value值
+      result[i] = clone(value)
+    }else{ // 获取到的value值是基本数据类型或函数
+      result[i] = value
+    }
+  }
+  return result
+}
+let arr = [1,2,{username: &#39;kobe&#39;}]
+let arr2 = clone(arr)
+console.log(arr, arr2)
+arr2[2].username = &#39;abdc&#39;
+console.log(arr, arr2)
+
+let obj = {username: &#39;luwang&#39;, age: 23}
+let obj2 = clone(obj)
+console.log(obj, obj2)
+obj2.username = &#39;LUWANG&#39;
+console.log(obj, obj2)</code></pre>
+</li>
+</ul>
+<h3><span id="7-class类">7、class类</span></h3><ul>
+<li><p>通过class定义类，实现类的继承</p>
+<ul>
+<li><p>回顾：原型、构造函数、构造函数+原型——继承</p>
+<pre><code class="javascript">function Person(name, age){
+  this.name = name
+  this.age = age
+}
+let person = new Person(&#39;kobe&#39;, 39)
+console.log(person)</code></pre>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/1591769869983.png" alt="继承"></p>
+</li>
+</ul>
+</li>
+<li><p>在类中通过 constructor() 定义构造方法(相当于构造函数)</p>
+<pre><code class="javascript">// 定義一個人物的類
+class Person{
+ // 类的构造方法
+  constructor(name, age){
+    this.name = name
+    this.age = age
+  }
+  // 类的一般方法
+  showMe(){
+    console.log(this.name)
+  }
+}
+let person = new Person(&#39;kobe&#39;, 39)
+console.log(person)
+person.showName()</code></pre>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/1591770059566.png" alt="继承"></p>
+</li>
+<li><p>一般方法: xxx () {}</p>
+</li>
+<li><p>用extends来定义子类（实现累的继承）</p>
+</li>
+<li><p>用super()来调用父类的构造方法</p>
+</li>
+<li><p>子类方法自定义: 将从父类中继承来的方法重新实现一遍（重写从父类继承的一般方法）</p>
+<pre><code class="javascript">// 定義一個人物的類
+class Person{
+  constructor(name, age){
+    this.name = name
+    this.age = age
+  }
+  showMe(){
+    console.log(&#39;調用父類的方法&#39;)
+    console.log(this.name, this.age)
+  }
+}
+let person = new Person(&#39;kobe&#39;, 39)
+person.showMe()
+
+// 子類
+class StarPerson extends Person{
+  constructor(name, age, salary){
+    super(name, age) // 調用父類的構造方法
+    this.salary = salary
+  }
+  showMe(){
+    console.log(&#39;子類重寫的方法&#39;)
+    console.log(this.name, this.age, this.salary)
+  }
+}
+let p1 = new StarPerson(&#39;wade&#39;, 36, 10000000)
+console.log(p1)
+p1.showMe()</code></pre>
+</li>
+<li><p>js中没有方法重载(方法名相同, 但参数不同)的语法</p>
+</li>
+</ul>
+<h3><span id="4-setmap容器结构">4、set/Map容器结构</span></h3><ul>
+<li><p>容器: 能保存多个数据的对象, 同时必须具备操作内部数据的方法</p>
+</li>
+<li><p>任意对象都可以作为容器使用, 但有的对象不太适合作为容器使用(如函数)</p>
+</li>
+<li><p><strong>Set的特点</strong>: 保存多个value, value是不重复 ====&gt;数组元素去重</p>
+</li>
+<li><p><strong>Map的特点</strong>: 保存多个key–value, key是不重复, value是可以重复的</p>
+</li>
+<li><p>API</p>
+<ul>
+<li>Set容器：无序不可重复的多个value的集合体<ul>
+<li><code>Set()</code></li>
+<li><code>Set(arr)</code> //arr是一维数组</li>
+<li><code>add(value)</code></li>
+<li><code>delete(value)</code></li>
+<li><code>clear()</code></li>
+<li><code>has(value)</code></li>
+<li><code>size</code></li>
+<li>Map容器：无序的key、不重复的多个key-value的集合体</li>
+</ul>
+</li>
+<li><code>Map()</code></li>
+<li><code>Map(arr)</code>//arr是二维数组</li>
+<li><code>set(key, value)</code></li>
+<li><code>get(key)</code></li>
+<li><code>delete(key)</code></li>
+<li><code>clear()</code></li>
+<li><code>has(key)</code></li>
+<li><code>size</code></li>
+</ul>
+<pre><code class="javascript">// let set = new Set()
+let set = new Set([1,2,4,5,2,3,6]) // 重复的会去除
+console.log(set)
+set.add(7)
+console.log(set.size, set)
+console.log(set.has(8))
+console.log(set.has(7))
+set.delete(7)
+console.log(set.size, set)
+set.clear()
+console.log(set.size, set)
+
+// let map = new Map()
+let map = new Map([[&#39;username&#39;, &#39;aaa&#39;], [&#39;age&#39;, 35], [&#39;sex&#39;, &#39;female&#39;]]) // 二维数组，且只能有两值(一个是key，一个是value)
+map.set(&#39;other&#39;, &#39;shuoming&#39;)
+console.log(map.size, map)
+map.delete(&#39;other&#39;)
+console.log(map)
+console.log(map.has(&#39;username&#39;))
+map.clear()
+console.log(map)</code></pre>
+</li>
+</ul>
+<h3><span id="5-forof循环">5、for–of循环</span></h3><ul>
+<li>可以遍历任何容器（Set、Map）</li>
+</ul>
+<pre><code class="javascript">let set = new Set([1, 2, 4, 3, 4, 5]) 
+for(let i of set){
+  console.log(i)
+}
+
+// 可以用Set给数组去重
+let arr = [1,2,4,5,5,6,2]
+let arr1 = arr
+arr = [] // 保留数组类型
+let set = new Set(arr1)
+for(let i of set){
+  arr.push(i)
+}
+console.log(arr)</code></pre>
+<ul>
+<li>数组</li>
+<li>对象</li>
+<li>伪/类对象</li>
+<li>字符串</li>
+<li>可迭代的对象</li>
+</ul>
+<h3><span id="6-promise对象">6、Promise对象</span></h3><ul>
+<li><p>理解：</p>
+<ul>
+<li>Promise对象代表了某个将要发生的事件（通常是一个异步操作）</li>
+<li>ES6的Promise是一个构造函数，用来生成promise实例</li>
+</ul>
+<ul>
+<li><p>解决<code>回调地狱</code>(回调函数的层层嵌套, 编码是不断向右扩展, 阅读性很差)；有了promise对象，可以将异步操作以同步的流程表达出来，避免了层层嵌套的回调函数（回调地狱）</p>
+</li>
+<li><p>能以同步编码的方式实现异步调用</p>
+</li>
+<li><p>在es6之前原生的js中是没这种实现的, 一些第三方框架(jQuery)实现了promise</p>
+</li>
+<li><p>promise对象的3个状态：</p>
+<ul>
+<li>pending：初始化状态</li>
+<li>fullfilled：成功状态</li>
+<li>rejected：失败状态</li>
+</ul>
+</li>
+<li><p>应用：</p>
+<ul>
+<li>使用promise实现超时处理</li>
+<li>使用promise封装处理Ajax请求</li>
+</ul>
+<pre><code>let request = new XMLHttpRequest()
+request.responseType = &#39;json&#39;
+request.open(&quot;GET&quot;, url)
+request.send()</code></pre></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>ES6中定义实现API(使用Promise基本步骤): </p>
+<pre><code>// 1. 创建promise对象
+let promise = new Promise((resolve, reject) =&gt; { 
+      // 初始化promise状态为pending
+  // 执行异步操作 
+  if(异步操作成功) { // 调用成功的回调
+    resolve(result);     // 修改promise状态为fullfilled
+  } else { // 调用失败的回调
+    reject(errorMsg);   // 修改promise的状态为rejected
+  } 
+}) 
+// 2. 调用promise对象的then()
+promise.then(function(
+  result =&gt; console.log(result), 
+  errorMsg =&gt; alert(errorMsg)
+))</code></pre><p>例子：</p>
+<pre><code class="javascript">// 1、创建promise对象
+let promise = new Promise((resolve, reject) =&gt; {
+  // 初始化promise状态  pending： 初始化
+  console.log(&#39;11111111&#39;)
+  // 执行异步操作，通常是发送Ajax请求，开启定时器
+  setTimeout(() =&gt; {
+    console.log(&#39;3333333&#39;)
+    // 根据异步任务的返回结果去修改promise的状态
+    // 异步任务执行成功
+    // resolve(&#39;哈哈，&#39;) // 修改promise的状态为 fullfilled：成功
+    // 异步任务执行失败
+    reject(&#39;555, &#39;) // 修改promise的状态为 rejsected： 失败
+  }, 2000)
+})
+console.log(&#39;222222222&#39;)
+// 2. 调用promise对象的then()
+promise
+  .then((data) =&gt; { // 成功的回调
+    console.log(data, &#39;成功了~~~&#39;)
+  }, (error) =&gt; { // 失败的回调
+    console.log(error, &#39;失败了……&#39;)
+})</code></pre>
+<p>实例：新闻、新闻的评论：只发新闻的内容；在接着根据新闻的id拿取这个新闻下的评论</p>
+<p>1、打开ES5_6_7中code目录中的es_server</p>
+<p>2、输入命令<code>node bin/www</code></p>
+<p>3、浏览器中访问 <a href="http://localhost:3000/news" target="_blank" rel="noopener">http://localhost:3000/news</a> ，能够获取数据</p>
+<pre><code class="javascript">// 定义获取新闻的功能函数
+function getNews(url){
+  let promise = new Promise((resolve, reject) =&gt; {
+    // 状态：初始化
+    // 执行异步任务
+    let xmlHttp = new XMLHttpRequest()
+    // 绑定监听readyState
+    /*xmlHttp.onreadystatechange = function(){
+      if(xmlHttp.readyState === 4 &amp;&amp; xmlHttp.status == 200){
+        // 请求成功
+        console.log(xmlHttp.responseText)
+        // 修改状态
+        resolve(xmlHttp.responseText) // 修改promise的状态为成功
+      }else{
+        // 请求失败
+        reject(&#39;暂时没有新闻内容&#39;)
+      }
+    } --&gt; 逻辑有问题*/
+    xmlHttp.onreadystatechange = function(){
+      if(xmlHttp.readyState === 4){
+        if(xmlHttp.status == 200){
+          // 请求成功
+          // console.log(xmlHttp.responseText)
+          // 修改状态
+          resolve(xmlHttp.responseText) // 修改promise的状态为成功
+        }else{
+          // 请求失败
+          reject(&#39;暂时没有新闻内容&#39;)
+        }
+      }
+    }
+
+    // open 设置请求得方式以及url
+    xmlHttp.open(&#39;GET&#39;, url)
+    // 发送
+    xmlHttp.send()
+  })
+  return promise
+}
+getNews(&#39;http://localhost:3000/news?id=2&#39;)
+  .then((data) =&gt; {
+    console.log(data)
+    // 发送请求获取评论内容准备url
+    let commentsUrl = JSON.parse(data).commentsUrl
+    let url = &#39;http://localhost:3000&#39; + commentsUrl
+    // 发送请求
+    return getNews(url)
+  },(error) =&gt; {
+    console.log(error)
+  })
+  .then((data) =&gt; {
+    console.log(data)
+  }, () =&gt; {
+
+})</code></pre>
+</li>
+</ul>
+<h3><span id="8-symbol属性">8、Symbol属性</span></h3><ul>
+<li>前言：ES5中对象的属性名都是字符串，容易造成重名，污染环境</li>
+<li>概念：ES6中添加了一种<strong>原始数据类型symbol</strong>(已有的数据类型：String、Number、boolean、null、undefined、对象)</li>
+<li>特点<ul>
+<li>Symbol属性对应的值是<strong>唯一</strong>的，解决命名冲突问题</li>
+<li>Symbol值<strong>不能</strong>与<strong>其他数据</strong>进行<strong>计算</strong>，包括与字符串拼串</li>
+<li>for in、for of遍历时不会遍历symbol属性</li>
+</ul>
+</li>
+<li>使用<ul>
+<li>调用Symbol函数得到symbol值</li>
+<li>传参标识</li>
+<li>内置Symbol值<ul>
+<li>除了定义自己使用的Symbol值以外，ES6还提供了11个内置的Symbol值（查看官方文档）</li>
+<li>对象的Symbol.iterator属性，指向该对象的默认遍历器方法</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code class="javascript">// 创建symbol属性值
+let symbol = Symbol()
+console.log(symbol)  // Symbol()
+let obj = {username:&#39;kobe&#39;, age:39}
+// 可以添加symbol属性——但是得用另一种方式
+obj.gender = &#39;男&#39;
+obj[symbol] = &#39;hello&#39;
+console.log(obj)  // {username: &quot;kobe&quot;, age: 39, gender: &quot;男&quot;, Symbol(): &quot;hello&quot;}
+
+//let symbol2 = Symbol()
+//let symbol3 = Symbol()
+// 并不相同，值是唯一的
+//console.log(symbol2, symbol3, symbol2 == symbol3)  // Symbol() Symbol() false
+
+// 可以传参，这样就能很明显看出不同了
+let symbol2 = Symbol(&#39;one&#39;)
+let symbol3 = Symbol(&#39;two&#39;)
+console.log(symbol2, symbol3, symbol2 == symbol3)  // Symbol(one) Symbol(two) false
+
+// 可以用来定义常量
+const Person_key = Symbol(&#39;person_key&#39;)
+console.log(Person_key)  // Symbol(person_key)
+
+
+
+
+
+
+// 等同于在指定的数据结构上部署了Iterator接口
+// 当使用for of去遍历某一个数据结构的时候，首先去找Symbol.itearator，找到了就去遍历，没有找到就不能遍历
+let targetData = {
+  [Symbol.iterator]: function(){
+    let nextIndex = 0
+    return{
+      next: function(){
+        return nextIndex &lt; this.length ? {value: this[nextIndex++], done: false} : {value: undefined, done: true}
+      }
+    }
+  }
+}
+// 使用三点运算符、解构赋值，默认会去调用Iterator接口
+let arr2 = [1,6]
+let arr3 = [2,3,4,5]
+arr2 = [1,...arr3,6]
+console.log(arr2)
+let [a,b] = arr2
+console.log(a,b)
+</code></pre>
+<h3><span id="9-iterator遍历器">9、Iterator遍历器</span></h3><ul>
+<li><p>概念：iterator是一种接口机制，为各种不同的数据结构提供统一的访问机制</p>
+</li>
+<li><p>作用：</p>
+<ul>
+<li>为各种数据结构，提供一个统一的、简便的访问接口</li>
+<li>使得数据机构的成员能够按照某种次序排列</li>
+<li>ES6创造了一种新的遍历命令for…of循环，Iterator接口主要供for…of消费</li>
+</ul>
+</li>
+<li><p>工作原理</p>
+<ul>
+<li>创建一个指针对象(遍历器对象)，指向数据结构的起始位置</li>
+<li>第一次调用next方法，指针自动指向数据结构的第一个成员</li>
+<li>接下来不断调用next方法，指针会一直往后移动，直到指向最后一个成员</li>
+<li>没调用next方法返回的是一个包含value和done的对象<code>{value: 当前成员的值, done: 布尔值}</code><ul>
+<li>value表示当前成员的值，done对应的布尔值表示当前的数据的结构是否遍历结束</li>
+<li>当遍历结束的时候返回的value值是undefined，done值为false</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>原生具备Iterator接口的数据(可用for…of遍历)</p>
+</li>
+<li><p>扩展理解</p>
+<ul>
+<li>当数据结构上部署了Symbol.iterator接口，该数据就是可以用for of遍历</li>
+<li>当使用for of去遍历目标数据的时候，该数据会自动去找Symbol.iterator属性（Symbol.iterator属性指向对象的默认遍历器方法）<ul>
+<li>Array</li>
+<li>arguments</li>
+<li>set容器</li>
+<li>map容器</li>
+<li>String</li>
+<li>……</li>
+</ul>
+</li>
+</ul>
+<pre><code class="javascript">// 模拟指针对象(遍历器对象)
+function myIterator(arr){// Iterator接口
+let nextIndex = 0 // 记录指针的位置
+  return{
+    next: function(){// 遍历器对象
+      return nextIndex &lt; arr.length ? {value: arr[nextIndex++], done: false} : {value: undefined, done: true}
+    }
+  }
+}
+// 准备一个数据
+let arr =[1,4,65,&#39;abc&#39;]
+
+let iteratorObj = myIterator(arr)
+console.log(iteratorObj.next()) // {value: 1, done: false}
+console.log(iteratorObj.next()) // {value: 4, done: false}
+console.log(iteratorObj.next()) // {value: 65, done: false}
+console.log(iteratorObj.next()) // {value: &quot;abc&quot;, done: false}
+console.log(iteratorObj.next()) // {value: undefined, done: true}
+
+// 将iterator接口部署到指定的数据类型上，可以使用for of去循环遍历
+// 数组、字符串、argument、set容器、map容器
+for(let i of arr){
+  console.log(i)
+}// 1 4 65 abc
+
+let str = &#39;abcdefg&#39;
+for(let i of str){
+  console.log(i)
+}// a b c d e f g
+
+function fun(){
+  for(let i of arguments){
+    console.log(i)
+  }
+}
+fun(1,4,5,&#39;abc&#39;) // 1 4 5 abc
+
+// let obj = {username:&#39;kobe&#39;, age: 39}
+// for(let i of obj){
+//   console.log(i)
+// }// Uncaught TypeError: obj is not iterable 不可迭代</code></pre>
+</li>
+</ul>
+<h3><span id="10-generator函数">10、Generator函数</span></h3><ul>
+<li><p>概念</p>
+<ul>
+<li>ES6提供的解决异步编程的方案之一</li>
+<li>Generator函数是一个状态机，内部封装了不同状态的数据</li>
+<li>用来生成遍历器对象</li>
+<li>可暂停函数(惰性求值)，yield可暂停，next方法可启动。每次返回的是yield后的表达式结果</li>
+</ul>
+</li>
+<li><p>特点</p>
+<ul>
+<li><p>function 与函数名之间有一个星号</p>
+</li>
+<li><p>内部用yield表达式来定义不同的状态</p>
+<p>例如：</p>
+<pre><code class="javascript">function* generatorExample(){
+    let result = yield &#39;hello&#39;  // 状态值为hello
+    yield &#39;generator&#39;  // 状态值为generator
+}</code></pre>
+</li>
+<li><p>generator函数返回的是指针对象，而不会执行函数内部逻辑</p>
+<pre><code class="javascript">function* generatorExample(){
+    console.log(&#39;开始执行&#39;)
+    let result = yield &#39;hello&#39;  // 状态值为hello
+    yield &#39;generator&#39;  // 状态值为generator
+}
+generatorExample() // 调用并不会执行函数内部逻辑</code></pre>
+</li>
+<li><p>调用next方法函数，内部逻辑开始执行，遇到yield表达式停止，返回<code>{value: yield后的表达式结果/return后的返回结果(如果没写，返回undefined),done: boolean值(后面还有返回false，没有返回true)}</code></p>
+<pre><code class="javascript">function* generatorExample(){
+    console.log(&#39;开始执行&#39;)
+    let result = yield &#39;hello&#39;  // 状态值为hello，会执行，停止 测试yield console.log(&#39;会执行&#39;)
+    console.log(&#39;下次调用next执行&#39;)
+    yield &#39;generator&#39;  // 状态值为generator
+    console.log(&#39;下次调用next执行&#39;)
+    return &#39;返回的结果&#39;
+}
+let MG = generatorExample() // 返回的是指针对象
+console.log(MG.next()) // 执行，遇到yield停止
+console.log(MG.next(&#39;可以拿到这个值&#39;)) // 再次调用next，往下执行，可以传参
+console.log(MG.next()) // 再次调用next，往下执行，返回true</code></pre>
+</li>
+<li><p>再次调用next方法会从上一次停止时的yield处开始，直到最后</p>
+</li>
+<li><p>yield语句返回结果通常为undefined，当调用next方法时传参内容会作为启动时yield语句的返回值</p>
+</li>
+<li><p>补充</p>
+<ul>
+<li>对象的Symbol.iterator属性，指向遍历器对象</li>
+</ul>
+<pre><code class="javascript">let obj = {username:&#39;kobe&#39;, age: 39}
+obj[Symbol.iterator] = function* myTest(){
+    yield 1
+    yield 2
+    yield 3
+}
+for(let i of obj){
+  console.log(i)
+}</code></pre>
+<ul>
+<li>案例<ul>
+<li>需求<ul>
+<li>发送ajax请求获取新闻内容</li>
+<li>新闻内容获取成功后再次发送请求，获取对应的新闻评论内容</li>
+<li>新闻内容获取失败则不需要再次发送请求</li>
+</ul>
+</li>
+<li>启动服务器——进入es_server目录，cmd输入命令<code>node bin/www</code></li>
+</ul>
+</li>
+</ul>
+<pre><code class="javascript">// 要比使用Promise更好
+function getNews(url){
+  $.get(url, function(data){ // 前面引入了jQuery
+    console.log(data)
+    let url = &#39;http://localhost:3000&#39; + data.commentsUrl
+    SX.next(url) // 放在这里也可以往下移，并且这里参数传输更方便
+  })
+}
+function* sendXml(){
+  let url = yield getNews(&#39;http://localhost:3000/news?id=3&#39;) // 如果这里出错，后面评论也不会再执行了
+  yield getNews(url)
+}
+// 获取遍历器对象
+let SX = sendXml()
+SX.next()</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<p>​        </p>
+<h2><span id="四-模块化">四、模块化</span></h2><h3><span id="1-理解">1、理解</span></h3><ul>
+<li><p>什么是模块?</p>
+<ul>
+<li>将一个复杂的程序依据一定的规则(规范)封装成几个块(文件), 并进行组合在一起</li>
+<li>块的内部数据/实现是私有的, 只是向外部暴露一些接口(方法)与外部其它模块通信</li>
+</ul>
+</li>
+<li><p>一个模块的组成</p>
+<ul>
+<li>数据—&gt;内部的属性</li>
+<li>操作数据的行为—&gt;内部的函数</li>
+</ul>
+</li>
+<li><p>模块化</p>
+<ul>
+<li>编码时是按照模块一个一个编码的, 整个项目就是一个模块化的项目</li>
+</ul>
+</li>
+<li><p>模块化的进化过程</p>
+<ul>
+<li><p>全局function模式 : </p>
+<ul>
+<li>编码: 全局变量/函数</li>
+<li>问题: 污染全局命名空间, 容易引起命名冲突/数据不安全</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/1591870404488.png" alt="全局变量"></p>
+<ul>
+<li><p>namespace模式 : </p>
+<ul>
+<li>编码: 将数据/行为封装到对象中</li>
+<li>解决: 命名冲突(减少了全局变量)</li>
+<li>问题: 数据不安全(外部可以直接修改模块内部的数据)</li>
+</ul>
+</li>
+</ul>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/1591870416611.png" alt="Namespace"></p>
+<ul>
+<li><p>IIFE模式/增强</p>
+<ul>
+<li><p>IIFE : 立即调用函数表达式—&gt;匿名函数自调用</p>
+</li>
+<li><p>编码: 将数据和行为封装到一个函数内部, 通过给window添加属性来向外暴露接口</p>
+</li>
+</ul>
+</li>
+</ul>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/1591870442007.png" alt="IIFE"></p>
+<ul>
+<li><p>引入依赖: 通过函数形参来引入依赖模块</p>
+<pre><code>(function(window, module2){
+  var data = &#39;atguigu.com&#39;
+  function foo() {
+     module2.xxx()
+     console.log(&#39;foo()&#39;+data)
+  }
+  function bar() {
+     console.log(&#39;bar()&#39;+data)
+  }
+
+  window.module = {foo}
+})(window, module2)</code></pre><p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/1591870456267.png" alt="IIFE增强"></p>
+</li>
+<li><p>模块化好处</p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/1591870477012.png" alt="模块化好处"></p>
+<ul>
+<li>避免命名冲突(减少命名空间污染)</li>
+<li>更好的分离, 按需加载</li>
+<li>更高复用性</li>
+<li>高可维护性</li>
+</ul>
+</li>
+<li><p>页面引入加载script</p>
+<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/1591871174402.png" alt="引入js"></p>
+<ul>
+<li>问题<ul>
+<li>请求过多</li>
+<li>依赖模糊</li>
+<li>难以维护</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>模块化规范</p>
+<ul>
+<li><p><strong>CommonJS</strong></p>
+<ul>
+<li><p>Node.js : 服务器端</p>
+</li>
+<li><p>Browserify : 浏览器端    也称为js的打包工具</p>
+</li>
+<li><p>基本语法:</p>
+<ul>
+<li><p>定义暴露模块 : exports</p>
+<pre><code>exports.xxx = value
+module.exports = value</code></pre><p>引入模块 : require</p>
+<pre><code>var module = require(&#39;模块名/模块相对路径&#39;)</code></pre></li>
+</ul>
+</li>
+<li><p>每个文件都可以当作一个模块</p>
+</li>
+<li><p>引入模块发生在什么时候?</p>
+<ul>
+<li>Node : 运行时, 动态同步引入</li>
+<li>Browserify : 在运行前对模块进行编译/转译/打包的处理(已经将依赖的模块包含进来了), <pre><code>运行的是打包生成的js, 运行时不存在需要再从远程引入依赖模块</code></pre></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>*<em>AMD *</em>: 浏览器端，模块的加载时异步的</p>
+<ul>
+<li><p>require.js</p>
+</li>
+<li><p>基本语法</p>
+<ul>
+<li><p>定义暴露模块: define([依赖模块名], function(){return 模块对象})</p>
+</li>
+<li><p>引入模块: require([‘模块1’, ‘模块2’, ‘模块3’], function(m1, m2){//使用模块对象})</p>
+</li>
+<li><p>配置: </p>
+<pre><code>require.config({
+  //基本路径
+  baseUrl : &#39;js/&#39;,
+  //标识名称与路径的映射
+  paths : {
+    &#39;模块1&#39; : &#39;modules/模块1&#39;,
+    &#39;模块2&#39; : &#39;modules/模块2&#39;,
+    &#39;angular&#39; : &#39;libs/angular&#39;,
+    &#39;angular-messages&#39; : &#39;libs/angular-messages&#39;
+  },
+  //非AMD的模块
+  shim : {
+    &#39;angular&#39; : {
+        exports : &#39;angular&#39;
+    },
+    &#39;angular-messages&#39; : {
+        exports : &#39;angular-messages&#39;,
+        deps : [&#39;angular&#39;]
+    }
+  }
+})</code></pre></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>CMD(通用模块定义) : 浏览器端，模块加载是异步的；模块使用时才会加载执行</p>
+<ul>
+<li><p>sea.js</p>
+</li>
+<li><p>基本语法</p>
+<ul>
+<li><p>定义暴露模块: </p>
+<pre><code>define(function(require, module, exports){
+  通过require引入依赖模块
+  通过module/exports来暴露模块
+  exports.xxx = value
+})</code></pre></li>
+<li><p>使用模块seajs.use([‘模块1’, ‘模块2’])</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>ES6</strong></p>
+<ul>
+<li><p>ES6内置了模块化的实现，依赖模块需要编译打包处理</p>
+</li>
+<li><p>基本语法</p>
+<ul>
+<li><p>定义暴露模块 : export</p>
+<ul>
+<li><p>暴露一个对象: </p>
+<pre><code>export default 对象</code></pre></li>
+<li><p>暴露多个: </p>
+<pre><code>export var xxx = value1
+export let yyy = value2
+
+var xxx = value1
+let yyy = value2
+export {xxx, yyy}</code></pre></li>
+</ul>
+</li>
+<li><p>引入使用模块 : import</p>
+<ul>
+<li><p>default模块:</p>
+<pre><code>import xxx  from &#39;模块路径/模块名&#39;</code></pre></li>
+<li><p>其它模块</p>
+<pre><code>import {xxx, yyy} from &#39;模块路径/模块名&#39;
+import * as module1 from &#39;模块路径/模块名&#39;</code></pre></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>问题: 所有浏览器还不能直接识别ES6模块化的语法  </p>
+</li>
+<li><p>解决:</p>
+<ul>
+<li>使用Babel将ES6—&gt;ES5(使用了CommonJS) —-浏览器还不能直接支行</li>
+<li>使用Browserify—&gt;打包处理—-浏览器可以运行</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3><span id="2-commonjs基于服务器端nodejs">2、CommonJS基于服务器端（Node.js）</span></h3><ul>
+<li><p>下载安装Node.js</p>
+</li>
+<li><p>创建目录结构</p>
+<ul>
+<li><p>Modules</p>
+<ul>
+<li>module1.js</li>
+<li>module2.js</li>
+<li>module3.js</li>
+</ul>
+</li>
+<li><p>app.js</p>
+</li>
+<li><p>package.json（命令创建,<code>npm init</code>,再输入包名）</p>
+<pre><code class="json">{
+    &quot;name&quot;: &quot;conmmonjs_node&quot;,
+    &quot;version&quot;: &quot;1.0.0&quot;
+}</code></pre>
+</li>
+</ul>
+</li>
+<li><p>下载第三方模块<code>npm install uniq --save</code></p>
+<ul>
+<li><p>package.json</p>
+<pre><code class="json">{
+    &quot;name&quot;: &quot;conmmonjs_node&quot;,
+    &quot;version&quot;: &quot;1.0.0&quot;,
+    &quot;dependencies&quot;:{
+        &quot;uniq&quot;: &quot;^1.0.1&quot;
+    }
+}</code></pre>
+</li>
+</ul>
+</li>
+<li><p>模块化编码</p>
+<ul>
+<li><p>module1.js</p>
+<pre><code class="javascript">// module.exports = value 暴露一个对象
+module.exports = {
+    msg: &#39;module1&#39;,
+    foo(){
+        console.log(this.msg)
+    }
+}</code></pre>
+</li>
+<li><p>module2.js</p>
+<pre><code class="javascript">// 暴露一个函数 module.exports = function(){}
+module.exports = fuction(){
+    console.log(&quot;module2&quot;)
+}</code></pre>
+</li>
+<li><p>module3.js</p>
+<pre><code class="javascript">// exports.xxx = value 分别暴露
+exports.foo = function(){
+    console.log(&#39;foo() module3&#39;)
+}
+exports.bar = function(){
+    console.log(&#39;bar() module3&#39;)
+}
+
+exports.arr = [2, 4, 5, 2, 3, 5, 1]</code></pre>
+</li>
+<li><p>app.js</p>
+<pre><code class="javascript">// 将其他的模块汇集到主模块
+let uniq = require(&#39;uniq&#39;)
+
+let module1 = require(&#39;./modules/module1&#39;)
+let module2 = require(&#39;./modules/module2&#39;)
+let module3 = require(&#39;./modules/module3&#39;)
+
+module1.foo()
+
+module2()
+
+module3.foo()
+module3.bar()
+
+let result = uniq(module3.arr)
+console.log(result)</code></pre>
+</li>
+</ul>
+</li>
+<li><p>通过node运行app.js——<code>node app.js</code></p>
+</li>
+</ul>
+<h3><span id="3-commonjs基于浏览器端应用browserify">3、CommonJS基于浏览器端应用（Browserify）</span></h3><ul>
+<li><p>创建项目结构</p>
+<ul>
+<li><p>js</p>
+<ul>
+<li>dist //打包生成文件的目录</li>
+<li>src //源码所在的目录<ul>
+<li>module1.js</li>
+<li>module2.js</li>
+<li>module3.js</li>
+<li>app.js //应用主源文件</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>index.html</p>
+</li>
+<li><p>package.json</p>
+<pre><code class="json">{
+    &quot;name&quot;: &quot;browserify-test&quot;,
+    &quot;version&quot;: &quot;1.0.0&quot;
+}</code></pre>
+</li>
+</ul>
+</li>
+<li><p>下载browserify</p>
+<ul>
+<li><p>全局：<code>npm install browserify -g</code></p>
+</li>
+<li><p>局部：<code>npm install browserify --save-dev</code></p>
+<pre><code class="json">{
+    &quot;name&quot;: &quot;browserify-test&quot;,
+    &quot;version&quot;: &quot;1.0.0&quot;,
+    &quot;devDependencies&quot;:{
+        &quot;browserify&quot;: &quot;^14.5.0&quot;
+    }
+}</code></pre>
+</li>
+</ul>
+</li>
+<li><p>下载第三方模块<code>npm install uniq --save</code></p>
+<ul>
+<li><p>package.json</p>
+<pre><code class="json">{
+    &quot;name&quot;: &quot;browserify-test&quot;,
+    &quot;version&quot;: &quot;1.0.0&quot;,
+    &quot;devDependencies&quot;:{
+        &quot;browserify&quot;: &quot;^14.5.0&quot;
+    },
+    &quot;dependencies&quot;:{
+        &quot;uniq&quot;: &quot;^1.0.1&quot;
+    }
+}</code></pre>
+</li>
+</ul>
+</li>
+<li><p>定义模块代码</p>
+<ul>
+<li><p>module1.js</p>
+<pre><code class="javascript">module.exports = {
+  foo() {
+    console.log(&#39;moudle1 foo()&#39;)
+  }
+}</code></pre>
+</li>
+<li><p>module2.js</p>
+<pre><code class="javascript">module.exports = function () {
+  console.log(&#39;module2()&#39;)
+}</code></pre>
+</li>
+<li><p>module3.js</p>
+<pre><code class="javascript">exports.foo = function () {
+  console.log(&#39;module3 foo()&#39;)
+}
+
+exports.bar = function () {
+  console.log(&#39;module3 bar()&#39;)
+}</code></pre>
+</li>
+<li><p>app.js</p>
+<pre><code class="javascript">//引用模块
+let module1 = require(&#39;./module1&#39;)
+let module2 = require(&#39;./module2&#39;)
+let module3 = require(&#39;./module3&#39;)
+
+let uniq = require(&#39;uniq&#39;)
+
+//使用模块
+module1.foo()
+module2()
+module3.foo()
+module3.bar()
+
+console.log(uniq([1, 3, 1, 4, 3]))</code></pre>
+</li>
+</ul>
+</li>
+<li><p>打包处理js：<code>browserify js/src/app.js -o js/dist/bundle.js</code></p>
+</li>
+<li><p>页面使用引入</p>
+<ul>
+<li><p>index.html</p>
+<pre><code class="html">&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;broserify测试&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;script src=&quot;js/dist/bundle.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h3><span id="4-amd规范">4、AMD规范</span></h3><h4><span id="1noamd">（1）NoAMD</span></h4><ul>
+<li><p>项目结构</p>
+<ul>
+<li>js<ul>
+<li>alerter.js</li>
+<li>dataService.js</li>
+</ul>
+</li>
+<li>app.js</li>
+<li>test1.html</li>
+</ul>
+</li>
+<li><p>文件内容</p>
+<ul>
+<li><p>dataService.js</p>
+<pre><code class="javascript">// 定义一个没有依赖的模块
+(function(win){ // 形参可以和实参的名字相同，这里方便区分
+    let name = &#39;dataservice.js&#39;
+    function getName(){
+        return name
+    }
+    win.dataService = {getName}
+})(window) // 实参</code></pre>
+</li>
+<li><p>alerter.js</p>
+<pre><code class="javascript">// 定义一个有依赖的模块
+(function(window, dataService){
+    let msg = &#39;alerter.js&#39;
+    function showMsg(){
+        alert(msg + &#39;,&#39; + dataService.getName())
+    }
+    window.alerter = {showMsg}
+})(window, dataService) // 依赖dataService</code></pre>
+</li>
+<li><p>app.js</p>
+<pre><code class="javascript">(function (alerter){
+    alerter.showMsg()
+})(alerter)</code></pre>
+</li>
+<li><p>test1.html</p>
+<pre><code class="html">&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;Modular Demo: 未使用AMD(require.js)&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;script src=&quot;./js/dataService.js&quot;&gt;&lt;/script&gt; 
+&lt;script src=&quot;./js/alerter.js&quot;&gt;&lt;/script&gt; 
+&lt;script src=&quot;./app.js&quot;&gt;&lt;/script&gt; // 下面的分别依赖上面的模块
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h4><span id="2amdrequirejs">（2）AMD（require.js）</span></h4><ol>
+<li><p>下载require.js, 并引入</p>
+<ul>
+<li>官网: <a href="http://www.requirejs.cn/" target="_blank" rel="noopener">http://www.requirejs.cn/</a></li>
+<li>github : <a href="https://github.com/requirejs/requirejs" target="_blank" rel="noopener">https://github.com/requirejs/requirejs</a></li>
+<li>将require.js导入项目: js/libs/require.js </li>
+</ul>
+</li>
+<li><p>创建项目结构</p>
+</li>
+</ol>
+<ul>
+<li>js<ul>
+<li>libs<ul>
+<li>require.js</li>
+</ul>
+</li>
+<li>modules<ul>
+<li>alerter.js</li>
+<li>dataService.js</li>
+</ul>
+</li>
+<li>main.js</li>
+</ul>
+</li>
+<li>index.html</li>
+</ul>
+<ol start="3">
+<li><p>定义require.js的模块代码</p>
+<ul>
+<li><p>dataService.js</p>
+<pre><code class="javascript">// 定义没有依赖的模块
+define(function () {
+ let msg = &#39;dataService.js&#39;
+
+ function getMsg() {
+   return msg.toUpperCase()
+ }
+ // 暴露模块
+ return {getMsg}
+})</code></pre>
+</li>
+<li><p>alerter.js</p>
+<pre><code class="javascript">// 定义有依赖的模块
+define([&#39;dataService&#39;, &#39;jquery&#39;], function (dataService, $) {
+ let msg = &#39;alerter.js&#39;
+
+ function showMsg() {
+   $(&#39;body&#39;).css(&#39;background&#39;, &#39;gray&#39;)
+   alert(dataService.getMsg() + &#39;, &#39; + msg)
+ }
+
+ return {showMsg}
+})</code></pre>
+</li>
+</ul>
+</li>
+<li><p>应用主(入口)js：main.js</p>
+<pre><code class="javascript">(function () {
+    //配置
+    require.config({
+        //基本路径 出发点在根目录下
+        baseUrl: &quot;js/&quot;,
+        //模块标识名与模块路径映射
+        paths: {
+            &quot;alerter&quot;: &quot;modules/alerter&quot;,
+            &quot;dataService&quot;: &quot;modules/dataService&quot;,
+        }
+    })
+    //引入使用模块
+    require( [&#39;alerter&#39;], function(alerter) {
+        alerter.showMsg()
+    })
+})()</code></pre>
+</li>
+<li><p>页面使用模块：index.html</p>
+</li>
+</ol>
+<pre><code class="html">&lt;script data-main=&quot;js/main&quot; src=&quot;js/libs/require.js&quot;&gt;&lt;/script&gt;</code></pre>
+<hr>
+<ol start="6">
+<li><p>使用第三方基于require.js的框架(jquery)</p>
+<ul>
+<li><p>将jquery的库文件导入到项目: </p>
+<ul>
+<li>js/libs/jquery-1.10.1.js</li>
+</ul>
+</li>
+<li><p>在main.js中配置jquery路径</p>
+<pre><code class="javascript">paths: {
+   &#39;jquery&#39;: &#39;libs/jquery-1.10.1&#39;  // jQuery定义的返回AMD模块名为小写
+}</code></pre>
+</li>
+<li><p>在alerter.js中使用jquery</p>
+<pre><code class="javascript">define([&#39;dataService&#39;, &#39;jquery&#39;], function (dataService, $) {
+   var name = &#39;xfzhang&#39;
+   function showMsg() {
+       $(&#39;body&#39;).css({background : &#39;red&#39;})
+       alert(name + &#39; &#39;+dataService.getMsg())
+   }
+   return {showMsg}
+})</code></pre>
+</li>
+</ul>
+</li>
+</ol>
+<hr>
+<ol start="7">
+<li><p>使用第三方不基于require.js的框架(angular/angular-messages)</p>
+<ul>
+<li><p>将angular.js和angular-messages.js导入项目</p>
+<ul>
+<li>js/libs/angular.js</li>
+<li>js/libs/angular-messages.js</li>
+</ul>
+</li>
+<li><p>在main.js中配置</p>
+<pre><code class="javascript">(function () {
+ require.config({
+   //基本路径
+   baseUrl: &quot;js/&quot;,
+   //模块标识名与模块路径映射
+   paths: {
+     //第三方库
+     &#39;jquery&#39; : &#39;libs/jquery-1.10.1&#39;,
+     &#39;angular&#39; : &#39;libs/angular&#39;,
+     &#39;angular-messages&#39; : &#39;libs/angular-messages&#39;,
+     //自定义模块
+     &quot;alerter&quot;: &quot;modules/alerter&quot;,
+     &quot;dataService&quot;: &quot;modules/dataService&quot;
+   },
+   /*
+    配置不兼容AMD的模块
+    exports : 指定导出的模块名
+    deps  : 指定所有依赖的模块的数组
+    */
+   shim: {
+     &#39;angular&#39; : {
+       exports : &#39;angular&#39;
+     },
+     &#39;angular-messages&#39; : {
+       exports : &#39;angular-messages&#39;,
+       deps : [&#39;angular&#39;]
+     }
+   }
+ })
+ //引入使用模块
+ require( [&#39;alerter&#39;, &#39;angular&#39;, &#39;angular-messages&#39;], function(alerter, angular) {
+   alerter.showMsg()
+   angular.module(&#39;myApp&#39;, [&#39;ngMessages&#39;])
+   angular.bootstrap(document,[&quot;myApp&quot;])
+ })
+})()</code></pre>
+</li>
+<li><p>页面:</p>
+<pre><code class="html">&lt;form name=&quot;myForm&quot;&gt;
+ 用户名: &lt;input type=&quot;text&quot; name=&quot;username&quot; ng-model=&quot;username&quot; ng-required=&quot;true&quot;&gt;
+ &lt;div style=&quot;color: red;&quot; ng-show=&quot;myForm.username.$dirty&amp;&amp;myForm.username.$invalid&quot;&gt;用户名是必须的&lt;/div&gt;
+&lt;/form&gt;</code></pre>
+</li>
+</ul>
+</li>
+</ol>
+<h3><span id="5-cmd规范"><font color="lightgray">5、CMD规范</font></span></h3><ol>
+<li><p>下载sea.js, 并引入</p>
+<ul>
+<li>官网: <a href="http://seajs.org/" target="_blank" rel="noopener">http://seajs.org/</a></li>
+<li>github : <a href="https://github.com/seajs/seajs" target="_blank" rel="noopener">https://github.com/seajs/seajs</a></li>
+<li>将sea.js导入项目: js/libs/sea.js </li>
+</ul>
+</li>
+<li><p>创建项目结构</p>
+<pre><code>|-js
+ |-libs
+   |-sea.js
+ |-modules
+   |-module1.js
+   |-module2.js
+   |-module3.js
+   |-module4.js
+   |-main.js
+|-index.html</code></pre></li>
+<li><p>定义sea.js的模块代码</p>
+<ul>
+<li><p>module1.js</p>
+<pre><code class="javascript">// 没有依赖的模块
+define(function (require, exports, module) {
+ //内部变量数据
+ var data = &#39;atguigu.com&#39;
+ //内部函数
+ function show() {
+   console.log(&#39;module1 show() &#39; + data)
+ }
+
+ //向外暴露
+ exports.show = show
+})</code></pre>
+</li>
+<li><p>module2.js</p>
+<pre><code class="javascript">define(function (require, exports, module) {
+ let msg = &#39;module2&#39;
+ function bar(){
+     console.log(msg)
+ }
+   module.exports = bar
+ /* module.exports = {
+   msg: &#39;I Will Back&#39;
+ } */
+})</code></pre>
+</li>
+<li><p>module3.js</p>
+<pre><code class="javascript">define(function(require, exports, module){
+   let data = &#39;module3&#39;
+   function fun(){
+       console.log(data)
+   }
+   exports.module3 = {fun}
+})
+/* define(function (require, exports, module) {
+ const API_KEY = &#39;abc123&#39;
+ exports.API_KEY = API_KEY
+}) */</code></pre>
+</li>
+<li><p>module4.js</p>
+<pre><code class="javascript">define(function(require, exports, module){
+   let msg = &#39;module4&#39;
+   // 同步引入
+   let module2 = require(&#39;./module2&#39;)
+   module2()
+   // 异步引入
+   require.async(&#39;./module3&#39;, function(module3){
+       module3.module3.fun()
+   })
+   function fun2(){
+       console.log(msg)
+   }
+   exports.fun2 = fun2
+})
+/*define(function (require, exports, module) {
+ //引入依赖模块(同步)
+ var module2 = require(&#39;./module2&#39;)
+
+ function show() {
+   console.log(&#39;module4 show() &#39; + module2.msg)
+ }
+
+ exports.show = show
+ //引入依赖模块(异步)
+ require.async(&#39;./module3&#39;, function (m3) {
+   console.log(&#39;异步引入依赖模块3  &#39; + m3.API_KEY)
+ })
+})*/</code></pre>
+</li>
+<li><p>main.js : 主(入口)模块</p>
+<pre><code class="javascript">define(function (require) {
+ let module1 = require(&#39;./module1&#39;)
+ console.log(module1.foo())
+ let module4 = require(&#39;./module4&#39;)
+ module4.fun2()
+})
+/*define(function (require) {
+ var m1 = require(&#39;./module1&#39;)
+ var m4 = require(&#39;./module4&#39;)
+ m1.show()
+ m4.show()
+})*/</code></pre>
+</li>
+</ul>
+</li>
+<li><p>index.html:</p>
+<pre><code>&lt;!--
+使用seajs:
+ 1. 引入sea.js库
+ 2. 如何定义导出模块 :
+   define()
+   exports
+   module.exports
+ 3. 如何依赖模块:
+   require()
+ 4. 如何使用模块:
+   seajs.use()
+--&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/libs/sea.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+ seajs.use(&#39;./js/modules/main&#39;)
+&lt;/script&gt;</code></pre></li>
+</ol>
+<p>​       </p>
+<h3><span id="6-es6-babel-browserify使用教程"><font color="red">6、ES6-Babel-Browserify使用教程</font></span></h3><ol>
+<li><p>定义package.json文件</p>
+<pre><code class="json">{
+ &quot;name&quot; : &quot;es6-babel-browserify&quot;,
+ &quot;version&quot; : &quot;1.0.0&quot;
+}</code></pre>
+</li>
+<li><p>安装babel-cli, babel-preset-es2015和browserify // cli——command line interface</p>
+<ul>
+<li><code>npm install babel-cli browserify -g</code></li>
+</ul>
+</li>
+</ol>
+<ul>
+<li><code>npm install babel-preset-es2015 --save-dev</code></li>
+<li>preset 预设（将es6转换成es5的所有插件打包）</li>
+</ul>
+<ol start="3">
+<li><p>定义.babelrc文件（babel run control）</p>
+<pre><code class="bash">{
+ &quot;presets&quot;: [&quot;es2015&quot;]
+}</code></pre>
+</li>
+<li><p>编码</p>
+<ul>
+<li><p>js/src/module1.js</p>
+<pre><code class="JavaScript">// 暴露模块 分别暴露
+export function foo() {
+ console.log(&#39;module1 foo()&#39;);
+}
+export let bar = function () {
+ console.log(&#39;module1 bar()&#39;);
+}
+export const DATA_ARR = [1, 3, 5, 1]</code></pre>
+</li>
+<li><p>js/src/module2.js</p>
+<pre><code class="JavaScript">// 统一暴露——常规暴露
+let data = &#39;module2 data&#39;
+
+function fun1() {
+ console.log(&#39;module2 fun1() &#39; + data);
+}
+
+function fun2() {
+ console.log(&#39;module2 fun2() &#39; + data);
+}
+
+export {fun1, fun2}</code></pre>
+</li>
+<li><p>js/src/module3.js</p>
+<pre><code class="JavaScript">// 默认暴露：可以暴露任意数据类型，暴露什么数据类型接收到的就是什么数据
+// export default value
+export default() =&gt;{
+   console.log(&#39;我是默认暴露的箭头函数&#39;)
+} // 只能暴露一个default，因此暴露对象
+/* export default {
+ name: &#39;Tom&#39;,
+ setName: function (name) {
+   this.name = name
+ }
+} */</code></pre>
+</li>
+<li><p>js/src/app.js</p>
+<pre><code class="JavaScript">// 引入其他的模块
+// 语法： import xxx from &#39;路径&#39;
+import {foo, bar} from &#39;./module1&#39;
+import {DATA_ARR} from &#39;./module1&#39;
+import {fun1, fun2} from &#39;./module2&#39;
+
+import module3 from &#39;./module3&#39;
+/* import person from &#39;./module3&#39; */
+
+// 安装 npm install jquery@1
+import $ from &#39;jquery&#39;
+
+$(&#39;body&#39;).css(&#39;background&#39;, &#39;red&#39;)
+
+foo()
+bar()
+console.log(DATA_ARR);
+fun1()
+fun2()
+
+module3()
+/* person.setName(&#39;JACK&#39;)
+console.log(person.name); */</code></pre>
+</li>
+</ul>
+</li>
+<li><p>编译</p>
+<ul>
+<li>使用Babel将ES6编译为ES5代码(但包含CommonJS语法) : <code>babel js/src -d js/lib</code></li>
+<li>使用Browserify编译js : <code>browserify js/lib/app.js -o js/lib/bundle.js</code></li>
+</ul>
+</li>
+<li><p>页面中引入测试</p>
+<pre><code class="html">&lt;script type=&quot;text/javascript&quot; src=&quot;js/lib/bundle.js&quot;&gt;&lt;/script&gt;</code></pre>
+</li>
+<li><p>引入第三方模块(jQuery)<br>1). 下载jQuery模块: </p>
+<ul>
+<li><code>npm install jquery@1 --save</code> // @后的是版本，1代表<code>1.x.x</code>中的最新版本</li>
+</ul>
+<p>2). 在app.js中引入并使用</p>
+<pre><code>import $ from &#39;jquery&#39;
+$(&#39;body&#39;).css(&#39;background&#39;, &#39;red&#39;)</code></pre></li>
+</ol>
+<h2><span id="五-es7">五、ES7</span></h2><h3><span id="1-async函数源自es2017">1、async函数(源自ES2017)</span></h3><ul>
+<li><p>概念：真正意义上去解决异步回调的问题，同步流程表达异步操作</p>
+</li>
+<li><p>本质：Generator的语法</p>
+</li>
+<li><p>语法：</p>
+<pre><code class="javascript">async function foo(){
+    await 异步操作;
+    await 异步操作;
+}</code></pre>
+</li>
+<li><p>特点：</p>
+<ul>
+<li>不需要像Generator去调用next方法，遇到await等待，当前的异步操作完成就往下执行</li>
+<li>返回的总是Promise对象，可以用then方法进行下一步操作</li>
+<li>async取代Generator函数的<code>*</code>，await取代Generator的yield</li>
+<li>语义上更为明确，使用简单，暂时没有任何副作用</li>
+</ul>
+<pre><code class="javascript">// async基本使用
+async function foo(){
+  return new Promise(resolve =&gt; {
+    // setTimeout(function(){
+    //   resolve()
+    // }, 2000)
+    // 可以写成下方这种
+    setTimeout(resolve, 2000)
+  })
+}
+async function test(){
+  console.log(&#39;开始执行&#39;, new Date().toTimeString())
+  await foo()
+  console.log(&#39;执行完毕&#39;, new Date().toTimeString())
+}
+test()
+
+</code></pre>
+</li>
+</ul>
+<p>  // async里await返回值<br>  function test2(){<br>    return ‘xxx’<br>  }<br>  async function asyncPrint(){<br>    /* let result = await test2()<br>    console.log(result) // 普通函数没有返回值<br>    <em>/<br>    /</em><br>    let result = await Promise.resolve()<br>    console.log(result) // Promise对象成功状态返回undefined<br>    */<br>    let result = await Promise.resolve(‘promise’)<br>    console.log(result) // Promise对象成功状态传参返回参数 promise<br>    result = await Promise.reject(‘失败了……’)<br>    console.log(result) // 失败状态，返回出错，且能将参数返回 Uncaught (in promise) 失败了……</p>
+<p>  }<br>  asyncPrint()</p>
+<pre><code>
+  仍是获取新闻内容案例
+
+  ```javascript
+  // async比generator又更简单
+  async function getNews(url){
+    return new Promise((resolve, reject) =&gt; {
+      $.ajax({ // 前面已经引入jQuery
+        method: &#39;GET&#39;,
+        url,  // 这是ES6中简写
+        /* success: function(data){
+          resolve()
+        },
+        error: function(error){
+          reject() 
+        }*/
+        // 简写
+        success: data =&gt; resolve(data),
+        error: error =&gt; reject(error)
+
+      })
+    })
+  }
+  async function sendXml(){
+    let result = await getNews(&#39;http://localhost:3000/news?id=7&#39;)
+    console.log(result) // {id: &quot;7&quot;, title: &quot;news title1...&quot;, content: &quot;news content1...&quot;, commentsUrl: &quot;/comments?newsId=7&quot;}
+    result = await getNews(&#39;http://localhost:3000&#39; + result.commentsUrl)
+    console.log(result)
+  }
+  sendXml()</code></pre><p>  改进一下，由于这种写法error并不会显示错误信息</p>
+<pre><code class="html">  &lt;script src=&quot;./jquery-3.1.0.min.js&quot;&gt;&lt;/script&gt;
+  &lt;script&gt;
+    // async比generator又更简单
+    async function getNews(url){
+      return new Promise((resolve, reject) =&gt; {
+        $.ajax({
+          method: &#39;GET&#39;,
+          url,  // 这是ES6中简写
+          /* success: function(data){
+            resolve()
+          },
+          error: function(error){
+            reject() 
+          }*/
+          // 简写
+          success: data =&gt; resolve(data),
+          // error: error =&gt; reject(error)
+          error: error =&gt; resolve(false) // 不用reject，而是返回false
+        })
+      })
+    }
+    async function sendXml(){
+      let result = await getNews(&#39;http://localhost:30010/news?id=7&#39;)
+      console.log(result) // {id: &quot;7&quot;, title: &quot;news title1...&quot;, content: &quot;news content1...&quot;, commentsUrl: &quot;/comments?newsId=7&quot;}
+      if(!result){ // 出错就弹窗
+        alert(&#39;暂时没有新闻……&#39;)
+      }
+      result = await getNews(&#39;http://localhost:3000&#39; + result.commentsUrl)
+      console.log(result)
+    }
+    sendXml()
+  &lt;/script&gt;</code></pre>
+<h3><span id="2-指数运算符幂">2、指数运算符(幂): <code>**</code></span></h3><p><code>console.log(3 ** 3)</code></p>
+<h3><span id="3-arrayprototypeincludesvalue-判断数组中是否包含指定value">3、<code>Array.prototype.includes(value)</code>: 判断数组中是否包含指定value</span></h3><pre><code class="javascript">let arr = [1,2,3,&#39;abc&#39;]
+console.log(arr.includes(&#39;a&#39;))</code></pre>
+<ul>
+<li><strong>区别方法的2种称谓</strong><ul>
+<li>静态(工具)方法<ul>
+<li>Fun.xxx = function(){}</li>
+</ul>
+</li>
+<li>实例方法<ul>
+<li>所有实例对象 : Fun.prototype.xxx = function(){} //xxx针对Fun的所有实例对象</li>
+<li>某个实例对象 : fun.xxx = function(){} //xxx只是针对fun对象</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
+      
+      
+       
+    </div>
+</article>
+
+
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+<!-- 
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>ES和模块化学习笔记</p>
+    <p><span class="copy-title">字数:</span><span class="post-count">12.1k</span></p>
+    <p><span class="copy-title">本文作者:</span><a  title="Luwang">Luwang</a></p>
+    <p><span class="copy-title">发布时间:</span>2020-06-04, 23:33:49</p>
+    <p><span class="copy-title">最后更新:</span>2020-07-12, 17:18:26</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/06/04/ES/" title="ES和模块化学习笔记">https://wallleap.cn/2020/06/04/ES/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">&#34;署名-非商用-相同方式共享 4.0&#34;</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+ -->
+
+    <div class="article_copyright">
+        <p><span class="copy-title">文章标题:</span>ES和模块化学习笔记</p>
+        <p><span class="copy-title">文章字数:</span><span class="post-count">12.1k</span></p>
+        <p><span class="copy-title">本文作者:</span><a  title="Luwang">Luwang</a></p>
+        <p><span class="copy-title">发布时间:</span>2020-06-04, 23:33:49</p>
+        <p><span class="copy-title">最后更新:</span>2020-07-12, 17:18:26</p>
+        <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/06/04/ES/" title="ES和模块化学习笔记">https://wallleap.cn/2020/06/04/ES/</a>
+        <p>
+            <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+    
+    
+    
+
+    <div id="comments"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+<script type="text/javascript">
+    $.getScript('/js/gitalk.js', function () {
+        var gitalk = new Gitalk({
+            clientID: 'c34c4610e9454bf73702',
+            clientSecret: 'bccb16d6af22e10394fcf4fc3bb916f541b0492c',
+            repo: 'comment',
+            owner: 'wallleap',
+            admin: ['wallleap'],
+            id: decodeURI(location.pathname),
+            distractionFreeMode: 'true',
+            language: 'zh-CN',
+            perPage: parseInt('10',10)
+        })
+        gitalk.render('comments')
+    })
+</script>
+
+
+
+
+
+
+
+    </div>
+    <div class="copyright">
+        <!-- <p class="footer-entry"><span class="miit">
+                <img src="/img/gov.png" title="中华人民共和国工业和信息化部">
+                <a href="http://beian.miit.gov.cn/" target="_blank" rel="noopener">赣ICP备20000895号</a>
+        </span>
+    
+    ©2019-2020 wallleap
+</p>
+<p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p> -->
+
+
+
+<div id="colophon" class="site-footer" role="contentinfo" style="background-color: transparent;font-size: 12px;">
+    <div class="site-info">
+        <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+        <a style="color: #b9b9b9;" href="https://www.jinrishici.com/" target="_blank" rel="noopener"><span id="poem_sentence" style="text-align: left;"></span>
+        <span id="poem_info" style="text-align: right;"></span></a>
+        <script type="text/javascript">
+          jinrishici.load(function(result) {
+            var sentence = document.querySelector("#poem_sentence")
+            var info = document.querySelector("#poem_info")
+            sentence.innerHTML = result.data.content
+            info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'
+          });
+        </script>
+      <!-- // 文字滚动 -->
+      
+      <!-- <div id="binft" style="text-align:center; color: #666666;"></div>
+      <script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/textScroll.js"></script> -->
+     
+      <div class="footertext">
+        <div class="img-preload">
+          <img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/other/wordpress-rotating-ball-o.svg">
+          <img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/other/disqus-preloader.svg">
+        </div>
+    
+          
+  
+        <p style="color: #666666;"><a href="#" style="color: #b9b9b9;">Blog wallleap</a>
+          , Copyright &copy; 2019-2020 
+          by Luwang All Rights Reserved.</p>
+      </div>
+      <!-- <div class="footer-device">
+      <p style="font-family: 'Ubuntu', sans-serif;">
+          <i class="fa fa-fire" aria-hidden="true"></i>
+          <span style="color: #666;">
+            Theme <a style="color: #b9b9b9;" href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank" style="color: #b9b9b9; text-decoration: underline dotted rgba(0, 0, 0, .1);">3-hexo</a>
+             <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i> 
+             by <a href="https://yelog.org/" target="_blank" style="color: #b9b9b9;;text-decoration: underline dotted rgba(0, 0, 0, .1);">yelog</a>
+             , Powered by <a style="color: #b9b9b9;" href="https://hexo.io/" target="_blank">Hexo</a>
+             , Hosted by <a style="color: #b9b9b9;" href="https://coding.net/" target="_blank">Coding Pages</a>
+              & <a style="color: #b9b9b9;" href="https://github.com/" target="_blank">Github Pages</a>
+          </span>
+        </p>
+      </div> -->
+  
+      
+      <a style="color: #b9b9b9;" href="http://beian.miit.gov.cn/" target="_blank">	
+        <img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/logo/ICP.png" style="vertical-align: text-bottom; width: 17px;" />
+        赣ICP备20000895号-1
+      </a>
+      <a href="https://icp.gov.moe" target="_blank"><img style="width:17px;margin-bottom: -2px;" src="https://icp.gov.moe/images/ico64.png">萌ICP备 </a><a href="https://icp.gov.moe/?keyword=20200895" target="_blank"> 20200895号</a>
+      
+      <span style="color: #666;padding-left: 20px;">
+        <i class="fa fa-clock-o" aria-hidden="true"></i>
+        <span id="time" align="center">载入时间中...</span>
+        <script>
+          var now = new Date(); 
+          function createtime() { 
+            var grt= new Date("08/08/2019 17:38:00");//在此处修改你的建站时间
+            now.setTime(now.getTime()+250); 
+            days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+            hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+            if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+            mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+            seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+            snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+            document.getElementById("time").innerHTML = "小站已经苟活 "+dnum+" 天 "+hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+         } 
+         setInterval("createtime()",250);
+        </script>
+        <!-- <span style="color:#666;padding-left: 20px;"><i class="fa fa-eye" aria-hidden="true"></i>访问量: <span class="site_pv"></span>次</span> -->
+        <span style="padding-left: 20px; color:#666;"><i class="fa fa-cog fa-spin" aria-hidden="true"></i></span>
+        <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1278079074'%3E%3C/span%3E%3Cscript src='https://s4.cnzz.com/z_stat.php%3Fid%3D1278079074%26online%3D2' type='text/javascript'%3E%3C/script%3E"));</script>
+        
+      </span>
+      <div style="text-align:center; padding-top: 20px;">
+        <div class="github-badge">
+          <a rel="license" href="https://hexo.io/" target="_blank" title="由Hexo强力驱动">
+          <span class="badge-subject"><i class="fa fa-fire" aria-hidden="true"></i> Powered</span><span class="badge-value bg-blue">Hexo</span></a>
+        </div>
+        <div class="github-badge">
+          <a rel="license" href="https://github.io/" target="_blank" title="静态网页托管于Github">
+          <span class="badge-subject">Hosted</span><span class="badge-value bg-brightgreen"><i class="fa fa-github" aria-hidden="true"></i> Github</span></a>
+        </div>
+        <div class="github-badge">
+            <a rel="license" href="https://coding.net/" target="_blank" title="静态网页托管于CODING">
+            <span class="badge-subject"><i class="fa fa-heart" aria-hidden="true"></i> Hosted</span>
+            <span class="badge-value bg-gray">CODING</span></a>
+          </div>
+        <div class="github-badge">
+            <a rel="license" href="https://www.jsdelivr.com/" target="_blank" title="jsDelivr提供CDN加速服务">
+            <span class="badge-subject"><i class="fa fa-firefox fa-spin" aria-hidden="true"></i> CND</span><span class="badge-value bg-cdn">Github&jsDelivr</span></a>
+        </div>
+        <div class="github-badge">
+            <a rel="license" href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank" title="站点使用 Sakura 主题，作者：Mashiro & Hojun">
+            <span class="badge-subject"><i class="fa fa-themeisle" aria-hidden="true"></i> Theme</span><span class="badge-value bg-theme">3-blog</span></a>
+        </div>
+        <div class="github-badge">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="本站点采用知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议进行许可">
+            <span class="badge-subject"><i class="fa fa-copyright"></i></span><span class="badge-value bg-lightgrey">BY-NC-SA 4.0</span></a>
+        </div>
+        <div class="github-badge">
+          <span class="badge-subject"><i class="fa fa-user" aria-hidden="true"></i> UV</span>
+          <span  class="site_uv badge-value bg-orange""></span>
+        </div>
+        <div class="github-badge">
+          <span class="badge-subject"><i class="fa fa-eye" aria-hidden="true"></i> PV</span>
+          <span class="site_pv badge-value bg-brightgreen"></span>
+        </div>
+      </div>  
+  
+      <div class="site-img" style="margin-top:20px;">
+        <a href="#"><img width="350px" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/wechat/wallleap.png"></a>
+        <!-- <a href="https://www.google.com/search?sxsrf=ACYBGNT2ZrasjGUBG6Nj1_Xye1N67lpsrA%3A1573382249794&source=hp&ei=aejHXey4LYHu-gSQlLqgDg&q=site%3Awallleap.cn&oq=site%3Awallleap.cn&gs_l=psy-ab.3...32142.36345..36698...0.0..4.1018.9243.3-5j2j5j3j1......0....1..gws-wiz.....10..35i362i39j35i39j0.9jvLRXQs6zM&ved=0ahUKEwiskd7Qud_lAhUBt54KHRCKDuQQ4dUDCAY&uact=5" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/logo/Google.svg" width="100px" height="80px"></a>
+        <a href="https://www.baidu.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/logo/baidu.png" width="100px" height="80px"></a>
+        <a href="https://www.jsdelivr.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/logo/JsDelivr_Logo.svg" width="100px" height="80px"></a>
+        <a href="https://github.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/logo/github-logo.jpg" width="100px" height="80px"></a>
+        <a href="https://aliyun.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/logo/aliyun-logo.png" width="100px" height="80px"></a>
+        <a href="https://dev.tencent.com/" target="_blank"><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/logo/tencentyun-logo.jpg" width="100px" height="80px"></a>   -->
+      </div>
+      <!-- <div>
+        <a href="https://hexo.io" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Powered-Hexo-blue" alt="Hexo"></a>
+        <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Theme-3--hexo-%232c2735" alt="3-blog"></a>
+        <a href="https://github.com/" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Hosted-GitHub-%2324292e" alt="GitHub"></a>
+        <a href="https://coding.net/" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/Hosted-CODING-%23141a3f" alt="CODING"></a>
+        <a href="https://www.jsdelivr.com/" target="_blank" rel="noopener"><img src="https://img.shields.io/badge/CDN-jsDelivr-%23ee3232" alt="jsDelivr"></a>
+      </div> -->
+    </div><!-- .site-info -->
+  </div>
+    </div>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏"><span class="min "></span></button>
+<a class="" id="rocket" ></a>
+
+    </div>
+</div>
+
+<div class="hide_box" onclick="dashangToggle()"></div>
+<div class="shang_box">
+    <a class="shang_close"  onclick="dashangToggle()">×</a>
+    <div class="shang_tit">
+        <p>喜欢就点赞,疼爱就打赏</p>
+    </div>
+    <div class="shang_payimg">
+        <div class="pay_img">
+            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
+            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
+        </div>
+    </div>
+    <div class="shang_payselect">
+        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
+    </div>
+</div>
+
+
+<script>!function(e){var c=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function i(){for(var r=0;r<c.length;r++)t=c[r],0<=(n=t.getBoundingClientRect()).bottom&&0<=n.left&&n.top<=(e.innerHeight||document.documentElement.clientHeight)&&function(){var t,n,e,i,o=c[r];t=o,n=function(){c=c.filter(function(t){return o!==t})},e=new Image,i=t.getAttribute("data-original"),e.onload=function(){t.src=i,n&&n()},e.src=i}();var t,n}i(),e.addEventListener("scroll",function(){var t,n;t=i,n=e,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(n)},500)})}(this);</script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script></body>
+<script src="/js/jquery.pjax.js?v=1.1.0" ></script>
+
+<script src="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"></script>
+
+<script src="/js/script.js?v=1.1.0" ></script>
+<script>
+    var img_resize = 'photoSwipe';
+    function initArticle() {
+        /*渲染对应的表格样式*/
+        
+            $("#post .pjax table").addClass("green_title");
+        
+
+        /*渲染打赏样式*/
+        
+        $("input[name=pay]").on("click", function () {
+            if($("input[name=pay]:checked").val()=="weixin"){
+                $(".shang_box .shang_payimg .pay_img").addClass("weixin_img");
+            } else {
+                $(".shang_box .shang_payimg .pay_img").removeClass("weixin_img");
+            }
+        })
+        
+
+        /*高亮代码块行号*/
+        
+        $('pre code').each(function(){
+            var lines = $(this).text().trim().split('\n').length, widther='';
+            if (lines>99) {
+                widther = 'widther'
+            }
+            var $numbering = $('<ul/>').addClass('pre-numbering ' + widther).attr("unselectable","on");
+            $(this).addClass('has-numbering ' + widther)
+                    .parent()
+                    .append($numbering);
+            for(var i=1;i<=lines;i++){
+                $numbering.append($('<li/>').text(i));
+            }
+        });
+        
+
+        /*访问数量*/
+        
+        $.getScript("//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js");
+        
+
+        /*代码高亮，行号对齐*/
+        $('.pre-numbering').css('line-height',$('.has-numbering').css('line-height'));
+
+        
+
+        // PhotoSwipe
+        $('article').each(function(i){
+            $(this).find('img').each(function(){
+                if ($(this).closest('figure').hasClass('article-gallery-img')) {
+                    return;
+                }
+                var alt = this.alt;
+                $(this)
+                    .wrap('<figure class="article-gallery-img" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"></figure>')
+                    .wrap('<a href="' + this.src + '" title="' + alt + '"></a>');
+                $(this).after('<div class="img_alt"><span>' + (alt || '') + '</span></div>');
+            });
+        });
+
+        var pswpElement = document.querySelectorAll('.pswp')[0];
+        if (pswpElement) {
+            var gallerySelector = '.article-gallery, article';
+
+            var initPhotoSwipeFromDOM = function(gallerySelector) {
+
+                // parse slide data (url, title, size ...) from DOM elements
+                // (children of gallerySelector)
+                var parseThumbnailElements = function(el) {
+                    var thumbElements = $(el).find('figure.article-gallery-img').toArray(),
+                        numNodes = thumbElements.length,
+                        items = [],
+                        figureEl,
+                        linkEl,
+                        size,
+                        imgEl,
+                        item;
+
+                    for (var i = 0; i < numNodes; i++) {
+
+                        figureEl = thumbElements[i]; // <figure> element
+
+                        // include only element nodes
+                        if (figureEl.nodeType !== 1) {
+                            continue;
+                        }
+
+                        linkEl = figureEl.children[0]; // <a> element
+                        imgEl = linkEl.children[0]; // <img>
+
+                        size = linkEl.getAttribute('data-size');
+                        size = size && size.split('x');
+
+                        // create slide object
+                        item = {
+                            src: linkEl.getAttribute('href'),
+                            w: size && parseInt(size[0], 10) || imgEl.width,
+                            h: size && parseInt(size[1], 10) || imgEl.height
+                        };
+
+                        if (figureEl.children.length > 1) {
+                            // <figcaption> content
+                            item.title = figureEl.children[1].innerHTML;
+                        }
+
+                        if (linkEl.children.length > 0) {
+                            // <img> thumbnail element, retrieving thumbnail url
+                            item.msrc = linkEl.children[0].getAttribute('src');
+                        }
+
+                        item.el = figureEl; // save link to element for getThumbBoundsFn
+                        items.push(item);
+                    }
+
+                    return items;
+                };
+
+                // find nearest parent element
+                var closest = function closest(el, fn) {
+                    return el && (fn(el) ? el : closest(el.parentNode, fn));
+                };
+
+                // triggers when user clicks on thumbnail
+                var onThumbnailsClick = function(e) {
+                    e = e || window.event;
+
+                    var eTarget = e.target || e.srcElement;
+
+                    // find root element of slide
+                    var clickedListItem = closest(eTarget, function(el) {
+                        return (el.tagName && el.tagName.toUpperCase() === 'FIGURE');
+                    });
+
+                    if (!clickedListItem) {
+                        return;
+                    }
+
+                    if (e.preventDefault) {
+                        e.preventDefault();
+                    } else {
+                        e.returnValue = false;
+                    }
+
+                    // find index of clicked item by looping through all child nodes
+                    // alternatively, you may define index via data- attribute
+                    var clickedGallery = $(clickedListItem).closest(gallerySelector)[0],
+                        childNodes = $(clickedGallery).find('figure.article-gallery-img').toArray(),
+                        numChildNodes = childNodes.length,
+                        nodeIndex = 0,
+                        index;
+
+                    for (var i = 0; i < numChildNodes; i++) {
+                        if (childNodes[i].nodeType !== 1) {
+                            continue;
+                        }
+
+                        if (childNodes[i] === clickedListItem) {
+                            index = nodeIndex;
+                            break;
+                        }
+                        nodeIndex++;
+                    }
+
+
+
+                    if (index >= 0) {
+                        // open PhotoSwipe if valid index found
+                        openPhotoSwipe(index, clickedGallery);
+                    }
+                    return false;
+                };
+
+                // parse picture index and gallery index from URL (#&pid=1&gid=2)
+                var photoswipeParseHash = function() {
+                    var hash = window.location.hash.substring(1),
+                        params = {};
+
+                    if (hash.length < 5) {
+                        return params;
+                    }
+
+                    var vars = hash.split('&');
+                    for (var i = 0; i < vars.length; i++) {
+                        if (!vars[i]) {
+                            continue;
+                        }
+                        var pair = vars[i].split('=');
+                        if (pair.length < 2) {
+                            continue;
+                        }
+                        params[pair[0]] = pair[1];
+                    }
+
+                    if (params.gid) {
+                        params.gid = parseInt(params.gid, 10);
+                    }
+
+                    return params;
+                };
+
+                var openPhotoSwipe = function(index, galleryElement, disableAnimation, fromURL) {
+                    var pswpElement = document.querySelectorAll('.pswp')[0],
+                        gallery,
+                        options,
+                        items;
+
+                    items = parseThumbnailElements(galleryElement);
+
+                    // define options (if needed)
+                    options = {
+
+                        // define gallery index (for URL)
+                        galleryUID: galleryElement.getAttribute('data-pswp-uid'),
+
+                        getThumbBoundsFn: function(index) {
+                            // See Options -> getThumbBoundsFn section of documentation for more info
+                            var thumbnail = items[index].el.getElementsByTagName('img')[0], // find thumbnail
+                                pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
+                                rect = thumbnail.getBoundingClientRect();
+
+                            return {
+                                x: rect.left,
+                                y: rect.top + pageYScroll,
+                                w: rect.width
+                            };
+                        }
+                    };
+
+                    // PhotoSwipe opened from URL
+                    if (fromURL) {
+                        if (options.galleryPIDs) {
+                            // parse real index when custom PIDs are used
+                            // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
+                            for (var j = 0; j < items.length; j++) {
+                                if (items[j].pid == index) {
+                                    options.index = j;
+                                    break;
+                                }
+                            }
+                        } else {
+                            // in URL indexes start from 1
+                            options.index = parseInt(index, 10) - 1;
+                        }
+                    } else {
+                        options.index = parseInt(index, 10);
+                    }
+
+                    // exit if index not found
+                    if (isNaN(options.index)) {
+                        return;
+                    }
+
+                    if (disableAnimation) {
+                        options.showAnimationDuration = 0;
+                    }
+
+                    // Pass data to PhotoSwipe and initialize it
+                    gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
+
+                    gallery.listen('imageLoadComplete', function(index, item) {
+                        var linkEl = item.el.children[0];
+                        var img = item.container.children[0];
+                        if (!linkEl.getAttribute('data-size')) {
+                            linkEl.setAttribute('data-size', img.naturalWidth + 'x' + img.naturalHeight);
+                            item.w = img.naturalWidth;
+                            item.h = img.naturalHeight;
+                            gallery.invalidateCurrItems();
+                            gallery.updateSize(true);
+                        }
+                    });
+
+                    gallery.init();
+                };
+
+                // loop through all gallery elements and bind events
+                var galleryElements = document.querySelectorAll(gallerySelector);
+
+                for (var i = 0, l = galleryElements.length; i < l; i++) {
+                    galleryElements[i].setAttribute('data-pswp-uid', i + 1);
+                    galleryElements[i].onclick = onThumbnailsClick;
+                }
+
+                // Parse URL and open gallery if it contains #&pid=3&gid=1
+                var hashData = photoswipeParseHash();
+                if (hashData.pid && hashData.gid) {
+                    openPhotoSwipe(hashData.pid, galleryElements[hashData.gid - 1], true, true);
+                }
+            };
+
+            // execute above function
+            initPhotoSwipeFromDOM(gallerySelector);
+        }
+        
+        
+    }
+
+    /*打赏页面隐藏与展示*/
+    
+    function dashangToggle() {
+        $(".shang_box").fadeToggle();
+        $(".hide_box").fadeToggle();
+    }
+    
+
+</script>
+
+<!--加入行号的高亮代码块样式-->
+
+<style>
+    pre{
+        position: relative;
+        margin-bottom: 24px;
+        border-radius: 10px;
+        border: 1px solid #e2dede;
+        background: #FFF;
+        overflow: hidden;
+    }
+    code.has-numbering{
+        margin-left: 30px;
+    }
+    code.has-numbering.widther{
+        margin-left: 35px;
+    }
+    .pre-numbering{
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        padding: 0.5em 3px 0.7em 5px;
+        border-right: 1px solid #C3CCD0;
+        text-align: right;
+        color: #AAA;
+        background-color: ;
+    }
+    .pre-numbering.widther {
+        width: 35px;
+    }
+</style>
+
+<!--自定义样式设置-->
+<style>
+    
+    
+    .nav {
+        width: 542px;
+    }
+    .nav.fullscreen {
+        margin-left: -542px;
+    }
+    .nav-left {
+        width: 120px;
+    }
+    
+    
+    @media screen and (max-width: 1468px) {
+        .nav {
+            width: 492px;
+        }
+        .nav.fullscreen {
+            margin-left: -492px;
+        }
+        .nav-left {
+            width: 100px;
+        }
+    }
+    
+    
+    @media screen and (max-width: 1024px) {
+        .nav {
+            width: 492px;
+            margin-left: -492px
+        }
+        .nav.fullscreen {
+            margin-left: 0;
+        }
+    }
+    
+    @media screen and (max-width: 426px) {
+        .nav {
+            width: 100%;
+        }
+        .nav-left {
+            width: 100%;
+        }
+    }
+    
+    
+    .nav-right .title-list nav a .post-title, .nav-right .title-list #local-search-result a .post-title {
+        color: #383636;
+    }
+    
+    
+    .nav-right .title-list nav a .post-date, .nav-right .title-list #local-search-result a .post-date {
+        color: #5e5e5f;
+    }
+    
+    
+    .nav-right nav a.hover, #local-search-result a.hover{
+        background-color: #e2e0e0;
+    }
+    
+    
+    .nav-right nav a.hover > span{
+        color: #03a788 !important;
+    }
+    
+
+    /*列表样式*/
+    
+
+    /* 背景图样式 */
+    
+    
+
+
+    /*引用块样式*/
+    
+
+    /*文章列表背景图*/
+    
+
+    
+</style>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element, as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script>
+<style>
+  .aplayer .aplayer-lrc {
+    height: 35px;
+  }
+  .aplayer .aplayer-lrc p{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px !important;
+  }
+  .aplayer .aplayer-lrc p.aplayer-lrc-current{
+    color: #FF1493;
+  }
+  .aplayer.aplayer-narrow .aplayer-body{
+    left: -66px !important;
+  }
+  .aplayer.aplayer-fixed .aplayer-lrc {
+    display: none;
+  }
+  .aplayer .aplayer-lrc.aplayer-lrc-hide {
+      display:none !important;
+  }
+  .aplayer.aplayer-fixed .lrc-show {
+    display: block;
+    background: rgba(255, 255, 255, 0.8);
+  }
+</style>
+<div class="aplayer"
+
+    data-id="2162711186"
+
+    data-server="netease"
+
+    data-type="playlist"
+
+    data-fixed="true"
+
+    data-autoplay="false"
+
+    data-loop="all"
+
+    data-order="random"
+
+    data-preload="auto"
+
+    data-volume="0.7"
+
+    data-mutex="true"
+
+>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/meting@1.2/dist/Meting.min.js"></script>
+<script>
+  $(function(){
+    $('body').on('click', '.aplayer', function(){
+      if($('.aplayer-button').hasClass('aplayer-play')) {
+        $('.aplayer-lrc').removeClass('lrc-show');
+      } else {
+        $('.aplayer-lrc').addClass('lrc-show');
+      }
+    })
+  });
+</script>
+
+<script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script type="text/javascript" src="/js/jquery.fancybox.min.js"></script>
+
+<script>
+(function() {
+
+  var arr = new Array();
+  var $tags = $('.post-tags').children('a');
+  $tags.each(function() {
+    arr.push($(this).html())
+  })
+  if (arr.indexOf("图集") !== -1) {
+
+    $('.hj_img').each(function() {
+      $(this).wrap('<a class="fancybox" data-fancybox="gallery" href="' + $(this).prop("src") + '"></a>'); 
+    })
+    //初始化fancybox，padding设为0，loop设为false
+    $('.fancybox').fancybox({
+      padding: 0,
+      loop: false
+    });
+  }
+})();
+</script>
+
+<!-- // 文字 -->
+<script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/shehuizhuyi.js"></script>
+<!-- // 爱心 -->
+<script src="https://cdn.jsdelivr.net/gh/wallleap/cdn/js/love.js"></script>
+<!-- // 按键屏蔽 需要jQuery -->
+<script src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/js/noSomeKey.js"></script>
+
+</html>

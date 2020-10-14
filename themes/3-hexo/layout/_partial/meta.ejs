@@ -4,21 +4,19 @@
 <link rel="alternate" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
 <% } %>
 <% if (theme.favicon){ %>
-<link rel="icon" href="<%- theme.favicon %>" type="image/x-icon">
-<link rel="shortcut icon" href="<%- theme.favicon %>" type="image/x-icon">
+<link rel="icon" href="<%- theme.favicon %>">
 <% } %>
 <link href="<%=theme.blog_path?theme.blog_path.lastIndexOf("/") === theme.blog_path.length-1?theme.blog_path.slice(0, theme.blog_path.length-1):theme.blog_path:'' %>/css/style.css?v=<%=theme.version%>" rel="stylesheet">
 <% if(theme.highlight && theme.highlight.on && theme.highlight.theme){ %>
 <link href="<%=theme.blog_path?theme.blog_path.lastIndexOf("/") === theme.blog_path.length-1?theme.blog_path.slice(0, theme.blog_path.length-1):theme.blog_path:'' %>/css/hl_theme/<%=theme.highlight.theme %>.css?v=<%=theme.version%>" rel="stylesheet">
 <%}%>
 <link href="<%=theme.CDN.animate %>" rel="stylesheet">
-<link href="<%=theme.CDN.font_awsome %>" rel="stylesheet">
 <% if (theme.img_resize == 'photoSwipe') {%>
 <link href="<%=theme.CDN.photoswipe_css%>" rel="stylesheet">
 <link href="<%=theme.CDN.photoswipe_skin_css%>" rel="stylesheet">
 <% } %>
 <script src="<%=theme.CDN.jquery%>"></script>
-<script src="<%=theme.blog_path?theme.blog_path.lastIndexOf("/") === theme.blog_path.length-1?theme.blog_path.slice(0, theme.blog_path.length-1):theme.blog_path:'' %>/js/jquery.autocomplete.min.js?v=<%=theme.version%>" ></script>
+<script src="<%=theme.blog_path?theme.blog_path.lastIndexOf("/") === theme.blog_path.length-1?theme.blog_path.slice(0, theme.blog_path.length-1):theme.blog_path:'' %>/js/titleTip.js?v=<%=theme.version%>" ></script>
 
 <script src="<%=theme.CDN.highlight %>"></script>
 <script>
@@ -34,3 +32,24 @@
 <script src="<%= theme.CDN.jquery_cookie %>" ></script>
 <%}%>
 <script src="<%=theme.blog_path?theme.blog_path.lastIndexOf("/") === theme.blog_path.length-1?theme.blog_path.slice(0, theme.blog_path.length-1):theme.blog_path:'' %>/js/iconfont.js?v=<%=theme.version%>" ></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="/css/customize.css">
+<link rel="stylesheet" href="/css/github-badge.css">
+
+<link rel="stylesheet" href="/css/jquery.fancybox.min.css" media="all">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/honjun/hexo-tag-emojis-byhj/css/emoji.css">
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+	.pace .pace-progress {  background: rgb(251, 129, 30); /*进度条颜色*/
+	height: 3px;  }
+	.pace .pace-progress-inner {  box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+	}
+	.pace .pace-activity {  border-top-color: rgb(251, 129, 30);    /*上边框颜色*/
+	border-left-color: rgb(251, 129, 30);    /*左边框颜色*/
+	}
+</style>
+
+  

@@ -58,6 +58,7 @@ photos: https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/banner/banner1.jpg
 
 对了，教程的话参考这个吧：[【爱折腾】RE：从零开始安装黑苹果](https://www.bilibili.com/video/av8653761)，顺带看下其他帖子
 {% bili 8653761 %}
+
 ## 02.黑苹果状态
 
 =处理器         变频正常
@@ -104,7 +105,7 @@ photos: https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/banner/banner1.jpg
 
  
 
- ## 04.网卡驱动更换
+## 04.网卡驱动更换
 
 
  由于USB网卡占用一个USB接口，蓝牙是内置网卡提供的，总是会掉，而且隔空投送功能不能实现，因此萌生了更换网卡的想法。
@@ -148,7 +149,7 @@ photos: https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/banner/banner1.jpg
  ===============================2019.7.4更新===================================
 
 
- ## 05.补充
+## 05.补充
 
  试了下10.5感觉不好用，就干脆直接回到了最稳定的10.13.6
 
@@ -198,7 +199,7 @@ photos: https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/banner/banner1.jpg
 
  ### (7)推荐下载
 
- ![推荐下载](RecommendDownload.png)
+![推荐下载](https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200808085257.png)
 
  
 
@@ -207,7 +208,7 @@ photos: https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/banner/banner1.jpg
 
  ===============================2019.7.26更新==================================
 
- ## 06.升级MacOS10.15Catalina
+## 06.升级MacOS10.15Catalina
 
  哈哈，说好回到最稳定的10.13.6，可本着冒险精神的我，又上10.15了，而且还找到了一个完美的EFI，哇哈哈。
 
@@ -242,7 +243,7 @@ photos: https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/banner/banner1.jpg
  ===============================2019.8.5更新===================================
 
 
- ## 07.蓝牙解决方案
+## 07.蓝牙解决方案
  还是[@CeWnHai](http://i.pcbeta.com/space-uid-4841127.html)这位大佬的方案，就上面的那个基本完美的EFI分享者。
 
  简而言之就是在VirtualSMC加入蓝牙的id即可。具体参考：
@@ -254,3 +255,21 @@ photos: https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/banner/banner1.jpg
  ===============================2019.8.27更新==================================
 
  以后文章优先在[使用hexo部署在github page搭建的博客](http://wallleap.top)更新
+
+
+ ===============================2020.5.28更新==================================
+
+## 08.更换OC引导
+
+使用的是[OpenCore引导神舟k670d蓝天W650kj完美](http://bbs.pcbeta.com/viewthread-1842304-7-1.html)这个帖子里的
+
+需要先刷D大的BOOT，之后按照帖子[蓝天解锁CFG锁教程](http://bbs.pcbeta.com/viewthread-1842372-1-1.html)操作。
+
+接着就可以把EFI换成OC的了
+
+ ===============================2020.5.28更新==================================
+
+## 09.尝试上车Big sur
+
+上车失败，硬盘空间不够，想安装到移动硬盘，还是不行
+
