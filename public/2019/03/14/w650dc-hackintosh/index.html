@@ -6,20 +6,18 @@
   <meta name="keywords" content=" w650dc , hackintosh , 黑苹果 ">
   <meta name="description" content="毁灭者DC W650DC装黑苹果心得 | wallleap">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="念两句诗          叙别梦、扬州一觉。          【宋代】吴文英《夜游宫·人去西楼雁杳》       .images{ 	float: left;     width: 100%;     height: 300px;     position: relative;     margin: 20px 0">
+<meta name="description" content="botui使用之后导致结构太混乱了，因此改用正常的md文档书写 valine评论也不太适合这个主题，改为gitalk   .talk-wrap{ 	position: relative; } .talk-wrap::before, .talk-wrap::after{ 	content: &quot;&quot;; 	display: table; 	clear: both; } .talk-left, .talk-">
 <meta property="og:type" content="website">
-<meta property="og:title" content="图集">
-<meta property="og:url" content="https://wallleap.cn/photo/index.html">
+<meta property="og:title" content="关于">
+<meta property="og:url" content="https://wallleap.cn/about/index.html">
 <meta property="og:site_name" content="wallleap">
-<meta property="og:description" content="念两句诗          叙别梦、扬州一觉。          【宋代】吴文英《夜游宫·人去西楼雁杳》       .images{ 	float: left;     width: 100%;     height: 300px;     position: relative;     margin: 20px 0">
+<meta property="og:description" content="botui使用之后导致结构太混乱了，因此改用正常的md文档书写 valine评论也不太适合这个主题，改为gitalk   .talk-wrap{ 	position: relative; } .talk-wrap::before, .talk-wrap::after{ 	content: &quot;&quot;; 	display: table; 	clear: both; } .talk-left, .talk-">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=46b93e4b7d1ed21b79c929e39555baf9/14ce36d3d539b600fbdea00ee950352ac65cb773.jpg">
-<meta property="article:published_time" content="2020-02-23T07:09:21.000Z">
-<meta property="article:modified_time" content="2020-03-24T14:15:05.640Z">
+<meta property="article:published_time" content="2020-02-23T06:54:06.000Z">
+<meta property="article:modified_time" content="2022-02-08T09:43:55.896Z">
 <meta property="article:author" content="Luwang">
 <meta property="article:tag" content="wallleap">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=46b93e4b7d1ed21b79c929e39555baf9/14ce36d3d539b600fbdea00ee950352ac65cb773.jpg">
 
 
 <link rel="icon" href="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/favicon.ico">
@@ -1144,7 +1142,7 @@
         
         <a  class="全部文章 编程 数据结构 "
            href="/2019/08/28/DataStructure1/"
-           data-tag="数据结构,C/C++,技术"
+           data-tag="技术,数据结构,C/C++"
            data-author="" >
             <span class="post-title" title="数据结构(1)-绪论">数据结构(1)-绪论</span>
             <span class="post-date" title="2019-08-28 22:12:47">2019/08/28</span>
@@ -1258,7 +1256,7 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2020-08-08 09:09:22'>2019-03-14 21:27</time>
+            发布时间 : <time class="date" title='最后更新: 2022-02-08 17:52:09'>2019-03-14 21:27</time>
         
     </div>
     <div class="article-meta">
@@ -1375,14 +1373,12 @@
 </tbody></table>
 <hr>
 <h2><span id="01折腾经历">01.折腾经历</span></h2><p>刚开始cpu是奔腾的，网上看到一篇帖子：</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://img-blog.csdnimg.cn/20190314205443964.png" alt="G4400仿冒ID"><br><a href="http://bbs.zol.com.cn/diybbs/d231_872661.html" target="_blank" rel="noopener">G4400+H110M黑苹果成功</a></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img-blog.csdnimg.cn/20190314205443964.png" alt="G4400仿冒ID"><br><a href="http://bbs.zol.com.cn/diybbs/d231_872661.html" target="_blank" rel="noopener">G4400+H110M黑苹果成功</a></p>
 <p>我在虚拟机装好了Mac，改好了config.plist</p>
 <p>(就这里我踩了个坑：使用的Clover Configurator版本不对，打死都进不去安装界面，一直卡在update那，这还是我换U装好黑苹果后才发现的)</p>
 <p>咨询了下某些大佬，他们说就算装了显卡也没得玩，so直接买了块i3 8100，刷了下BIOS，换上U，引导直接成功安装10.12.6</p>
 <p>把引导文件放到EFI分区之后，发现有些地方一直闪屏，根据黑果小兵的教程改好了显存(改到了3072MB)还是会闪，有的网友说SMBIOS只留型号那一栏为18,1可以解决，然并卵。然后我直接把整个EFI换了clover4596，保留了改好了之后的config.plist，开机，很好不闪了，然后干脆直接装了带Clover4596的10.13.6  </p>
 <p>对了，教程的话参考这个吧：<a href="https://www.bilibili.com/video/av8653761" target="_blank" rel="noopener">【爱折腾】RE：从零开始安装黑苹果</a>，顺带看下其他帖子</p>
-<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="//player.bilibili.com/player.html?8653761" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"></iframe></div>
-
 <h2><span id="02黑苹果状态">02.黑苹果状态</span></h2><p>=处理器         变频正常</p>
 <p>=显卡             独显没办法，HD510也没办法。UHD630没毛病了，能驱动，能调亮度。睡眠有问题，长时间会睡死，Mojave好像升级到最新版Clover4020好像不会睡死</p>
 <p>=声卡             声卡正常 注入29</p>
@@ -1435,7 +1431,7 @@
 <blockquote>
 <p>-DW1830/BCM943602BAED</p>
 </blockquote>
-<p> 后面两种因为很好驱动，市场价越来越高，穷苦人家实在买不起，然后就盯着第一款，发现有一家店卖￥49，因此就直接入手了。<br> <img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://img-blog.csdnimg.cn/20190630104200606.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTQ5MTAz,size_16,color_FFFFFF,t_70" alt="DW1820A价格"></p>
+<p> 后面两种因为很好驱动，市场价越来越高，穷苦人家实在买不起，然后就盯着第一款，发现有一家店卖￥49，因此就直接入手了。<br> <img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img-blog.csdnimg.cn/20190630104200606.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTQ5MTAz,size_16,color_FFFFFF,t_70" alt="DW1820A价格"></p>
 <blockquote>
 <p>注：</p>
 </blockquote>
@@ -1443,10 +1439,10 @@
 <p>1、此网卡大部分电脑应该都支持，17年前的HP、联想慎入。</p>
 </blockquote>
 <blockquote>
-<p>2、黑苹果直接先把三个驱动放到Clover/kext下，然后替换掉以前的网卡就行了，隔空投送终于能用了<br> <img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://img-blog.csdnimg.cn/20190630104303392.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTQ5MTAz,size_16,color_FFFFFF,t_70" alt="黑苹果驱动"></p>
+<p>2、黑苹果直接先把三个驱动放到Clover/kext下，然后替换掉以前的网卡就行了，隔空投送终于能用了<br> <img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img-blog.csdnimg.cn/20190630104303392.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTQ5MTAz,size_16,color_FFFFFF,t_70" alt="黑苹果驱动"></p>
 </blockquote>
 <blockquote>
-<p>3、Win下需要安装WLAN和蓝牙驱动，有以下解决方案：<br> ①直接下载驱动安装<br> ②用手机USB网络共享，之后用驱动精灵安装<br> ③插网线，再用驱动精灵下载驱动<br> ④外置USB网卡，驱动精灵<br> <img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://img-blog.csdnimg.cn/20190630104842234.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTQ5MTAz,size_16,color_FFFFFF,t_70" alt="win驱动"></p>
+<p>3、Win下需要安装WLAN和蓝牙驱动，有以下解决方案：<br> ①直接下载驱动安装<br> ②用手机USB网络共享，之后用驱动精灵安装<br> ③插网线，再用驱动精灵下载驱动<br> ④外置USB网卡，驱动精灵<br> <img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img-blog.csdnimg.cn/20190630104842234.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTQ5MTAz,size_16,color_FFFFFF,t_70" alt="win驱动"></p>
 </blockquote>
 <blockquote>
 <p>4、WIFI_5G<br> 网卡是支持5G的，WIN下不用修改，Mac可以参考这个：<br> <a href="http://bbs.pcbeta.com/viewthread-1817645-1-1.html" target="_blank" rel="noopener">[网卡] BCM94350ZAE(dw1820A)驱动教程，基本完美</a></p>
@@ -1461,14 +1457,14 @@
 <h3><span id="2iterm2配置">(2)iTerm2配置</span></h3><p> <a href="https://www.cnblogs.com/diyxiaoshitou/p/9017413.html" target="_blank" rel="noopener">Mac OS 终端利器 iTerm2配置大全</a></p>
 <h3><span id="3安装任何来源命令">(3)安装任何来源命令</span></h3><p> <code>sudo spctl --master-disable</code> </p>
 <h3><span id="4dock栏插入空格">(4)Dock栏插入空格</span></h3><pre><code> defaults write com.apple.dock persistent-apps -array-add &#39;{&quot;tile-type&quot;=&quot;spacer-tile&quot;;}&#39;</code></pre><p> 再输入下面的命令</p>
-<p> <code>killall Dock</code><br> <img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://img-blog.csdnimg.cn/20190704220349999.png" alt="程序坞"></p>
+<p> <code>killall Dock</code><br> <img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img-blog.csdnimg.cn/20190704220349999.png" alt="程序坞"></p>
 <p> 不过以上命令只是对 Dock 栏的左半部分有效,如果你想在右半部分（应用、文稿、下载、废纸篓）也添加空格的话,可以用下面的这个命令：</p>
 <pre><code> defaults write com.apple.dock persistent-others -array-add &#39;{tile-data={}; tile-type=&quot;spacer-tile&quot;;}&#39; ;killall Dock</code></pre><p> 不想要了直接拖出去就行</p>
-<h3><span id="5开机第二段八苹果花屏解决方案">(5)开机第二段八苹果花屏解决方案</span></h3><p> 使用EDID Edit获取EDID到Clover中注入<br> <img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://img-blog.csdnimg.cn/20190706162642419.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTQ5MTAz,size_16,color_FFFFFF,t_70" alt="注入EDID"></p>
+<h3><span id="5开机第二段八苹果花屏解决方案">(5)开机第二段八苹果花屏解决方案</span></h3><p> 使用EDID Edit获取EDID到Clover中注入<br> <img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img-blog.csdnimg.cn/20190706162642419.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTQ5MTAz,size_16,color_FFFFFF,t_70" alt="注入EDID"></p>
 <h3><span id="6一些下载地址更新ing">(6)一些下载地址(更新ing)</span></h3><p> Config.plist <a href="https://github.com/RehabMan/OS-X-Clover-Laptop-Config/blob/master/hotpatch/config.plist" target="_blank" rel="noopener">https://github.com/RehabMan/OS-X-Clover-Laptop-Config/blob/master/hotpatch/config.plist</a></p>
 <p> Clover <a href="https://github.com/Dids/clover-builder/releases" target="_blank" rel="noopener">https://github.com/Dids/clover-builder/releases</a></p>
-<p> Clover Configaration（CCG） <a href="https://mackie100projects.altervista.org/clover-configurator/" target="_blank" rel="noopener">https://mackie100projects.altervista.org/clover-configurator/</a><br> <img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://img-blog.csdnimg.cn/20190704221926207.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTQ5MTAz,size_16,color_FFFFFF,t_70" alt="CCG"></p>
-<h3><span id="7推荐下载">(7)推荐下载</span></h3><p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200808085257.png" alt="推荐下载"></p>
+<p> Clover Configaration（CCG） <a href="https://mackie100projects.altervista.org/clover-configurator/" target="_blank" rel="noopener">https://mackie100projects.altervista.org/clover-configurator/</a><br> <img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://img-blog.csdnimg.cn/20190704221926207.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM2OTQ5MTAz,size_16,color_FFFFFF,t_70" alt="CCG"></p>
+<h3><span id="7推荐下载">(7)推荐下载</span></h3><p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200808085257.png" alt="推荐下载"></p>
 <p> ===============================2019.7.26更新==================================</p>
 <h2><span id="06升级macos1015catalina">06.升级MacOS10.15Catalina</span></h2><p> 哈哈，说好回到最稳定的10.13.6，可本着冒险精神的我，又上10.15了，而且还找到了一个完美的EFI，哇哈哈。</p>
 <p> 闲着无聊，然后就使用镜像升级到了10.14.5，然后直接通过系统升级到10.15 Beta 版(19A512f)。能开机，重要的问题就两个，声卡不能驱动、蓝牙无法使用。</p>
@@ -1547,7 +1543,7 @@
     <p><span class="copy-title">字数:</span><span class="post-count">1.8k</span></p>
     <p><span class="copy-title">本文作者:</span><a  title="Luwang">Luwang</a></p>
     <p><span class="copy-title">发布时间:</span>2019-03-14, 21:27:46</p>
-    <p><span class="copy-title">最后更新:</span>2020-08-08, 09:09:22</p>
+    <p><span class="copy-title">最后更新:</span>2022-02-08, 17:52:09</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/03/14/w650dc-hackintosh/" title="毁灭者DC W650DC装黑苹果心得">https://wallleap.cn/2019/03/14/w650dc-hackintosh/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">&#34;署名-非商用-相同方式共享 4.0&#34;</a> 转载请保留原文链接及作者。
@@ -1560,7 +1556,7 @@
         <p><span class="copy-title">文章字数:</span><span class="post-count">1.8k</span></p>
         <p><span class="copy-title">本文作者:</span><a  title="Luwang">Luwang</a></p>
         <p><span class="copy-title">发布时间:</span>2019-03-14, 21:27:46</p>
-        <p><span class="copy-title">最后更新:</span>2020-08-08, 09:09:22</p>
+        <p><span class="copy-title">最后更新:</span>2022-02-08, 17:52:09</p>
         <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/03/14/w650dc-hackintosh/" title="毁灭者DC W650DC装黑苹果心得">https://wallleap.cn/2019/03/14/w650dc-hackintosh/</a>
         <p>
             <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
@@ -1636,7 +1632,7 @@
           
   
         <p style="color: #666666;"><a href="#" style="color: #b9b9b9;">Blog wallleap</a>
-          , Copyright &copy; 2019-2020 
+          , Copyright &copy; 2019-2022 
           by Luwang All Rights Reserved.</p>
       </div>
       <!-- <div class="footer-device">

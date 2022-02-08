@@ -6,20 +6,18 @@
   <meta name="keywords" content=" hexo ">
   <meta name="description" content="valine评论系统使用 | wallleap">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="念两句诗          叙别梦、扬州一觉。          【宋代】吴文英《夜游宫·人去西楼雁杳》       .images{ 	float: left;     width: 100%;     height: 300px;     position: relative;     margin: 20px 0">
+<meta name="description" content="botui使用之后导致结构太混乱了，因此改用正常的md文档书写 valine评论也不太适合这个主题，改为gitalk   .talk-wrap{ 	position: relative; } .talk-wrap::before, .talk-wrap::after{ 	content: &quot;&quot;; 	display: table; 	clear: both; } .talk-left, .talk-">
 <meta property="og:type" content="website">
-<meta property="og:title" content="图集">
-<meta property="og:url" content="https://wallleap.cn/photo/index.html">
+<meta property="og:title" content="关于">
+<meta property="og:url" content="https://wallleap.cn/about/index.html">
 <meta property="og:site_name" content="wallleap">
-<meta property="og:description" content="念两句诗          叙别梦、扬州一觉。          【宋代】吴文英《夜游宫·人去西楼雁杳》       .images{ 	float: left;     width: 100%;     height: 300px;     position: relative;     margin: 20px 0">
+<meta property="og:description" content="botui使用之后导致结构太混乱了，因此改用正常的md文档书写 valine评论也不太适合这个主题，改为gitalk   .talk-wrap{ 	position: relative; } .talk-wrap::before, .talk-wrap::after{ 	content: &quot;&quot;; 	display: table; 	clear: both; } .talk-left, .talk-">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=46b93e4b7d1ed21b79c929e39555baf9/14ce36d3d539b600fbdea00ee950352ac65cb773.jpg">
-<meta property="article:published_time" content="2020-02-23T07:09:21.000Z">
-<meta property="article:modified_time" content="2020-03-24T14:15:05.640Z">
+<meta property="article:published_time" content="2020-02-23T06:54:06.000Z">
+<meta property="article:modified_time" content="2022-02-08T09:43:55.896Z">
 <meta property="article:author" content="Luwang">
 <meta property="article:tag" content="wallleap">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=46b93e4b7d1ed21b79c929e39555baf9/14ce36d3d539b600fbdea00ee950352ac65cb773.jpg">
 
 
 <link rel="icon" href="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/favicon.ico">
@@ -1144,7 +1142,7 @@
         
         <a  class="全部文章 编程 数据结构 "
            href="/2019/08/28/DataStructure1/"
-           data-tag="数据结构,C/C++,技术"
+           data-tag="技术,数据结构,C/C++"
            data-author="" >
             <span class="post-title" title="数据结构(1)-绪论">数据结构(1)-绪论</span>
             <span class="post-date" title="2019-08-28 22:12:47">2019/08/28</span>
@@ -1252,7 +1250,7 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2020-05-06 23:08:05'>2020-03-30 12:16</time>
+            发布时间 : <time class="date" title='最后更新: 2022-02-08 17:43:55'>2020-03-30 12:16</time>
         
     </div>
     <div class="article-meta">
@@ -1312,7 +1310,7 @@
 <a id="more"></a>
 
 <p>emmmm，版本<code>v1.4.0</code>之后更新了很多内容，不得不说，这段时间作者真的是高产啊</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/illustration/valine.png" alt></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/illustration/valine.png" alt></p>
 <p>但是不想推翻重写，因此直接在这篇博文上修改</p>
 <p><font color="#bac">更新内容</font></p>
 <ul>
@@ -1330,7 +1328,7 @@
 <p>现在在控制台出现了你刚刚创建的应用，点击这个应用的右上角设置<strong><i class="fa fa-cog" aria-hidden="true"></i></strong>图标</p>
 <p>进入了设置界面，点击<code>valine开发版</code>下面那栏里的<code>应用Keys</code></p>
 <p>我们只需要里面的<code>AppID</code>和<code>AppKey</code>，现在先开始下面操作，这两个等下会用到</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/illustration/valine1.png" alt="valine应用keys"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/illustration/valine1.png" alt="valine应用keys"></p>
 <p>当然啦，如果你的博客主题已经<strong>集成</strong>了valine，那么将这两个值填到<code>_config.yml</code>的相应位置就可以了，下面的教程就可以选择性查看了</p>
 <h2><span id="修改博客渲染文件">修改博客渲染文件</span></h2><h3><span id="添加代码">添加代码</span></h3><p>现在到博客主题目录下打开<code>layout</code>目录，再进入<code>_partial</code>目录，在这个目录即<code>MyBlog/themes/主题名/layout/_partial</code>下新建<code>comment.ejs</code>文件，填入代码：</p>
 <pre><code class="ejs">&lt;% if (theme.valine &amp;&amp; post.comments) { %&gt;
@@ -1580,11 +1578,11 @@ textarea[id=&#39;veditor&#39;]::placeholder{
 <h3><span id="云引擎设置">云引擎设置</span></h3><p>回到我们在LeanCloud创建的应用<code>valine</code>，点击左边的第二个选项<code>云引擎</code></p>
 <p>点击<code>web组</code>下方的<code>设置</code></p>
 <p>在代码库的下方填上<code>https://github.com/DesertsP/Valine-Admin.git</code>，点击方框右边的<kbd>保存</kbd></p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/illustration/valine2.png" alt="代码库"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/illustration/valine2.png" alt="代码库"></p>
 <p>往下滑，在<code>自定义环境变量</code>这里添加如下变量</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/illustration/valine3.png" alt="变量"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/illustration/valine3.png" alt="变量"></p>
 <p>这些下面有解释，我们先接着往下滑，把<code>Web 主机域名</code>启用</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/illustration/valine4.png" alt="Web主机域名"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/illustration/valine4.png" alt="Web主机域名"></p>
 <table>
 <thead>
 <tr>
@@ -1743,7 +1741,7 @@ textarea[id=&#39;veditor&#39;]::placeholder{
 <h3><span id="开始部署">开始部署</span></h3><p>点击左边的<code>部署</code>，再点击页面中的<kbd>Git源码部署</kbd></p>
 <p>在出现的页面中<code>分支或版本号</code>下方的框中填入<code>master</code>，勾选☑️<code>下载最新依赖</code>复选框</p>
 <p>再点击<kbd>部署</kbd>,接着等待部署完成即可</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/illustration/valine5.png" alt="部署"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/illustration/valine5.png" alt="部署"></p>
 <h3><span id="设置定时任务">设置定时任务</span></h3><p>到上一步已经完成了邮箱通知提醒的功能了</p>
 <p>但是免费的LeanCloud有休眠政策，具体能运行几小时忘记了，但是不能全天运行</p>
 <p>也就是说可能会漏掉一些评论的提醒</p>
@@ -1752,7 +1750,7 @@ textarea[id=&#39;veditor&#39;]::placeholder{
 <p>这就是定时任务所执行的内容</p>
 <p>点击<code>定时任务</code>，创建两个定时任务，分别填：</p>
 <p>名称：<code>自动唤醒</code>  生产环境：<code>self-wake</code>  Cron表达式：<code>0 0/30 7-23 * * ?</code><br>名称：<code>定时检查24小时内漏发的邮件通知</code>  生产环境：<code>resend-mails</code>  Cron表达式：<code>0 0 8 * * ?</code></p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/illustration/valine6.png" alt></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/illustration/valine6.png" alt></p>
 <hr>
 <p>设置完成之后就OK啦</p>
 <p>这样就拥有了一个完美的评论系统了</p>
@@ -1776,7 +1774,7 @@ textarea[id=&#39;veditor&#39;]::placeholder{
     <p><span class="copy-title">字数:</span><span class="post-count">5k</span></p>
     <p><span class="copy-title">本文作者:</span><a  title="Luwang">Luwang</a></p>
     <p><span class="copy-title">发布时间:</span>2020-03-30, 12:16:01</p>
-    <p><span class="copy-title">最后更新:</span>2020-05-06, 23:08:05</p>
+    <p><span class="copy-title">最后更新:</span>2022-02-08, 17:43:55</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/03/30/hexoValine/" title="valine评论系统使用">https://wallleap.cn/2020/03/30/hexoValine/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">&#34;署名-非商用-相同方式共享 4.0&#34;</a> 转载请保留原文链接及作者。
@@ -1789,7 +1787,7 @@ textarea[id=&#39;veditor&#39;]::placeholder{
         <p><span class="copy-title">文章字数:</span><span class="post-count">5k</span></p>
         <p><span class="copy-title">本文作者:</span><a  title="Luwang">Luwang</a></p>
         <p><span class="copy-title">发布时间:</span>2020-03-30, 12:16:01</p>
-        <p><span class="copy-title">最后更新:</span>2020-05-06, 23:08:05</p>
+        <p><span class="copy-title">最后更新:</span>2022-02-08, 17:43:55</p>
         <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/03/30/hexoValine/" title="valine评论系统使用">https://wallleap.cn/2020/03/30/hexoValine/</a>
         <p>
             <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
@@ -1865,7 +1863,7 @@ textarea[id=&#39;veditor&#39;]::placeholder{
           
   
         <p style="color: #666666;"><a href="#" style="color: #b9b9b9;">Blog wallleap</a>
-          , Copyright &copy; 2019-2020 
+          , Copyright &copy; 2019-2022 
           by Luwang All Rights Reserved.</p>
       </div>
       <!-- <div class="footer-device">

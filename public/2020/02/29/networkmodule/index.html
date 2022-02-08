@@ -6,20 +6,18 @@
   <meta name="keywords" content=" HCNA ">
   <meta name="description" content="两种主要的网络参考模型 | wallleap">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="念两句诗          叙别梦、扬州一觉。          【宋代】吴文英《夜游宫·人去西楼雁杳》       .images{ 	float: left;     width: 100%;     height: 300px;     position: relative;     margin: 20px 0">
+<meta name="description" content="botui使用之后导致结构太混乱了，因此改用正常的md文档书写 valine评论也不太适合这个主题，改为gitalk   .talk-wrap{ 	position: relative; } .talk-wrap::before, .talk-wrap::after{ 	content: &quot;&quot;; 	display: table; 	clear: both; } .talk-left, .talk-">
 <meta property="og:type" content="website">
-<meta property="og:title" content="图集">
-<meta property="og:url" content="https://wallleap.cn/photo/index.html">
+<meta property="og:title" content="关于">
+<meta property="og:url" content="https://wallleap.cn/about/index.html">
 <meta property="og:site_name" content="wallleap">
-<meta property="og:description" content="念两句诗          叙别梦、扬州一觉。          【宋代】吴文英《夜游宫·人去西楼雁杳》       .images{ 	float: left;     width: 100%;     height: 300px;     position: relative;     margin: 20px 0">
+<meta property="og:description" content="botui使用之后导致结构太混乱了，因此改用正常的md文档书写 valine评论也不太适合这个主题，改为gitalk   .talk-wrap{ 	position: relative; } .talk-wrap::before, .talk-wrap::after{ 	content: &quot;&quot;; 	display: table; 	clear: both; } .talk-left, .talk-">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=46b93e4b7d1ed21b79c929e39555baf9/14ce36d3d539b600fbdea00ee950352ac65cb773.jpg">
-<meta property="article:published_time" content="2020-02-23T07:09:21.000Z">
-<meta property="article:modified_time" content="2020-03-24T14:15:05.640Z">
+<meta property="article:published_time" content="2020-02-23T06:54:06.000Z">
+<meta property="article:modified_time" content="2022-02-08T09:43:55.896Z">
 <meta property="article:author" content="Luwang">
 <meta property="article:tag" content="wallleap">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=46b93e4b7d1ed21b79c929e39555baf9/14ce36d3d539b600fbdea00ee950352ac65cb773.jpg">
 
 
 <link rel="icon" href="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/favicon.ico">
@@ -1144,7 +1142,7 @@
         
         <a  class="全部文章 编程 数据结构 "
            href="/2019/08/28/DataStructure1/"
-           data-tag="数据结构,C/C++,技术"
+           data-tag="技术,数据结构,C/C++"
            data-author="" >
             <span class="post-title" title="数据结构(1)-绪论">数据结构(1)-绪论</span>
             <span class="post-date" title="2019-08-28 22:12:47">2019/08/28</span>
@@ -1252,7 +1250,7 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2020-03-07 19:22:09'>2020-02-29 19:53</time>
+            发布时间 : <time class="date" title='最后更新: 2022-02-08 17:43:55'>2020-02-29 19:53</time>
         
     </div>
     <div class="article-meta">
@@ -1305,13 +1303,13 @@
       
         <p>我本来只是想写下HCNA的内容的，可是发现还是得讲下<strong>计算机网络基础</strong></p>
 <p><strong>先讲下两种网络参考模型吧</strong></p>
-<h2><span id="no0引言">No.0<img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_png/6aVaON9Kibf6ibic5RkMCpub0xbVCW5kH5xtxxWHmrrEzGXZpTKu3MSQlRq9VAvzSBTPmQmRJ3XzRrGib6qzGM5Eeg/640?tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img">)引言<img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_png/US10Gcd0tQGYLDQ4mkzRQRu3MPsRBxdl5IQicKIHJk3ySTIJotQ6RTEDdcfGGVBZrMicve2tNujEh6JZCouU984g/640?tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></span></h2><p>在计算机网络刚出现的时候，也就是两个主机使用一根网线相连，发展到后面，在一个计算机网络中，使用各自开发的技术，终端之间进行数据通信和资源共享。但是随着网络的扩张，需要有一个统一的协议(规则)，来实现不同网络之间的互联。</p>
+<h2><span id="no0引言">No.0<img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://mmbiz.qpic.cn/mmbiz_png/6aVaON9Kibf6ibic5RkMCpub0xbVCW5kH5xtxxWHmrrEzGXZpTKu3MSQlRq9VAvzSBTPmQmRJ3XzRrGib6qzGM5Eeg/640?tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img">)引言<img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://mmbiz.qpic.cn/mmbiz_png/US10Gcd0tQGYLDQ4mkzRQRu3MPsRBxdl5IQicKIHJk3ySTIJotQ6RTEDdcfGGVBZrMicve2tNujEh6JZCouU984g/640?tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></span></h2><p>在计算机网络刚出现的时候，也就是两个主机使用一根网线相连，发展到后面，在一个计算机网络中，使用各自开发的技术，终端之间进行数据通信和资源共享。但是随着网络的扩张，需要有一个统一的协议(规则)，来实现不同网络之间的互联。</p>
 <p>国际标准化组织ISO制定了网络互连的七层框架的一个参考模型，称为<strong>开放系统互连参考模型</strong>，简称<strong>OSI/RM</strong>(Open System Internetwork Reference Model)。</p>
 <p>由于OSI模型和协议比较复杂，所以并没有得到广泛的应用。于是20世纪70年代中期美国国防部为ARPANET开发了<strong>TCP/IP</strong>网络体系结构, TCP/IP是一组用于实现网络互连的通信协议。Internet网络体系结构以TCP/IP为核心，基于TCP/IP的参考模型将协议分成四个层次和5个层次。而TCP/IP模型因其开放性和易用性在实践中得到了广泛的应用，TCP/IP协议栈也成为互联网的主流协议。</p>
 <p>OSI/RM法律上标准，TCP/IP工业网络体系标准。</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_jpg/bQicJnZn4LHTuxKwib3AibzSz7x7m55ia3yJkkayrgwLJj5teMia6LvgQCTSaVvwwc7u32vvy2qA4NN5y2cTSBtAsrg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://mmbiz.qpic.cn/mmbiz_jpg/bQicJnZn4LHTuxKwib3AibzSz7x7m55ia3yJkkayrgwLJj5teMia6LvgQCTSaVvwwc7u32vvy2qA4NN5y2cTSBtAsrg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
 <p>而我们主要使用的是介于4层和7层之间的TCP/IP 5层模型，由高至底为应用层、传输层、网络层、数据链路层和物理层。</p>
-<h2><span id="no1功能">No.1<img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_png/6aVaON9Kibf6ibic5RkMCpub0xbVCW5kH5xtxxWHmrrEzGXZpTKu3MSQlRq9VAvzSBTPmQmRJ3XzRrGib6qzGM5Eeg/640?tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img">)功能<img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_png/US10Gcd0tQGYLDQ4mkzRQRu3MPsRBxdl5IQicKIHJk3ySTIJotQ6RTEDdcfGGVBZrMicve2tNujEh6JZCouU984g/640?tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></span></h2><p>不同主机之间的相同层次被称为<strong>对等层(Peer)</strong>。</p>
+<h2><span id="no1功能">No.1<img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://mmbiz.qpic.cn/mmbiz_png/6aVaON9Kibf6ibic5RkMCpub0xbVCW5kH5xtxxWHmrrEzGXZpTKu3MSQlRq9VAvzSBTPmQmRJ3XzRrGib6qzGM5Eeg/640?tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img">)功能<img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://mmbiz.qpic.cn/mmbiz_png/US10Gcd0tQGYLDQ4mkzRQRu3MPsRBxdl5IQicKIHJk3ySTIJotQ6RTEDdcfGGVBZrMicve2tNujEh6JZCouU984g/640?tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></span></h2><p>不同主机之间的相同层次被称为<strong>对等层(Peer)</strong>。</p>
 <p>对等层之间存在协议关系。即对等实体之间互相通信需要遵守一定的规则，如通信的内容、通信的方式等。这种对等实体之间交换数据或通信时必须遵守的规则称为<strong>对等层协议(Peer Protocol)</strong>。</p>
 <p><strong>网络协议的三要素：</strong><br>*&lt;1&gt;语法：数据与控制信息的结构或格式*<br>*&lt;2&gt;语义：需要发出何种控制信息，完成何种动作以及做出何种响应。*<br>*&lt;3&gt;同步：事情实现顺序的详细说明*</p>
 <p>除了物理层外，OSI模型中的其他6个对等层都存在对应的协议，如数据链路层协议、网络层协议等，对等实体利用对等协议进行通信以向高层提供<strong>服务</strong>。</p>
@@ -1331,7 +1329,7 @@
 <p>N层实体使用N-1层实体所提供的服务时，不需要知道N-1层实体所提供的服务是如何实现的以及N-1层实体间的协议，而只需要知道下一层可以为自己提供哪些服务(是快速昂贵通信还是慢速低廉通信)，以及通过什么样的<strong>接口</strong>提供的。</p>
 <p>在OSI模型中，各层之间的接口都有统一的规则。N层的服务访问点SAP(Service Access Point)是N层实体提供服务给N+1层的地方，SAP可以理解为下层实体之间的逻辑传输通道。每一层的SAP都有一个唯一标明它的地址。一个N层可能存在多个SAP。</p>
 <p>PDU ：协议数据单元　　对等实体之间传送的数据单位SDU :  服务数据单元　　层与层之间交换的数据的单位IDU：  接口数据单元   在同一系统上下两层实体的交换信息中，经过SAP的信息单元<br>可以是多个SDU合成一个PDU,也可以是一个SDU划分为几个PDU。</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_jpg/bQicJnZn4LHTuxKwib3AibzSz7x7m55ia3yJllYIZd4HepVkvQfvbq8vfuiaX9nONm9ugvBlCKwgYX9Vu9cMr67vCvQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://mmbiz.qpic.cn/mmbiz_jpg/bQicJnZn4LHTuxKwib3AibzSz7x7m55ia3yJllYIZd4HepVkvQfvbq8vfuiaX9nONm9ugvBlCKwgYX9Vu9cMr67vCvQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
 <p><strong>各层功能：</strong></p>
 <p>（1）物理层</p>
 <p><strong>物理层</strong>（Physical Layer）是OSI参考模型的最低层。</p>
@@ -1364,7 +1362,7 @@
 <p><strong>应用层</strong>（Application Layer）是OSI参考模型的最高层。</p>
 <p>应用层为网络用户或应用程序提供各种服务，如文件传输、电子邮件、网络管理和远程登录等。</p>
 <p>应用层协议的代表有Telnet、FTP、HTTP、SNMP等。</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_jpg/bQicJnZn4LHTuxKwib3AibzSz7x7m55ia3yJbtDVGcia7bB7uHDIQiaHknAUZrMVS6VcKbVvIqbZlPoWO9iauicWo1LfkQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://mmbiz.qpic.cn/mmbiz_jpg/bQicJnZn4LHTuxKwib3AibzSz7x7m55ia3yJbtDVGcia7bB7uHDIQiaHknAUZrMVS6VcKbVvIqbZlPoWO9iauicWo1LfkQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
 <p><strong>TCP/IP分层模型</strong>的四个协议层分别完成以下的<strong>功能</strong>：　　</p>
 <p>第一层<strong>网络接口层</strong>　　网络接口层定义了数据从网络传输的物理细节，即比特如何被与网络介质直接交互的硬件设备接口通过电子或光学方式发送。</p>
 <p>网络接口层包括用于协作IP数据在已有网络介质上传输的协议。实际上TCP/IP标准并不定义与ISO数据链路层和物理层相对应的功能，提供TCP/IP协议的数据结构和实际物理硬件之间的接口。　　</p>
@@ -1374,10 +1372,10 @@
 <p>其中TCP协议(Transmission Control Protocol)提供可靠的数据流运输服务，UDP协议(Use Datagram Protocol)提供不可靠的用户数据报服务。　　</p>
 <p>第四层应用层　　应用层对应于OSI七层参考模型的应用层、表示层和会话层。</p>
 <p>因特网的应用层协议包括Finger、Whois、FTP(文件传输协议)、Gopher、HTTP(超文本传输协议)、Telent(远程终端协议)、SMTP(简单邮件传送协议)、IRC(因特网中继会话)、NNTP（网络新闻传输协议）等。</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_jpg/bQicJnZn4LHTuxKwib3AibzSz7x7m55ia3yJt8NxfuEAIB3QqslhFcCOwTSLU8xmCCFmia4w8hroNkHjQogVuXhmQvA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
-<h2><span id="no2协议簇">No.2<img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_png/6aVaON9Kibf6ibic5RkMCpub0xbVCW5kH5xtxxWHmrrEzGXZpTKu3MSQlRq9VAvzSBTPmQmRJ3XzRrGib6qzGM5Eeg/640?tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img">)协议簇<img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_png/US10Gcd0tQGYLDQ4mkzRQRu3MPsRBxdl5IQicKIHJk3ySTIJotQ6RTEDdcfGGVBZrMicve2tNujEh6JZCouU984g/640?tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></span></h2><p><strong>协议簇</strong>包括上百个各种功能的协议，TCP和IP协议仅是保证数据完整传输的两个基本的重要协议。通常说TCP/IP是Internet协议族。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://mmbiz.qpic.cn/mmbiz_jpg/bQicJnZn4LHTuxKwib3AibzSz7x7m55ia3yJt8NxfuEAIB3QqslhFcCOwTSLU8xmCCFmia4w8hroNkHjQogVuXhmQvA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<h2><span id="no2协议簇">No.2<img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://mmbiz.qpic.cn/mmbiz_png/6aVaON9Kibf6ibic5RkMCpub0xbVCW5kH5xtxxWHmrrEzGXZpTKu3MSQlRq9VAvzSBTPmQmRJ3XzRrGib6qzGM5Eeg/640?tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img">)协议簇<img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://mmbiz.qpic.cn/mmbiz_png/US10Gcd0tQGYLDQ4mkzRQRu3MPsRBxdl5IQicKIHJk3ySTIJotQ6RTEDdcfGGVBZrMicve2tNujEh6JZCouU984g/640?tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></span></h2><p><strong>协议簇</strong>包括上百个各种功能的协议，TCP和IP协议仅是保证数据完整传输的两个基本的重要协议。通常说TCP/IP是Internet协议族。</p>
 <p>TCP/IP参考模型各层对应的协议已经得到广泛应用。</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHTuxKwib3AibzSz7x7m55ia3yJF6pPV1bRPicHiccoE7tYexiaC0Cr1COcWBqqwATxTTNj78foKic95EVf4Q/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://mmbiz.qpic.cn/mmbiz_png/bQicJnZn4LHTuxKwib3AibzSz7x7m55ia3yJF6pPV1bRPicHiccoE7tYexiaC0Cr1COcWBqqwATxTTNj78foKic95EVf4Q/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></p>
 <h3><span id="01-数据链路层">01 数据链路层</span></h3><p>数据链路层主要功能</p>
 <p>① 建立、维护和释放数据链路</p>
 <p>② 定界、同步、处理透明性问题：差错控制、顺序控制、流量控制</p>
@@ -1421,7 +1419,7 @@
 <h3><span id="04-应用层">04 应用层</span></h3><p>应用层支撑协议包括域名解析协议(DNS)、简单网络管理协议(SNMP)等</p>
 <p>典型应用包括Web浏览、电子邮件、文件传输访问、远程登录等</p>
 <p>与应用相关的协议包括超文本传输协议(HTTP)、简单邮件传输协议(SMTP)、邮局协议(POP3)、文件传输协议(FTP)、简单文件传输协议(TFTP)和远程登录(Telnet)等</p>
-<h2><span id="no3结尾">No.3<img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_png/6aVaON9Kibf6ibic5RkMCpub0xbVCW5kH5xtxxWHmrrEzGXZpTKu3MSQlRq9VAvzSBTPmQmRJ3XzRrGib6qzGM5Eeg/640?tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img">)结尾<img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://mmbiz.qpic.cn/mmbiz_png/US10Gcd0tQGYLDQ4mkzRQRu3MPsRBxdl5IQicKIHJk3ySTIJotQ6RTEDdcfGGVBZrMicve2tNujEh6JZCouU984g/640?tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></span></h2><p>暂时不知道该讲些什么了，以后想起来了再修改吧</p>
+<h2><span id="no3结尾">No.3<img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://mmbiz.qpic.cn/mmbiz_png/6aVaON9Kibf6ibic5RkMCpub0xbVCW5kH5xtxxWHmrrEzGXZpTKu3MSQlRq9VAvzSBTPmQmRJ3XzRrGib6qzGM5Eeg/640?tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img">)结尾<img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://mmbiz.qpic.cn/mmbiz_png/US10Gcd0tQGYLDQ4mkzRQRu3MPsRBxdl5IQicKIHJk3ySTIJotQ6RTEDdcfGGVBZrMicve2tNujEh6JZCouU984g/640?tp=webp&wxfrom=5&wx_lazy=1&wx_co=1" alt="img"></span></h2><p>暂时不知道该讲些什么了，以后想起来了再修改吧</p>
 <p>拖了挺久了，可能文章写的不太好，如果发现错误欢迎大家指正</p>
 <p>图片和部分文字参考百度百科、CSDN和其他博客，如有侵权，可联系删除</p>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
@@ -1444,7 +1442,7 @@
     <p><span class="copy-title">字数:</span><span class="post-count">4.2k</span></p>
     <p><span class="copy-title">本文作者:</span><a  title="Luwang">Luwang</a></p>
     <p><span class="copy-title">发布时间:</span>2020-02-29, 19:53:49</p>
-    <p><span class="copy-title">最后更新:</span>2020-03-07, 19:22:09</p>
+    <p><span class="copy-title">最后更新:</span>2022-02-08, 17:43:55</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/02/29/networkmodule/" title="两种主要的网络参考模型">https://wallleap.cn/2020/02/29/networkmodule/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">&#34;署名-非商用-相同方式共享 4.0&#34;</a> 转载请保留原文链接及作者。
@@ -1457,7 +1455,7 @@
         <p><span class="copy-title">文章字数:</span><span class="post-count">4.2k</span></p>
         <p><span class="copy-title">本文作者:</span><a  title="Luwang">Luwang</a></p>
         <p><span class="copy-title">发布时间:</span>2020-02-29, 19:53:49</p>
-        <p><span class="copy-title">最后更新:</span>2020-03-07, 19:22:09</p>
+        <p><span class="copy-title">最后更新:</span>2022-02-08, 17:43:55</p>
         <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/02/29/networkmodule/" title="两种主要的网络参考模型">https://wallleap.cn/2020/02/29/networkmodule/</a>
         <p>
             <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
@@ -1533,7 +1531,7 @@
           
   
         <p style="color: #666666;"><a href="#" style="color: #b9b9b9;">Blog wallleap</a>
-          , Copyright &copy; 2019-2020 
+          , Copyright &copy; 2019-2022 
           by Luwang All Rights Reserved.</p>
       </div>
       <!-- <div class="footer-device">

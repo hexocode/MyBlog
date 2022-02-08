@@ -6,20 +6,18 @@
   <meta name="keywords" content=" 前端 , web , Ajax ">
   <meta name="description" content="Ajax学习笔记 | wallleap">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="念两句诗          叙别梦、扬州一觉。          【宋代】吴文英《夜游宫·人去西楼雁杳》       .images{ 	float: left;     width: 100%;     height: 300px;     position: relative;     margin: 20px 0">
+<meta name="description" content="botui使用之后导致结构太混乱了，因此改用正常的md文档书写 valine评论也不太适合这个主题，改为gitalk   .talk-wrap{ 	position: relative; } .talk-wrap::before, .talk-wrap::after{ 	content: &quot;&quot;; 	display: table; 	clear: both; } .talk-left, .talk-">
 <meta property="og:type" content="website">
-<meta property="og:title" content="图集">
-<meta property="og:url" content="https://wallleap.cn/photo/index.html">
+<meta property="og:title" content="关于">
+<meta property="og:url" content="https://wallleap.cn/about/index.html">
 <meta property="og:site_name" content="wallleap">
-<meta property="og:description" content="念两句诗          叙别梦、扬州一觉。          【宋代】吴文英《夜游宫·人去西楼雁杳》       .images{ 	float: left;     width: 100%;     height: 300px;     position: relative;     margin: 20px 0">
+<meta property="og:description" content="botui使用之后导致结构太混乱了，因此改用正常的md文档书写 valine评论也不太适合这个主题，改为gitalk   .talk-wrap{ 	position: relative; } .talk-wrap::before, .talk-wrap::after{ 	content: &quot;&quot;; 	display: table; 	clear: both; } .talk-left, .talk-">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=46b93e4b7d1ed21b79c929e39555baf9/14ce36d3d539b600fbdea00ee950352ac65cb773.jpg">
-<meta property="article:published_time" content="2020-02-23T07:09:21.000Z">
-<meta property="article:modified_time" content="2020-03-24T14:15:05.640Z">
+<meta property="article:published_time" content="2020-02-23T06:54:06.000Z">
+<meta property="article:modified_time" content="2022-02-08T09:43:55.896Z">
 <meta property="article:author" content="Luwang">
 <meta property="article:tag" content="wallleap">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=46b93e4b7d1ed21b79c929e39555baf9/14ce36d3d539b600fbdea00ee950352ac65cb773.jpg">
 
 
 <link rel="icon" href="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/favicon.ico">
@@ -1144,7 +1142,7 @@
         
         <a  class="全部文章 编程 数据结构 "
            href="/2019/08/28/DataStructure1/"
-           data-tag="数据结构,C/C++,技术"
+           data-tag="技术,数据结构,C/C++"
            data-author="" >
             <span class="post-title" title="数据结构(1)-绪论">数据结构(1)-绪论</span>
             <span class="post-date" title="2019-08-28 22:12:47">2019/08/28</span>
@@ -1256,7 +1254,7 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2020-09-11 21:49:36'>2020-08-20 12:33</time>
+            发布时间 : <time class="date" title='最后更新: 2022-02-08 17:43:55'>2020-08-20 12:33</time>
         
     </div>
     <div class="article-meta">
@@ -1310,7 +1308,7 @@
         <h2><span id="一-概述">一、概述</span></h2><blockquote>
 <p>Web程序的最初的目的就是将信息(数据)放到公共的服务器，让所有的网络用户都可以通过浏览器访问</p>
 </blockquote>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815183452.png" alt="image-20200815183450778"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815183452.png" alt="image-20200815183450778"></p>
 <p>在此之前，我们可以通过以下几种方式让浏览器发出服务端的请求，获得服务端的数据：</p>
 <ul>
 <li><p>地址栏输入地址，回车，刷新</p>
@@ -1347,10 +1345,10 @@
 <p>需要有node，没有的可以先<a href="https://nodejs.org/en/" target="_blank" rel="noopener">下载</a></p>
 <p>进入一个文件夹，输入命令创建node应用</p>
 <pre><code class="bash">npm init --yes</code></pre>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/image-20200810090417637.png" alt="node初始化命令"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/image-20200810090417637.png" alt="node初始化命令"></p>
 <p>接着输入命令，安装express</p>
 <pre><code class="bash">npm install express</code></pre>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/image-20200810090617412.png" alt="express安装"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/image-20200810090617412.png" alt="express安装"></p>
 <p>2、基本使用</p>
 <p>(1) 编写代码</p>
 <pre><code class="javascript">// 1、引入express
@@ -1450,7 +1448,7 @@ btn.onclick = function(){
     result.innerHTML = xhr.response
   }
 &lt;/script&gt;</code></pre>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815183735.png" alt="ajax基础操作"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815183735.png" alt="ajax基础操作"></p>
 <h3><span id="2-理解readystate">2、理解readyState</span></h3><p><code>onreadystatechange</code>是XHR状态改变时触发的</p>
 <pre><code class="html">&lt;script&gt;
   var xhr = new XMLHttpRequest()
@@ -1466,7 +1464,7 @@ btn.onclick = function(){
   })
 &lt;/script&gt;</code></pre>
 <p>readyState：</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815183844.png" alt="readyState代码"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815183844.png" alt="readyState代码"></p>
 <p>new XMLHttpRequest –&gt; 0 初始化 <strong>请求代理对象</strong></p>
 <p>1–-&gt; open方法已经调用，<strong>建立</strong>一个与服务端特定端口的<strong>连接</strong></p>
 <p>2 –-&gt; 已经<strong>接收</strong>到了响应报文的<strong>响应头</strong> <code>console.log(this.getAllResponseHeaders())</code> 可以拿到响应头，拿不到响应体</p>
@@ -1474,8 +1472,8 @@ btn.onclick = function(){
 <p>获取指定键：<code>console.log(this.getAllResponseHeaders(‘data’))</code></p>
 <p>3 –-&gt; <strong>正在下载响应报文的响应体</strong>，可能响应体为空或不完整</p>
 <p>4 –-&gt; 一切OK，<strong>整个响应报文已经下载下来</strong>了 <code>console.log(this.responseText)</code></p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815183915.png" alt="readyState"></p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815183935.png" alt="image-20200815183934889"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815183915.png" alt="readyState"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815183935.png" alt="image-20200815183934889"></p>
 <p>所以应该<strong>在readyState的值为4</strong>时，才去处理后续的逻辑</p>
 <p>可以用<code>xhr.onload</code>替代</p>
 <pre><code class="html">&lt;script&gt;
@@ -1489,7 +1487,7 @@ btn.onclick = function(){
 &lt;/script&gt;</code></pre>
 <p>ps: console.log(this) 显示readyState是2、3、4可展开来全都是4，这个是console.log的机制问题，展开的时候只会显示此时的状态</p>
 <p>例如：</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815184045.png" alt="log机制测试"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815184045.png" alt="log机制测试"></p>
 <p>在浏览器上看，不展开没问题显示123，展开的一瞬间都是456</p>
 <h3><span id="3-ajax遵循http协议">3、AJAX遵循HTTP协议</span></h3><p>HTTP协议(Hypertext Transport Protocol，超文本传输协议)详细规定了浏览器和万维网服务器之间互相通信的规则。</p>
 <p>本质上XMLHttpRequest就是JavaScript在web平台中发送HTTP请求的手段，所以我们发送出去的请求仍然是HTTP请求，同样符合HTTP约定的格式</p>
@@ -1534,7 +1532,7 @@ btn.onclick = function(){
   &lt;body&gt;
     &lt;h1&gt;wallleap&lt;/h1&gt;
   &lt;/body&gt;
-&lt;/html&gt;</code></pre><p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815184354.png" alt="HTTP响应报文信息"></p>
+&lt;/html&gt;</code></pre><p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815184354.png" alt="HTTP响应报文信息"></p>
 <pre><code class="html">&lt;script&gt;
   // 1、创建对象
   var xhr = new XMLHttpRequest()
@@ -1780,35 +1778,35 @@ app.all(&#39;/server&#39;, (request, response) =&gt; {
 <p>同步：一个人在同一个时刻只能做一件事情，在执行一些耗时的操作(不需要看管)不去做别的事情，只是等待</p>
 <p>异步：在执行一些耗时的操作(不需要看管)去做别的事，而不是等待</p>
 <p>xhr.open()第三个参数(async)要求传入的是一个bool值，其作用就是设置此次请求是否采用异步方式执行，默认为true，如果需要同步执行可以通过传递false实现</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815184832.png" alt="image-20200815184831019"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815184832.png" alt="image-20200815184831019"></p>
 <p><code>console.time(‘标识’)</code> 启动一个秒表</p>
 <p>中间写代码</p>
 <p><code>console.timeEnd(‘标识’)</code> 结束这个秒表</p>
 <p>这样就能知道用了多长时间(标识名称得相同)</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815184906.png" alt="image-20200815184905369"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815184906.png" alt="image-20200815184905369"></p>
 <p>如果采用同步方式执行，则代码会卡死在xhr.send()这一步</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815184921.png" alt="image-20200815184920339"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815184921.png" alt="image-20200815184920339"></p>
 <p>send方法会不会出现等待情况(区分同异步)</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815184939.png" alt="image-20200815184938765"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815184939.png" alt="image-20200815184938765"></p>
 <p>知道同步模式即可(已被遗弃)</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815184956.png" alt="image-20200815184955646"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815184956.png" alt="image-20200815184955646"></p>
 <p>同步模式注册时间时机问题</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815185018.png" alt="image-20200815185017871"></p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815185029.png" alt="image-20200815185028276"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815185018.png" alt="image-20200815185017871"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815185029.png" alt="image-20200815185028276"></p>
 <h3><span id="5-响应数据格式">5、响应数据格式</span></h3><p>如果希望服务器返回一个复杂数据，该如何处理：</p>
 <p> 服务器发出何种格式的数据，这个格式如何在客户端用JavaScript解析</p>
 <p>5.1 XML</p>
 <p>一种数据描述手段</p>
 <p>老掉牙的东西，现在项目中基本不使用</p>
 <p>淘汰的原因：数据冗余太多</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815185058.png" alt="image-20200815185057257"></p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815185108.png" alt="image-20200815185106691"></p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815185115.png" alt="image-20200815185114823"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815185058.png" alt="image-20200815185057257"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815185108.png" alt="image-20200815185106691"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815185115.png" alt="image-20200815185114823"></p>
 <p><strong>5.2 JSON</strong></p>
 <p>也是一种数据描述手段，类似于JavaScript字面量方式</p>
 <p>服务端采用JSON格式返回数据，客户端按照JSON格式解析数据</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815185141.png" alt="image-20200815185140660"></p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815185148.png" alt="image-20200815185147671"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815185141.png" alt="image-20200815185140660"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815185148.png" alt="image-20200815185147671"></p>
 <p>来测试一下json的</p>
 <p><code>server.js</code>中添加</p>
 <pre><code class="javascript">//JSON 响应
@@ -1869,11 +1867,11 @@ app.all(&#39;/json-server&#39;, (request, response) =&gt; {
 <p>不管服务器使用XML还是JSON本质上都是将数据返回给客户端</p>
 <p>服务端应该设置一个合理的Content-Type</p>
 <h3><span id="6-处理服务器端响应的数据">6、处理服务器端响应的数据</span></h3><p>动态渲染数据到表格中</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815185218.png" alt="image-20200815185217284"></p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815185226.png" alt="image-20200815185225225"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815185218.png" alt="image-20200815185217284"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815185226.png" alt="image-20200815185225225"></p>
 <p>现在一般都不会这样操作，太繁琐了</p>
 <p>模板引擎</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815185252.png" alt="image-20200815185251189"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815185252.png" alt="image-20200815185251189"></p>
 <p>常见模板引擎列表：<a href="https://github.com/tj/consolidate.js#supported-template-engines" target="_blank" rel="noopener">https://github.com/tj/consolidate.js#supported-template-engines</a></p>
 <p>artTemplate： <a href="https://aui.github.io/art-template" target="_blank" rel="noopener">https://aui.github.io/art-template</a></p>
 <p>模板引擎实际上就是一个API，模板引擎有很多种，使用方式大同小异，目的为了可以更容易地将数据渲染到HTML中</p>
@@ -2211,14 +2209,14 @@ console.log(ajax(&#39;post&#39;, &#39;post.php&#39;, {key1: &#39;value1&#39;, ke
 <p>不能使用同步模式</p>
 <p>补充一个概念：</p>
 <p>委托(或回调)</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815185828.png" alt="image-20200815185827212"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815185828.png" alt="image-20200815185827212"></p>
 <p>函数可以理解为一个想要做的事情，函数体中约定了这件事情做的过程，直到调用时才开始工作。</p>
 <p>将函数作为参数传递就像是将一件事情交给别人，这就是委托。</p>
 <p>异步编程中回调/委托使用频率很高。（由于是异步的，你先执行，我告诉你做什么，我就不等了——等不及，你执行就行了）</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815185846.png" alt="image-20200815185845589"></p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815185858.png" alt="image-20200815185856765"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815185846.png" alt="image-20200815185845589"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815185858.png" alt="image-20200815185856765"></p>
 <p>回调地狱/黑洞：死循环</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815185914.png" alt="image-20200815185913313"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815185914.png" alt="image-20200815185913313"></p>
 <p><font color="red"><strong>最终版本</strong></font></p>
 <pre><code class="javascript">/*
 发送一个Ajax请求 version5
@@ -2374,7 +2372,7 @@ $.postJSON(&#39;json.php&#39;, {id: 1}, function(res){
 })
 明确请求的方式，根据方式选择快捷方法
 &lt;/script&gt;</code></pre>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815190207.png" alt="image-20200815190206531"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815190207.png" alt="image-20200815190206531"></p>
 <pre><code class="html">&lt;script src=&quot;https://cdn.bootcdn.net/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
 &lt;script type=&quot;text/javascript&quot;&gt;
 // 跳转其他页面，会白屏，但是有些页面只是部分不相同，可以局部刷新
@@ -2735,22 +2733,22 @@ app.listen(9000, ()=&gt;{
 &lt;/script&gt;</code></pre>
 <p>访问<a href="http://127.0.0.1:9000/home，可以访问这个index.html，点击按钮可以获取到数据" target="_blank" rel="noopener">http://127.0.0.1:9000/home，可以访问这个index.html，点击按钮可以获取到数据</a></p>
 <p>(2) 同源或者不同源说的是两个地址之间的关系，不同源地址之间请求我们称之为跨域请求。</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815190430.png" alt="image-20200815190429165"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815190430.png" alt="image-20200815190429165"></p>
 <p>跨域的案例：</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815190440.png" alt="image-20200815190439633"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815190440.png" alt="image-20200815190439633"></p>
 <p>跨域会报错：</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815190456.png" alt="image-20200815190455302"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815190456.png" alt="image-20200815190455302"></p>
 <h3><span id="2-解决方案">2、解决方案</span></h3><p>不同源地址之间如果需要相互请求，必须服务端和客户端配合才能完成</p>
 <p>尝试找到一种可以发送不同源请求的方式</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815190529.png" alt="可能可以解决跨域的方法"></p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815190556.png" alt="正常图片标签"></p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815190621.png" alt="尝试使用img标签解决跨域"></p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815190650.png" alt="正常link标签"></p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815190712.png" alt="尝试使用link标签解决跨域"></p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815190738.png" alt="尝试使用script标签解决跨域"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815190529.png" alt="可能可以解决跨域的方法"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815190556.png" alt="正常图片标签"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815190621.png" alt="尝试使用img标签解决跨域"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815190650.png" alt="正常link标签"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815190712.png" alt="尝试使用link标签解决跨域"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815190738.png" alt="尝试使用script标签解决跨域"></p>
 <p>初级跨域解决方案</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815190812.png" alt="服务器端将json用函数包裹返回"></p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815190858.png" alt="客户端使用该函数拿到数据"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815190812.png" alt="服务器端将json用函数包裹返回"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815190858.png" alt="客户端使用该函数拿到数据"></p>
 <p>(1) <strong>JSONP</strong></p>
 <p>JSON with Padding，是一种借助于<code>script</code>标签发送跨域请求的技巧。这个是非官方的跨域解决方案，是程序员们机智地想出来的，只支持get请求。</p>
 <p>其原理就是在客户端借助<code>script</code>标签请求服务端的一个动态网页(php等)，服务端的这个动态网页返回一段带有函数调用的JavaScript全局函数调用的脚本，将原本需要返回给客户端的数据传递进去。</p>
@@ -2824,7 +2822,7 @@ header(&#39;Content-Type: application/javascript&#39;);
 $result = json_encode($data);
 $callback_name = $_GET[&#39;callback&#39;];
 echo &quot;typeof {$callback_name} === &#39;function&#39; &amp;&amp; {$callback_name}({$result})&quot;;</code></pre>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815191014.png" alt="image-20200815191013064"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/illustration/20200815191014.png" alt="image-20200815191013064"></p>
 <ul>
 <li>原生方式实践jsonp</li>
 </ul>
@@ -3037,7 +3035,7 @@ echo json_encode($data);</code></pre>
     <p><span class="copy-title">字数:</span><span class="post-count">11.8k</span></p>
     <p><span class="copy-title">本文作者:</span><a  title="Luwang">Luwang</a></p>
     <p><span class="copy-title">发布时间:</span>2020-08-20, 12:33:14</p>
-    <p><span class="copy-title">最后更新:</span>2020-09-11, 21:49:36</p>
+    <p><span class="copy-title">最后更新:</span>2022-02-08, 17:43:55</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/08/20/AJAX/" title="Ajax学习笔记">https://wallleap.cn/2020/08/20/AJAX/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">&#34;署名-非商用-相同方式共享 4.0&#34;</a> 转载请保留原文链接及作者。
@@ -3050,7 +3048,7 @@ echo json_encode($data);</code></pre>
         <p><span class="copy-title">文章字数:</span><span class="post-count">11.8k</span></p>
         <p><span class="copy-title">本文作者:</span><a  title="Luwang">Luwang</a></p>
         <p><span class="copy-title">发布时间:</span>2020-08-20, 12:33:14</p>
-        <p><span class="copy-title">最后更新:</span>2020-09-11, 21:49:36</p>
+        <p><span class="copy-title">最后更新:</span>2022-02-08, 17:43:55</p>
         <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/08/20/AJAX/" title="Ajax学习笔记">https://wallleap.cn/2020/08/20/AJAX/</a>
         <p>
             <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
@@ -3126,7 +3124,7 @@ echo json_encode($data);</code></pre>
           
   
         <p style="color: #666666;"><a href="#" style="color: #b9b9b9;">Blog wallleap</a>
-          , Copyright &copy; 2019-2020 
+          , Copyright &copy; 2019-2022 
           by Luwang All Rights Reserved.</p>
       </div>
       <!-- <div class="footer-device">

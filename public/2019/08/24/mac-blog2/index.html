@@ -6,20 +6,18 @@
   <meta name="keywords" content=" Hexo , GitHub , Blog , 博客 ">
   <meta name="description" content="Mac使用Hexo和GitHub搭建博客(2)--优化配置 | wallleap">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="念两句诗          叙别梦、扬州一觉。          【宋代】吴文英《夜游宫·人去西楼雁杳》       .images{ 	float: left;     width: 100%;     height: 300px;     position: relative;     margin: 20px 0">
+<meta name="description" content="botui使用之后导致结构太混乱了，因此改用正常的md文档书写 valine评论也不太适合这个主题，改为gitalk   .talk-wrap{ 	position: relative; } .talk-wrap::before, .talk-wrap::after{ 	content: &quot;&quot;; 	display: table; 	clear: both; } .talk-left, .talk-">
 <meta property="og:type" content="website">
-<meta property="og:title" content="图集">
-<meta property="og:url" content="https://wallleap.cn/photo/index.html">
+<meta property="og:title" content="关于">
+<meta property="og:url" content="https://wallleap.cn/about/index.html">
 <meta property="og:site_name" content="wallleap">
-<meta property="og:description" content="念两句诗          叙别梦、扬州一觉。          【宋代】吴文英《夜游宫·人去西楼雁杳》       .images{ 	float: left;     width: 100%;     height: 300px;     position: relative;     margin: 20px 0">
+<meta property="og:description" content="botui使用之后导致结构太混乱了，因此改用正常的md文档书写 valine评论也不太适合这个主题，改为gitalk   .talk-wrap{ 	position: relative; } .talk-wrap::before, .talk-wrap::after{ 	content: &quot;&quot;; 	display: table; 	clear: both; } .talk-left, .talk-">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=46b93e4b7d1ed21b79c929e39555baf9/14ce36d3d539b600fbdea00ee950352ac65cb773.jpg">
-<meta property="article:published_time" content="2020-02-23T07:09:21.000Z">
-<meta property="article:modified_time" content="2020-03-24T14:15:05.640Z">
+<meta property="article:published_time" content="2020-02-23T06:54:06.000Z">
+<meta property="article:modified_time" content="2022-02-08T09:43:55.896Z">
 <meta property="article:author" content="Luwang">
 <meta property="article:tag" content="wallleap">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=46b93e4b7d1ed21b79c929e39555baf9/14ce36d3d539b600fbdea00ee950352ac65cb773.jpg">
 
 
 <link rel="icon" href="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/favicon.ico">
@@ -1144,7 +1142,7 @@
         
         <a  class="全部文章 编程 数据结构 "
            href="/2019/08/28/DataStructure1/"
-           data-tag="数据结构,C/C++,技术"
+           data-tag="技术,数据结构,C/C++"
            data-author="" >
             <span class="post-title" title="数据结构(1)-绪论">数据结构(1)-绪论</span>
             <span class="post-date" title="2019-08-28 22:12:47">2019/08/28</span>
@@ -1258,7 +1256,7 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2020-02-27 16:49:53'>2019-08-24 20:21</time>
+            发布时间 : <time class="date" title='最后更新: 2022-02-08 17:43:55'>2019-08-24 20:21</time>
         
     </div>
     <div class="article-meta">
@@ -1357,12 +1355,12 @@ categories:
     - category2
 ---</code></pre><p>标签改为多标签，分类为二级分类</p>
 <h3><span id="3-其他页面">3、其他页面</span></h3><p><code>hexo new page &quot;about&quot;</code><br>还有category等都可以添加</p>
-<p>about页还需要修改主题_config.yml：<br><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/mac-blog2/pic1.jpg" alt></p>
-<h2><span id="三-域名解析">三、域名解析</span></h2><h3><span id="1-域名解析">1、域名解析</span></h3><p>进入到购买域名的控制台，找到域名服务或解析服务<br><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/mac-blog2/pic2.jpg" alt><br>点击自己域名后的解析设置<br><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/mac-blog2/pic3.jpg" alt><br>点击添加记录<br><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/mac-blog2/pic4.jpg" alt><br>按照下图填写，注意记录值填<code>自己的用户名.github.io</code><br><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/mac-blog2/pic5.jpg" alt><br>也可以再添加主机记录用www的，这样输入www也能访问<br><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/mac-blog2/pic6.jpg" alt></p>
-<h3><span id="2-添加文件">2、添加文件</span></h3><p>做完了解析工作还是不行的，需要在仓库加上CNAME文件，文件中只需要填写域名，比如我的：<br><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/mac-blog2/pic7.jpg" alt><br>由于仓库中上传时会自动删除，因此放到<code>~/blog/source/</code>下</p>
+<p>about页还需要修改主题_config.yml：<br><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/mac-blog2/pic1.jpg" alt></p>
+<h2><span id="三-域名解析">三、域名解析</span></h2><h3><span id="1-域名解析">1、域名解析</span></h3><p>进入到购买域名的控制台，找到域名服务或解析服务<br><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/mac-blog2/pic2.jpg" alt><br>点击自己域名后的解析设置<br><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/mac-blog2/pic3.jpg" alt><br>点击添加记录<br><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/mac-blog2/pic4.jpg" alt><br>按照下图填写，注意记录值填<code>自己的用户名.github.io</code><br><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/mac-blog2/pic5.jpg" alt><br>也可以再添加主机记录用www的，这样输入www也能访问<br><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/mac-blog2/pic6.jpg" alt></p>
+<h3><span id="2-添加文件">2、添加文件</span></h3><p>做完了解析工作还是不行的，需要在仓库加上CNAME文件，文件中只需要填写域名，比如我的：<br><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/mac-blog2/pic7.jpg" alt><br>由于仓库中上传时会自动删除，因此放到<code>~/blog/source/</code>下</p>
 <h2><span id="四-评论系统">四、评论系统</span></h2><p>上面主题配置中有提到过，但对于一个博客而言，评论部分是不可或缺的，因此将其单独说明。</p>
-<p>由于本人只用过<code>gitment</code>和<code>gitalk</code>，而个人感觉<code>gitalk</code>更好用一点，因此这里介绍<code>gitalk</code>使用，上面有<code>gitment</code>的教程链接<br>首先打开主题配置文件(<code>~/blog/themes/3-hexo/_config.yml</code>),找到评论设置，将comment字段的on设为true，type设为gitalk。找到gitalk字段，添加on:true,其他的评论系统字段添加on:false.接着打开链接<a href="https://github.com/settings/applications/new" target="_blank" rel="noopener">https://github.com/settings/applications/new</a>,登录GitHub账户，<br><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/mac-blog2/pic8.jpg" alt></p>
-<p>注意callbalk URL一定要是自己域名的地址，接着点击绿色按钮，把Client ID和Client Secret复制到主题配置文件的gitalk字段相应位置，接着githubID和adminUser填自己的用户名即可,repo填博客的仓库(即<code>用户名.github.io</code>)<br><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/mac-blog2/pic9.jpg" alt></p>
+<p>由于本人只用过<code>gitment</code>和<code>gitalk</code>，而个人感觉<code>gitalk</code>更好用一点，因此这里介绍<code>gitalk</code>使用，上面有<code>gitment</code>的教程链接<br>首先打开主题配置文件(<code>~/blog/themes/3-hexo/_config.yml</code>),找到评论设置，将comment字段的on设为true，type设为gitalk。找到gitalk字段，添加on:true,其他的评论系统字段添加on:false.接着打开链接<a href="https://github.com/settings/applications/new" target="_blank" rel="noopener">https://github.com/settings/applications/new</a>,登录GitHub账户，<br><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/mac-blog2/pic8.jpg" alt></p>
+<p>注意callbalk URL一定要是自己域名的地址，接着点击绿色按钮，把Client ID和Client Secret复制到主题配置文件的gitalk字段相应位置，接着githubID和adminUser填自己的用户名即可,repo填博客的仓库(即<code>用户名.github.io</code>)<br><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/mac-blog2/pic9.jpg" alt></p>
 <h2><span id="五-博客美化">五、博客美化</span></h2><h3><span id="1-了解hexo博客layout">1、了解hexo博客layout</span></h3><h3><span id="2-修改layout中各布局代码">2、修改layout中各布局代码</span></h3><h3><span id="3-css美化">3、css美化</span></h3><h3><span id="4-其他小部件">4、其他小部件</span></h3><hr>
 <p> <strong>文章汇总：</strong></p>
 <table><tr><td bgcolor="#FFFF00"> Mac使用Hexo和GitHub搭建博客(1)</td></tr></table>
@@ -1398,7 +1396,7 @@ categories:
     <p><span class="copy-title">字数:</span><span class="post-count">896</span></p>
     <p><span class="copy-title">本文作者:</span><a  title="Luwang">Luwang</a></p>
     <p><span class="copy-title">发布时间:</span>2019-08-24, 20:21:59</p>
-    <p><span class="copy-title">最后更新:</span>2020-02-27, 16:49:53</p>
+    <p><span class="copy-title">最后更新:</span>2022-02-08, 17:43:55</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/08/24/mac-blog2/" title="Mac使用Hexo和GitHub搭建博客(2)--优化配置">https://wallleap.cn/2019/08/24/mac-blog2/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">&#34;署名-非商用-相同方式共享 4.0&#34;</a> 转载请保留原文链接及作者。
@@ -1411,7 +1409,7 @@ categories:
         <p><span class="copy-title">文章字数:</span><span class="post-count">896</span></p>
         <p><span class="copy-title">本文作者:</span><a  title="Luwang">Luwang</a></p>
         <p><span class="copy-title">发布时间:</span>2019-08-24, 20:21:59</p>
-        <p><span class="copy-title">最后更新:</span>2020-02-27, 16:49:53</p>
+        <p><span class="copy-title">最后更新:</span>2022-02-08, 17:43:55</p>
         <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/08/24/mac-blog2/" title="Mac使用Hexo和GitHub搭建博客(2)--优化配置">https://wallleap.cn/2019/08/24/mac-blog2/</a>
         <p>
             <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
@@ -1487,7 +1485,7 @@ categories:
           
   
         <p style="color: #666666;"><a href="#" style="color: #b9b9b9;">Blog wallleap</a>
-          , Copyright &copy; 2019-2020 
+          , Copyright &copy; 2019-2022 
           by Luwang All Rights Reserved.</p>
       </div>
       <!-- <div class="footer-device">

@@ -98,14 +98,20 @@ theme: 3-hexo
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
+#deploy:
+#- type: git
+#  repo:
+#    github: git@github.com:hexocode/hexocode.github.io.git
+#    # gitlab: git@gitlab.com:wallleap/wallleapblog.git,master
+#    # coding: git@e.coding.net:wallleap/3-blog.git
+#  branch: main
+#- type: baidu_url_submitter ## 添加这里内容即可
 deploy:
-- type: git
-  repo: 
-    github: git@github.com:wallleap/3blog.git,master
-    # gitlab: git@gitlab.com:wallleap/wallleapblog.git,master
-    coding: git@e.coding.net:wallleap/3-blog.git
-  branch: master
-- type: baidu_url_submitter ## 添加这里内容即可
+  - type: git
+    repo: git@github.com:hexocode/hexocode.github.io.git
+    branch: main
+  - type: baidu_url_submitter ## 添加这里内容即可
+
 
 # RRS\sitemap
 plugin:

@@ -57,7 +57,6 @@ photos: https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/banner/banner1.jpg
 把引导文件放到EFI分区之后，发现有些地方一直闪屏，根据黑果小兵的教程改好了显存(改到了3072MB)还是会闪，有的网友说SMBIOS只留型号那一栏为18,1可以解决，然并卵。然后我直接把整个EFI换了clover4596，保留了改好了之后的config.plist，开机，很好不闪了，然后干脆直接装了带Clover4596的10.13.6  
 
 对了，教程的话参考这个吧：[【爱折腾】RE：从零开始安装黑苹果](https://www.bilibili.com/video/av8653761)，顺带看下其他帖子
-{% bili 8653761 %}
 
 ## 02.黑苹果状态
 

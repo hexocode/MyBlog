@@ -6,20 +6,18 @@
   <meta name="keywords" content=" HCNA , VLAN ">
   <meta name="description" content="HCNA学习——VLAN配置 | wallleap">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="念两句诗          叙别梦、扬州一觉。          【宋代】吴文英《夜游宫·人去西楼雁杳》       .images{ 	float: left;     width: 100%;     height: 300px;     position: relative;     margin: 20px 0">
+<meta name="description" content="botui使用之后导致结构太混乱了，因此改用正常的md文档书写 valine评论也不太适合这个主题，改为gitalk   .talk-wrap{ 	position: relative; } .talk-wrap::before, .talk-wrap::after{ 	content: &quot;&quot;; 	display: table; 	clear: both; } .talk-left, .talk-">
 <meta property="og:type" content="website">
-<meta property="og:title" content="图集">
-<meta property="og:url" content="https://wallleap.cn/photo/index.html">
+<meta property="og:title" content="关于">
+<meta property="og:url" content="https://wallleap.cn/about/index.html">
 <meta property="og:site_name" content="wallleap">
-<meta property="og:description" content="念两句诗          叙别梦、扬州一觉。          【宋代】吴文英《夜游宫·人去西楼雁杳》       .images{ 	float: left;     width: 100%;     height: 300px;     position: relative;     margin: 20px 0">
+<meta property="og:description" content="botui使用之后导致结构太混乱了，因此改用正常的md文档书写 valine评论也不太适合这个主题，改为gitalk   .talk-wrap{ 	position: relative; } .talk-wrap::before, .talk-wrap::after{ 	content: &quot;&quot;; 	display: table; 	clear: both; } .talk-left, .talk-">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=46b93e4b7d1ed21b79c929e39555baf9/14ce36d3d539b600fbdea00ee950352ac65cb773.jpg">
-<meta property="article:published_time" content="2020-02-23T07:09:21.000Z">
-<meta property="article:modified_time" content="2020-03-24T14:15:05.640Z">
+<meta property="article:published_time" content="2020-02-23T06:54:06.000Z">
+<meta property="article:modified_time" content="2022-02-08T09:43:55.896Z">
 <meta property="article:author" content="Luwang">
 <meta property="article:tag" content="wallleap">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=46b93e4b7d1ed21b79c929e39555baf9/14ce36d3d539b600fbdea00ee950352ac65cb773.jpg">
 
 
 <link rel="icon" href="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/favicon.ico">
@@ -1144,7 +1142,7 @@
         
         <a  class="全部文章 编程 数据结构 "
            href="/2019/08/28/DataStructure1/"
-           data-tag="数据结构,C/C++,技术"
+           data-tag="技术,数据结构,C/C++"
            data-author="" >
             <span class="post-title" title="数据结构(1)-绪论">数据结构(1)-绪论</span>
             <span class="post-date" title="2019-08-28 22:12:47">2019/08/28</span>
@@ -1254,7 +1252,7 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2020-03-14 00:58:08'>2020-03-07 00:54</time>
+            发布时间 : <time class="date" title='最后更新: 2022-02-08 17:43:55'>2020-03-07 00:54</time>
         
     </div>
     <div class="article-meta">
@@ -1361,28 +1359,28 @@
 <pre><code>[s1]display vlan</code></pre><p>3、查看配置好的VLAN的简要信息</p>
 <pre><code>[s1]display vlan summary</code></pre><p>4、查看VLAN和接口配置情况</p>
 <pre><code>[s1]display port vlan</code></pre><h2><span id="vlan技术原理">VLAN技术原理</span></h2><p>交换机用VLAN标签来区分不同VLAN的以太网帧</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/test/hcna-pic48.png" alt="pic48"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/test/hcna-pic48.png" alt="pic48"></p>
 <p>帧格式</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/test/hcna-pic49.png" alt="pic49"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/test/hcna-pic49.png" alt="pic49"></p>
 <h3><span id="单交换机vlan标签操作">单交换机VLAN标签操作</span></h3><ul>
 <li>在进入交换机端口是，附加缺省VLAN标签</li>
 <li>出交换机端口时，去掉VLAN标签</li>
 </ul>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/test/hcna-pic50.png" alt="pic50"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/test/hcna-pic50.png" alt="pic50"></p>
 <h3><span id="access链路类型端口">Access链路类型端口</span></h3><p>Access接口是交换机上用来连接用户主机的接口。<br>当Access接口从主机收到一个不带VLAN标签的数据帧时，会给该数据帧加上与PVID一致的VLAN标签。<br>当Access接口要发送一个带VLAN标签的数据帧给主机时，首先检查该数据帧的VLAN ID是否与自己的PVID相同，若相同，则去掉VLAN标签后发送该数据帧给主机；若不相同，直接丢弃该数据帧。</p>
 <p>一般在与客户机相连的接口上配置。</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/test/hcna-pic51.png" alt="pic51"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/test/hcna-pic51.png" alt="pic51"></p>
 <h3><span id="跨交换机vlan标签">跨交换机VLAN标签</span></h3><p>带有VLAN标签的以太网帧在交换机间传递</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/test/hcna-pic52.png" alt="pic52"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/test/hcna-pic52.png" alt="pic52"></p>
 <h3><span id="trunk链路类型端口">Trunk链路类型端口</span></h3><p>为了使VLAN的数据帧能够跨跃多台交换机传递，交换机之间互联的链路需要设置为干道链路(Trunk Link)<br>允许多个VLAN通过，可以接收和发送多个VLAN的数据帧，缺省VLAN的以太网帧不带标签。<br>当Trunk端口收到数据帧时，如果该帧不包含802.1Q的VLAN标签，将打上该Trunk端口的PVID；如果该帧包含802.1Q的VLAN标签，则不改变。<br>当Trunk端口发送数据帧时，当所发送帧的VLAN ID与端口的PVID不同时，检查是否允许该VLAN通过，若允许的话直接转发，不允许就直接丢弃；当该帧的VLAN ID与端口的PVID相同时，则剥离VLAN标签后转发。</p>
 <p>一般用于交换机与交换机之间连接的接口。</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/test/hcna-pic53.png" alt="pic53"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/test/hcna-pic53.png" alt="pic53"></p>
 <h3><span id="hybrid链路类型端口">Hybrid链路类型端口</span></h3><p>允许多个VLAN通过，可以接收和发送多个VLAN的数据帧。<br>Hybrid端口和Trunk端口的不同之处在于：</p>
 <ul>
 <li>Hybrid端口允许多个VLAN的以太网帧不带标签</li>
 <li>Trunk端口只允许缺省VLAN的以太网帧不带标签</li>
 </ul>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/test/hcna-pic54.png" alt="pic54"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/test/hcna-pic54.png" alt="pic54"></p>
 <h3><span id="接口配置">接口配置</span></h3><hr>
 <h4><span id="配置access口">配置access口</span></h4><pre><code>[s1]int g0/0/2       # 进入与PC相连的接口
 [s1-g0/0/2]port link-type access  # 配置接口类型为Access
@@ -1402,10 +1400,10 @@
 [s1-g0/0/1]port hybrid tagged vlan 10 20   #接收带有VLAN10、20标签的帧</code></pre><h2><span id="vlan间路由">VLAN间路由</span></h2><p>由于VLAN隔离了二层广播域，也间接的隔离了各个VLAN之间的其他二层流量交换，这样导致属于不同VLAN之间的用户不能进行二层的通信，但是如果我们想让VLAN10和VLAN20之间能够通信怎么办呢</p>
 <p>——经过三层的路由转发能将报文从一个VLAN转发到另外一个VLAN。</p>
 <h3><span id="路由器物理接口">路由器物理接口</span></h3><p>这个讲还是得讲的，但是一般不用，所以只给个拓扑图，不配置</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/test/hcna-pic56.png" alt="pic56"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/test/hcna-pic56.png" alt="pic56"></p>
 <p>随着交换机VLAN的数量增加，需要路由器的接口也随之增加。而路由器的端口数量有限且某些端口也并不是一直工作状态，导致成本高且某些端口使用率低，造成浪费。</p>
 <h3><span id="单臂路由">单臂路由</span></h3><p>和上面的相比，只是将物理接口转换成了虚拟子接口，节省了路由器端口</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/test/hcna-pic57.png" alt="pic57"><br>配置：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/test/hcna-pic57.png" alt="pic57"><br>配置：</p>
 <p>S1、S2(下面两交换机)与PC相连的接口配置为Access接口，并且S1的E0/0/1及E0/0/3都是VLAN10，S2的E0/0/1为VLAN20、E0/0/3为VLAN30；<br>S1、S2、S3与交换机/路由器相连的接口配置为Trunk口，并且允许所有VLAN通过<br>剩下的重头戏：配置R1</p>
 <pre><code># 进入子接口1并且配置好IP
 [R1]int g0/0/0.1
@@ -1415,9 +1413,9 @@
 Mar  7 2020 00:05:38-08:00 R1 %%01IFNET/4/LINK_STATE(l)[0]:The line protocol IP
 on the interface GigabitEthernet0/0/0.1 has entered the UP state.
 # 开启子接口的ARP广播功能
-[R1-GigabitEthernet0/0/0.1]arp broadcast enable</code></pre><p>其他两个接口也这样配置<br><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/test/hcna-pic58.png" alt="pic58"><br>配置完成之后，可以使用命令<code>display ip interface brief</code>查看接口状态<br><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/test/hcna-pic59.png" alt="pic59"><br>使用命令<code>display ip routing-table</code>查看路由表</p>
+[R1-GigabitEthernet0/0/0.1]arp broadcast enable</code></pre><p>其他两个接口也这样配置<br><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/test/hcna-pic58.png" alt="pic58"><br>配置完成之后，可以使用命令<code>display ip interface brief</code>查看接口状态<br><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/test/hcna-pic59.png" alt="pic59"><br>使用命令<code>display ip routing-table</code>查看路由表</p>
 <p>之后使用ping IP测试连通性即可</p>
-<h3><span id="利用三层交换机">利用三层交换机</span></h3><p>三层交换机带有路由功能，VLANIF接口可以配置IP地址，借助VLANIF接口，三层交换机就能实现路由转发功能<br><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/test/hcna-pic60.png" alt="pic60"><br>设置好PC的网络参数，IP、掩码已给出，网关为192.168.*.254<br>接着配置交换机SW<br>创建VLAN并配置接口</p>
+<h3><span id="利用三层交换机">利用三层交换机</span></h3><p>三层交换机带有路由功能，VLANIF接口可以配置IP地址，借助VLANIF接口，三层交换机就能实现路由转发功能<br><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/test/hcna-pic60.png" alt="pic60"><br>设置好PC的网络参数，IP、掩码已给出，网关为192.168.*.254<br>接着配置交换机SW<br>创建VLAN并配置接口</p>
 <pre><code>[SW]vlan 10
 [SW-vlan10]vlan 20
 [SW-vlan20]int g0/0/1
@@ -1432,7 +1430,7 @@ on the interface GigabitEthernet0/0/0.1 has entered the UP state.
 <pre><code>[SW]int VLANif 10
 [SW-Vlanif10]ip add 192.168.1.254 24
 [SW-Vlanif10]int VLANif 20
-[SW-Vlanif20]ip add 192.168.1.254 24</code></pre><p>这样就配置成功了<br>查看接口状态<br><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/test/hcna-pic61.png" alt="pic61"><br>PC测试<br><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/test/hcna-pic62.png" alt="pic62"></p>
+[SW-Vlanif20]ip add 192.168.1.254 24</code></pre><p>这样就配置成功了<br>查看接口状态<br><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/test/hcna-pic61.png" alt="pic61"><br>PC测试<br><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/test/hcna-pic62.png" alt="pic62"></p>
 <p>VLAN的就到这里了，拜拜~</p>
 <h6><span id="历史文章">历史文章</span></h6><ul>
 <li><p><a href="https://mp.weixin.qq.com/s?__biz=MzI1OTc5NTA2OA==&mid=2247483846&idx=1&sn=ce5bf8ad9f3405800246e60225f51821&chksm=ea7230d5dd05b9c318994de74340a05e958a3a4fb621a2c86cee84e69820ff02b562263ac5ee&token=1031513744&lang=zh_CN&scene=21#wechat_redirect" target="_blank" rel="noopener">HCNA学习——eNSP安装</a></p>
@@ -1444,7 +1442,7 @@ on the interface GigabitEthernet0/0/0.1 has entered the UP state.
 <li><p><a href="https://mp.weixin.qq.com/s?__biz=MzI1OTc5NTA2OA==&mid=2247483918&idx=1&sn=6e374721274a9cbe28240662183f00da&chksm=ea72331ddd05ba0b86f8f9ec37940e1e337923ea941fd05847b7e35157e4c14855135afc217f&token=1031513744&lang=zh_CN&scene=21#wechat_redirect" target="_blank" rel="noopener">HCNA学习——交换机基础配置</a></p>
 </li>
 </ul>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/test/wechat-img.png" alt="扫码_搜索联合传播样式-白色版"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn/img/pic/test/wechat-img.png" alt="扫码_搜索联合传播样式-白色版"></p>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.2.0/dist/mindmap.min.css">
       
       
@@ -1465,7 +1463,7 @@ on the interface GigabitEthernet0/0/0.1 has entered the UP state.
     <p><span class="copy-title">字数:</span><span class="post-count">3.6k</span></p>
     <p><span class="copy-title">本文作者:</span><a  title="Luwang">Luwang</a></p>
     <p><span class="copy-title">发布时间:</span>2020-03-07, 00:54:04</p>
-    <p><span class="copy-title">最后更新:</span>2020-03-14, 00:58:08</p>
+    <p><span class="copy-title">最后更新:</span>2022-02-08, 17:43:55</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/03/07/hcna-vlan/" title="HCNA学习——VLAN配置">https://wallleap.cn/2020/03/07/hcna-vlan/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">&#34;署名-非商用-相同方式共享 4.0&#34;</a> 转载请保留原文链接及作者。
@@ -1478,7 +1476,7 @@ on the interface GigabitEthernet0/0/0.1 has entered the UP state.
         <p><span class="copy-title">文章字数:</span><span class="post-count">3.6k</span></p>
         <p><span class="copy-title">本文作者:</span><a  title="Luwang">Luwang</a></p>
         <p><span class="copy-title">发布时间:</span>2020-03-07, 00:54:04</p>
-        <p><span class="copy-title">最后更新:</span>2020-03-14, 00:58:08</p>
+        <p><span class="copy-title">最后更新:</span>2022-02-08, 17:43:55</p>
         <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/03/07/hcna-vlan/" title="HCNA学习——VLAN配置">https://wallleap.cn/2020/03/07/hcna-vlan/</a>
         <p>
             <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
@@ -1554,7 +1552,7 @@ on the interface GigabitEthernet0/0/0.1 has entered the UP state.
           
   
         <p style="color: #666666;"><a href="#" style="color: #b9b9b9;">Blog wallleap</a>
-          , Copyright &copy; 2019-2020 
+          , Copyright &copy; 2019-2022 
           by Luwang All Rights Reserved.</p>
       </div>
       <!-- <div class="footer-device">

@@ -6,20 +6,18 @@
   <meta name="keywords" content=" HCL , 华三 , 实验 , 配置 ">
   <meta name="description" content="HCL配置(一)--ping通及Telnet | wallleap">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<meta name="description" content="念两句诗          叙别梦、扬州一觉。          【宋代】吴文英《夜游宫·人去西楼雁杳》       .images{ 	float: left;     width: 100%;     height: 300px;     position: relative;     margin: 20px 0">
+<meta name="description" content="botui使用之后导致结构太混乱了，因此改用正常的md文档书写 valine评论也不太适合这个主题，改为gitalk   .talk-wrap{ 	position: relative; } .talk-wrap::before, .talk-wrap::after{ 	content: &quot;&quot;; 	display: table; 	clear: both; } .talk-left, .talk-">
 <meta property="og:type" content="website">
-<meta property="og:title" content="图集">
-<meta property="og:url" content="https://wallleap.cn/photo/index.html">
+<meta property="og:title" content="关于">
+<meta property="og:url" content="https://wallleap.cn/about/index.html">
 <meta property="og:site_name" content="wallleap">
-<meta property="og:description" content="念两句诗          叙别梦、扬州一觉。          【宋代】吴文英《夜游宫·人去西楼雁杳》       .images{ 	float: left;     width: 100%;     height: 300px;     position: relative;     margin: 20px 0">
+<meta property="og:description" content="botui使用之后导致结构太混乱了，因此改用正常的md文档书写 valine评论也不太适合这个主题，改为gitalk   .talk-wrap{ 	position: relative; } .talk-wrap::before, .talk-wrap::after{ 	content: &quot;&quot;; 	display: table; 	clear: both; } .talk-left, .talk-">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=46b93e4b7d1ed21b79c929e39555baf9/14ce36d3d539b600fbdea00ee950352ac65cb773.jpg">
-<meta property="article:published_time" content="2020-02-23T07:09:21.000Z">
-<meta property="article:modified_time" content="2020-03-24T14:15:05.640Z">
+<meta property="article:published_time" content="2020-02-23T06:54:06.000Z">
+<meta property="article:modified_time" content="2022-02-08T09:43:55.896Z">
 <meta property="article:author" content="Luwang">
 <meta property="article:tag" content="wallleap">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268%3Bg%3D0/sign=46b93e4b7d1ed21b79c929e39555baf9/14ce36d3d539b600fbdea00ee950352ac65cb773.jpg">
 
 
 <link rel="icon" href="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/favicon.ico">
@@ -1144,7 +1142,7 @@
         
         <a  class="全部文章 编程 数据结构 "
            href="/2019/08/28/DataStructure1/"
-           data-tag="数据结构,C/C++,技术"
+           data-tag="技术,数据结构,C/C++"
            data-author="" >
             <span class="post-title" title="数据结构(1)-绪论">数据结构(1)-绪论</span>
             <span class="post-date" title="2019-08-28 22:12:47">2019/08/28</span>
@@ -1258,7 +1256,7 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2019-10-24 12:49:59'>2019-09-09 21:54</time>
+            发布时间 : <time class="date" title='最后更新: 2022-02-08 17:43:55'>2019-09-09 21:54</time>
         
     </div>
     <div class="article-meta">
@@ -1318,13 +1316,13 @@
 </ul>
 </blockquote>
 <h2><span id="二-配置"><font color="orange">二、配置</font></span></h2><h3><span id="1-新建工程并添加设备">1、新建工程并添加设备</span></h3><p>单机图示图标，新建工程，自己命名选择路径保存</p>
-<p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL1/pic1.png" alt></p>
-<p>从左边选择设备，拖入操作区，使用GE线缆将设备连接起来，连接Host的时候注意选择有线网卡<br><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL1/pic2.png" alt></p>
-<h3><span id="2-查看host的ip并配好pc-host相关参数">2、查看Host的IP并配好PC、Host相关参数</span></h3><p>在真机环境中打开命令提示符，输入<code>ipconfig</code>获得刚刚新建的网卡IP<br><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL1/pic3.png" alt><br>图示显示169…未分配地址，打开网络管理界面，右击Vbox…网卡<br><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL1/pic4.png" alt><br>属性–找到Internet协议版本4(TCP/IPv4)，双击后配置静态IP<br><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL1/pic5.png" alt><br>禁用－启用该网卡，再次输入<code>ipconfig</code>查看IP地址<br><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL1/pic6.png" alt><br>启动所有设备<br><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL1/pic7.png" alt><br>右击PC，选择配置，输入相关参数，启用接口<br><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL1/pic8.png" alt></p>
+<p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL1/pic1.png" alt></p>
+<p>从左边选择设备，拖入操作区，使用GE线缆将设备连接起来，连接Host的时候注意选择有线网卡<br><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL1/pic2.png" alt></p>
+<h3><span id="2-查看host的ip并配好pc-host相关参数">2、查看Host的IP并配好PC、Host相关参数</span></h3><p>在真机环境中打开命令提示符，输入<code>ipconfig</code>获得刚刚新建的网卡IP<br><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL1/pic3.png" alt><br>图示显示169…未分配地址，打开网络管理界面，右击Vbox…网卡<br><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL1/pic4.png" alt><br>属性–找到Internet协议版本4(TCP/IPv4)，双击后配置静态IP<br><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL1/pic5.png" alt><br>禁用－启用该网卡，再次输入<code>ipconfig</code>查看IP地址<br><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL1/pic6.png" alt><br>启动所有设备<br><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL1/pic7.png" alt><br>右击PC，选择配置，输入相关参数，启用接口<br><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL1/pic8.png" alt></p>
 <h3><span id="3-路由器配置">3、路由器配置</span></h3><p><kbd>Ctrl</kbd>+<kbd>C</kbd>退出自动配置，按<kbd>enter</kbd>继续</p>
 <h4><span id="1修改名称">(1)修改名称</span></h4><pre><code>&lt;H3C&gt;system-view
 System View: return to User View with Ctrl+Z.
-[H3C]sysname LWR</code></pre><h4><span id="2配置接口">(2)配置接口</span></h4><p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="web-HCL1/pic9.png" alt></p>
+[H3C]sysname LWR</code></pre><h4><span id="2配置接口">(2)配置接口</span></h4><p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="web-HCL1/pic9.png" alt></p>
 <ul>
 <li>G0/0 192.168.11.1     </li>
 <li>G0/1 192.168.10.1</li>
@@ -1349,8 +1347,8 @@ interface GigabitEthernet0/1
  ip address 192.168.10.1 255.255.255.0</code></pre><h4><span id="3开启telnet服务">(3)开启telnet服务</span></h4><pre><code>[LWR]telnet server enable
 [LWR]user-interface vty 0 4
 [LWR-line-vty0-4]authentication-mode none
-[LWR-line-vty0-4]user level-5</code></pre><p>真机到控制面板中选择程序，启用服务，勾选Telnet Client，确定，开启telnet功能<br><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL1/pic10.png" alt></p>
-<h3><span id="4-交换机配置">4、交换机配置</span></h3><p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL1/pic11.png" alt></p>
+[LWR-line-vty0-4]user level-5</code></pre><p>真机到控制面板中选择程序，启用服务，勾选Telnet Client，确定，开启telnet功能<br><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL1/pic10.png" alt></p>
+<h3><span id="4-交换机配置">4、交换机配置</span></h3><p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL1/pic11.png" alt></p>
 <p>S1：<br><kbd>Ctrl</kbd>+<kbd>C</kbd>   <kbd>enter</kbd></p>
 <pre><code>&lt;H3C&gt;sys
 System View: return to User View with Ctrl+Z.
@@ -1369,8 +1367,8 @@ System View: return to User View with Ctrl+Z.
 [LWS2-GigabitEthernet1/0/1]quit
 [LWS2]int g1/0/2
 [LWS2-GigabitEthernet1/0/2]no sh
-[LWS2-GigabitEthernet1/0/2]quit</code></pre><h3><span id="5-测试">5、测试</span></h3><h4><span id="1pcping路由器地址">(1)PCping路由器地址</span></h4><p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL1/pic12.png" alt></p>
-<h4><span id="2host真机pingr并telnet">(2)Host(真机)pingR并telnet</span></h4><p><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL1/pic13.png" alt><br><img class="lozad" data-src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL1/pic14.png" alt></p>
+[LWS2-GigabitEthernet1/0/2]quit</code></pre><h3><span id="5-测试">5、测试</span></h3><h4><span id="1pcping路由器地址">(1)PCping路由器地址</span></h4><p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL1/pic12.png" alt></p>
+<h4><span id="2host真机pingr并telnet">(2)Host(真机)pingR并telnet</span></h4><p><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL1/pic13.png" alt><br><img src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/img/pic/web-HCL1/pic14.png" alt></p>
 <h3><span id="6-时间配置">6、时间配置</span></h3><p><lwr>sys<br>System View: return to User View with Ctrl+Z.<br>[LWR]clock p<br>[LWR]clock protocol none<br>[LWR]quit<br><lwr>clock datetime 21:53:50 2019/09/09</lwr></lwr></p>
 <p>7、保存<br><lwr>save<br>The current configuration will be written to the device. Are you sure? [Y/N]:y<br>Please input the file name(*.cfg)[flash:/startup.cfg]<br>(To leave the existing filename unchanged, press the enter key):<br>Validating file. Please wait…<br>Configuration is saved to device successfully.</lwr></p>
 <hr>
@@ -1426,7 +1424,7 @@ System View: return to User View with Ctrl+Z.
     <p><span class="copy-title">字数:</span><span class="post-count">688</span></p>
     <p><span class="copy-title">本文作者:</span><a  title="Luwang">Luwang</a></p>
     <p><span class="copy-title">发布时间:</span>2019-09-09, 21:54:19</p>
-    <p><span class="copy-title">最后更新:</span>2019-10-24, 12:49:59</p>
+    <p><span class="copy-title">最后更新:</span>2022-02-08, 17:43:55</p>
     <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/09/09/web-HCL1/" title="HCL配置(一)--ping通及Telnet">https://wallleap.cn/2019/09/09/web-HCL1/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">&#34;署名-非商用-相同方式共享 4.0&#34;</a> 转载请保留原文链接及作者。
@@ -1439,7 +1437,7 @@ System View: return to User View with Ctrl+Z.
         <p><span class="copy-title">文章字数:</span><span class="post-count">688</span></p>
         <p><span class="copy-title">本文作者:</span><a  title="Luwang">Luwang</a></p>
         <p><span class="copy-title">发布时间:</span>2019-09-09, 21:54:19</p>
-        <p><span class="copy-title">最后更新:</span>2019-10-24, 12:49:59</p>
+        <p><span class="copy-title">最后更新:</span>2022-02-08, 17:43:55</p>
         <span class="copy-title">原始链接:</span><a class="post-url" href="/2019/09/09/web-HCL1/" title="HCL配置(一)--ping通及Telnet">https://wallleap.cn/2019/09/09/web-HCL1/</a>
         <p>
             <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
@@ -1515,7 +1513,7 @@ System View: return to User View with Ctrl+Z.
           
   
         <p style="color: #666666;"><a href="#" style="color: #b9b9b9;">Blog wallleap</a>
-          , Copyright &copy; 2019-2020 
+          , Copyright &copy; 2019-2022 
           by Luwang All Rights Reserved.</p>
       </div>
       <!-- <div class="footer-device">
